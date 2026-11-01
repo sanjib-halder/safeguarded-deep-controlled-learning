@@ -1,0 +1,235 @@
+{
+  "total_periods": 512000,
+  "corrected": 9836,
+  "by_status": {
+    "all up": 316666,
+    "A and C down": 7172,
+    "A down": 53138,
+    "C down": 45022,
+    "B down": 52115,
+    "B and C down": 25161,
+    "A and B and C down": 4084,
+    "A and B down": 8642
+  },
+  "corrected_by_status": {
+    "A down": 820,
+    "all up": 5109,
+    "B and C down": 626,
+    "C down": 564,
+    "B down": 2626,
+    "A and C down": 90,
+    "A and B down": 1
+  },
+  "by_direction": {
+    "order less": 9075,
+    "cancel SDI's order": 669,
+    "order more": 132
+  },
+  "by_supplier": {
+    "B": 2455,
+    "A": 7148,
+    "C": 273
+  },
+  "by_inventory": {
+    "4 to 7": 286710,
+    "8 or more": 125072,
+    "0 to 3": 99625,
+    "backorders (I < 0)": 593
+  },
+  "corrected_by_inventory": {
+    "0 to 3": 9141,
+    "4 to 7": 563,
+    "backorders (I < 0)": 28,
+    "8 or more": 104
+  },
+  "by_status_supplier": {
+    "A down": {
+      "B": 592,
+      "C": 229
+    },
+    "all up": {
+      "A": 3657,
+      "B": 1457
+    },
+    "B and C down": {
+      "A": 626
+    },
+    "C down": {
+      "B": 316,
+      "A": 248
+    },
+    "B down": {
+      "A": 2617,
+      "C": 43
+    },
+    "A and C down": {
+      "B": 90
+    },
+    "A and B down": {
+      "C": 1
+    },
+    "A and B and C down": {}
+  },
+  "per_instance": [
+    {
+      "instance": "F00_lcl",
+      "rep": 0,
+      "share_corrected": 0.114625
+    },
+    {
+      "instance": "F00_lch",
+      "rep": 0,
+      "share_corrected": 0.0485
+    },
+    {
+      "instance": "F01_lcl",
+      "rep": 1,
+      "share_corrected": 0.0141875
+    },
+    {
+      "instance": "F01_lch",
+      "rep": 1,
+      "share_corrected": 0.0014375
+    },
+    {
+      "instance": "F02_lcl",
+      "rep": 2,
+      "share_corrected": 0.075875
+    },
+    {
+      "instance": "F02_lch",
+      "rep": 2,
+      "share_corrected": 0.0133125
+    },
+    {
+      "instance": "F03_lcl",
+      "rep": 3,
+      "share_corrected": 6.25e-05
+    },
+    {
+      "instance": "F03_lch",
+      "rep": 3,
+      "share_corrected": 6.25e-05
+    },
+    {
+      "instance": "F04_lcl",
+      "rep": 4,
+      "share_corrected": 0.002
+    },
+    {
+      "instance": "F04_lch",
+      "rep": 4,
+      "share_corrected": 0.014375
+    },
+    {
+      "instance": "F05_lcl",
+      "rep": 5,
+      "share_corrected": 0.021125
+    },
+    {
+      "instance": "F05_lch",
+      "rep": 5,
+      "share_corrected": 0.0
+    },
+    {
+      "instance": "F06_lcl",
+      "rep": 6,
+      "share_corrected": 0.007
+    },
+    {
+      "instance": "F06_lch",
+      "rep": 6,
+      "share_corrected": 0.0003125
+    },
+    {
+      "instance": "F07_lcl",
+      "rep": 7,
+      "share_corrected": 0.0004375
+    },
+    {
+      "instance": "F07_lch",
+      "rep": 7,
+      "share_corrected": 0.0080625
+    },
+    {
+      "instance": "F08_lcl",
+      "rep": 8,
+      "share_corrected": 0.000625
+    },
+    {
+      "instance": "F08_lch",
+      "rep": 8,
+      "share_corrected": 0.0001875
+    },
+    {
+      "instance": "F09_lcl",
+      "rep": 9,
+      "share_corrected": 0.0123125
+    },
+    {
+      "instance": "F09_lch",
+      "rep": 9,
+      "share_corrected": 0.0019375
+    },
+    {
+      "instance": "F10_lcl",
+      "rep": 10,
+      "share_corrected": 0.0009375
+    },
+    {
+      "instance": "F10_lch",
+      "rep": 10,
+      "share_corrected": 0.0054375
+    },
+    {
+      "instance": "F11_lcl",
+      "rep": 11,
+      "share_corrected": 0.0144375
+    },
+    {
+      "instance": "F11_lch",
+      "rep": 11,
+      "share_corrected": 0.000375
+    },
+    {
+      "instance": "F12_lcl",
+      "rep": 12,
+      "share_corrected": 0.10525
+    },
+    {
+      "instance": "F12_lch",
+      "rep": 12,
+      "share_corrected": 0.0238125
+    },
+    {
+      "instance": "F13_lcl",
+      "rep": 13,
+      "share_corrected": 0.1213125
+    },
+    {
+      "instance": "F13_lch",
+      "rep": 13,
+      "share_corrected": 0.0003125
+    },
+    {
+      "instance": "F14_lcl",
+      "rep": 14,
+      "share_corrected": 0.0
+    },
+    {
+      "instance": "F14_lch",
+      "rep": 14,
+      "share_corrected": 0.0001875
+    },
+    {
+      "instance": "F15_lcl",
+      "rep": 15,
+      "share_corrected": 0.0035625
+    },
+    {
+      "instance": "F15_lch",
+      "rep": 15,
+      "share_corrected": 0.0026875
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+Fig. 1: structure of S-DCL (schematic)
+  -> fig1.pdf / .png
+Fig. 2: factorial effects on the GMI gap
+  n = 128, replicates = 16, residual dof = 105
+  Fixed cost               effect -1.25 pp  SE 0.52  95% CI [-2.28, -0.23]  p = 0.0173
+  Regional shocks          effect +0.91 pp  SE 0.52  95% CI [-0.11, +1.94]  p = 0.0809
+  Price premium            effect -2.55 pp  SE 0.52  95% CI [-3.58, -1.52]  p = 0.0000
+  Fixed cost × shocks      effect +0.28 pp  SE 0.52  95% CI [-0.75, +1.30]  p = 0.5947
+  Fixed cost × premium     effect +0.95 pp  SE 0.52  95% CI [-0.07, +1.98]  p = 0.0688
+  Shocks × premium         effect +0.28 pp  SE 0.52  95% CI [-0.75, +1.30]  p = 0.5954
+  Three-way                effect -0.46 pp  SE 0.52  95% CI [-1.48, +0.57]  p = 0.3797
+  -> fig2.pdf / .png
+Fig. 3: per-instance difference to SDI, hard cells, H1 + H2
+  Seed 101  mean -1.027 pp, worst +0.34 pp, best -5.53 pp
+  Seed 202  mean -0.273 pp, worst +17.12 pp, best -4.75 pp
+  Seed 303  mean -0.633 pp, worst +10.95 pp, best -5.00 pp
+  Ensemble  mean -1.063 pp, worst -0.01 pp, best -5.08 pp
+  -> fig3.pdf / .png
+Fig. 4: gap to the restricted three-supplier optimum, N = 4 and 5
+  N = 4 GMI             mean -7.71%  min -21.43  max +4.94  (n = 32)
+  N = 4 SDI             mean -9.73%  min -26.54  max +2.34  (n = 32)
+  N = 4 S-DCL ensemble  mean -9.91%  min -26.58  max +2.04  (n = 32)
+  N = 5 GMI             mean -7.35%  min -30.47  max +3.57  (n = 32)
+  N = 5 SDI             mean -8.10%  min -30.74  max +2.55  (n = 32)
+  N = 5 S-DCL ensemble  mean -8.47%  min -30.74  max +2.28  (n = 32)
+  -> fig4.pdf / .png
+Fig. 5: mean gain on SDI against worst-instance loss
+  Full single network          gain +0.726 pp  worst +10.95 pp  (n = 48)
+  No confirmation              gain +0.540 pp  worst +2.65 pp  (n = 48)
+  One labelling pass           gain +0.696 pp  worst +0.00 pp  (n = 48)
+  No prior                     gain +0.568 pp  worst +3.20 pp  (n = 48)
+  Coordinate search            gain +0.884 pp  worst +0.26 pp  (n = 48)
+  H = 12                       gain +1.061 pp  worst +0.14 pp  (n = 48)
+  Network 101                  gain +1.027 pp  worst +0.34 pp  (n = 32)
+  Network 202                  gain +0.273 pp  worst +17.12 pp  (n = 32)
+  Network 303                  gain +0.633 pp  worst +10.95 pp  (n = 32)
+  Ensemble                     gain +1.063 pp  worst -0.01 pp  (n = 32)
+  Ensemble, O2, no gate        gain -1.718 pp  worst +17.37 pp  (n = 64)
+  S-DCL policy (gated), O2     gain +0.307 pp  worst +0.02 pp  (n = 64)
+  -> fig5.pdf / .png

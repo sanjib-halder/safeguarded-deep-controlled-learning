@@ -1,0 +1,596 @@
+{
+  "summary": {
+    "mean_sign_agreement": 0.48484848484848486,
+    "share_descent_works": 0.25,
+    "verdict": "BIASED/UNINFORMATIVE: gradients do not reliably point downhill; use a gradient-free learner.",
+    "minutes": 5.5
+  },
+  "rows": [
+    {
+      "instance": "F00_lch",
+      "point": "untrained (= status table)",
+      "horizon": 48,
+      "cost": 236.02578735351562,
+      "grad_norm": 15.037774085998535,
+      "directional": [
+        {
+          "eps": 0.003,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 0.8645383181671301
+        },
+        {
+          "eps": 0.01,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 0.8645383181671301
+        },
+        {
+          "eps": 0.03,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 0.8645383181671301
+        },
+        {
+          "eps": 0.1,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 0.8645383181671301
+        }
+      ],
+      "descent": [
+        {
+          "step": 0.01,
+          "dL_along_minus_grad": 0.0,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.03,
+          "dL_along_minus_grad": 0.0,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.1,
+          "dL_along_minus_grad": 0.0,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.3,
+          "dL_along_minus_grad": 11.714691162109375,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        }
+      ],
+      "sign_agreement_best_eps": NaN,
+      "best_eps": 0.03,
+      "descent_works": false
+    },
+    {
+      "instance": "F00_lch",
+      "point": "perturbed",
+      "horizon": 48,
+      "cost": 236.02578735351562,
+      "grad_norm": 28.79586410522461,
+      "directional": [
+        {
+          "eps": 0.003,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 0.06012891442514956
+        },
+        {
+          "eps": 0.01,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 0.06012891442514956
+        },
+        {
+          "eps": 0.03,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 0.06012891442514956
+        },
+        {
+          "eps": 0.1,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 0.06012891442514956
+        }
+      ],
+      "descent": [
+        {
+          "step": 0.01,
+          "dL_along_minus_grad": 0.0,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.03,
+          "dL_along_minus_grad": 0.0,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.1,
+          "dL_along_minus_grad": 0.0,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.3,
+          "dL_along_minus_grad": 5.0982818603515625,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        }
+      ],
+      "sign_agreement_best_eps": NaN,
+      "best_eps": 0.03,
+      "descent_works": false
+    },
+    {
+      "instance": "F00_lch",
+      "point": "untrained (= status table)",
+      "horizon": 240,
+      "cost": 240.08895874023438,
+      "grad_norm": 24.583145141601562,
+      "directional": [
+        {
+          "eps": 0.003,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 1.2612505666911602
+        },
+        {
+          "eps": 0.01,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 1.2612505666911602
+        },
+        {
+          "eps": 0.03,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 1.2612505666911602
+        },
+        {
+          "eps": 0.1,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 1.2612505666911602
+        }
+      ],
+      "descent": [
+        {
+          "step": 0.01,
+          "dL_along_minus_grad": 0.0,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.03,
+          "dL_along_minus_grad": 0.0,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.1,
+          "dL_along_minus_grad": 0.0,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.3,
+          "dL_along_minus_grad": 8.338760375976562,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        }
+      ],
+      "sign_agreement_best_eps": NaN,
+      "best_eps": 0.03,
+      "descent_works": false
+    },
+    {
+      "instance": "F00_lch",
+      "point": "perturbed",
+      "horizon": 240,
+      "cost": 240.08895874023438,
+      "grad_norm": 45.488525390625,
+      "directional": [
+        {
+          "eps": 0.003,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 0.1820018862684568
+        },
+        {
+          "eps": 0.01,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 0.1820018862684568
+        },
+        {
+          "eps": 0.03,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 0.1820018862684568
+        },
+        {
+          "eps": 0.1,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 0.1820018862684568
+        }
+      ],
+      "descent": [
+        {
+          "step": 0.01,
+          "dL_along_minus_grad": 0.0,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.03,
+          "dL_along_minus_grad": 0.0,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.1,
+          "dL_along_minus_grad": 0.0,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.3,
+          "dL_along_minus_grad": 8.337417602539062,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        }
+      ],
+      "sign_agreement_best_eps": NaN,
+      "best_eps": 0.03,
+      "descent_works": false
+    },
+    {
+      "instance": "F05_lcl",
+      "point": "untrained (= status table)",
+      "horizon": 48,
+      "cost": 229.27398681640625,
+      "grad_norm": 25.799419403076172,
+      "directional": [
+        {
+          "eps": 0.003,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 0.898165596028169
+        },
+        {
+          "eps": 0.01,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 0.898165596028169
+        },
+        {
+          "eps": 0.03,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 0.898165596028169
+        },
+        {
+          "eps": 0.1,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 0.898165596028169
+        }
+      ],
+      "descent": [
+        {
+          "step": 0.01,
+          "dL_along_minus_grad": 0.0,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.03,
+          "dL_along_minus_grad": 0.0,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.1,
+          "dL_along_minus_grad": 0.0,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.3,
+          "dL_along_minus_grad": 10.10760498046875,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        }
+      ],
+      "sign_agreement_best_eps": NaN,
+      "best_eps": 0.03,
+      "descent_works": false
+    },
+    {
+      "instance": "F05_lcl",
+      "point": "perturbed",
+      "horizon": 48,
+      "cost": 233.494140625,
+      "grad_norm": 153.40953063964844,
+      "directional": [
+        {
+          "eps": 0.003,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 0.33971206036706764
+        },
+        {
+          "eps": 0.01,
+          "nonzero_fd": 2,
+          "sign_agreement": 0.0,
+          "correlation": NaN,
+          "mean_abs_fd": 0.2858479817708333,
+          "mean_abs_ad": 0.33971206036706764
+        },
+        {
+          "eps": 0.03,
+          "nonzero_fd": 8,
+          "sign_agreement": 0.25,
+          "correlation": -0.48190779550850465,
+          "mean_abs_fd": 0.3811306423611112,
+          "mean_abs_ad": 0.33971206036706764
+        },
+        {
+          "eps": 0.1,
+          "nonzero_fd": 11,
+          "sign_agreement": 0.6363636363636364,
+          "correlation": 0.5494874649639061,
+          "mean_abs_fd": 0.4314422607421875,
+          "mean_abs_ad": 0.33971206036706764
+        }
+      ],
+      "descent": [
+        {
+          "step": 0.01,
+          "dL_along_minus_grad": -0.4103546142578125,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.03,
+          "dL_along_minus_grad": -4.22015380859375,
+          "dL_random_mean": -0.008575439453125,
+          "dL_random_min": -0.0343017578125
+        },
+        {
+          "step": 0.1,
+          "dL_along_minus_grad": -4.22015380859375,
+          "dL_random_mean": -0.021076202392578125,
+          "dL_random_min": -0.1124420166015625
+        },
+        {
+          "step": 0.3,
+          "dL_along_minus_grad": -3.716766357421875,
+          "dL_random_mean": 0.0232086181640625,
+          "dL_random_min": -0.105316162109375
+        }
+      ],
+      "sign_agreement_best_eps": 0.6363636363636364,
+      "best_eps": 0.1,
+      "descent_works": true
+    },
+    {
+      "instance": "F05_lcl",
+      "point": "untrained (= status table)",
+      "horizon": 240,
+      "cost": 231.82528686523438,
+      "grad_norm": 34.633644104003906,
+      "directional": [
+        {
+          "eps": 0.003,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 2.9541949381430945
+        },
+        {
+          "eps": 0.01,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 2.9541949381430945
+        },
+        {
+          "eps": 0.03,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 2.9541949381430945
+        },
+        {
+          "eps": 0.1,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 2.9541949381430945
+        }
+      ],
+      "descent": [
+        {
+          "step": 0.01,
+          "dL_along_minus_grad": 0.0,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.03,
+          "dL_along_minus_grad": 0.0,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.1,
+          "dL_along_minus_grad": 0.0,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.3,
+          "dL_along_minus_grad": 6.710113525390625,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        }
+      ],
+      "sign_agreement_best_eps": NaN,
+      "best_eps": 0.03,
+      "descent_works": false
+    },
+    {
+      "instance": "F05_lcl",
+      "point": "perturbed",
+      "horizon": 240,
+      "cost": 239.7433319091797,
+      "grad_norm": 181.40736389160156,
+      "directional": [
+        {
+          "eps": 0.003,
+          "nonzero_fd": 0,
+          "sign_agreement": NaN,
+          "correlation": NaN,
+          "mean_abs_fd": 0.0,
+          "mean_abs_ad": 0.5038224415232738
+        },
+        {
+          "eps": 0.01,
+          "nonzero_fd": 3,
+          "sign_agreement": 0.6666666666666666,
+          "correlation": 0.218865969629125,
+          "mean_abs_fd": 0.005594889322916667,
+          "mean_abs_ad": 0.5038224415232738
+        },
+        {
+          "eps": 0.03,
+          "nonzero_fd": 10,
+          "sign_agreement": 0.3,
+          "correlation": -0.41688489190101047,
+          "mean_abs_fd": 0.006273057725694445,
+          "mean_abs_ad": 0.5038224415232738
+        },
+        {
+          "eps": 0.1,
+          "nonzero_fd": 12,
+          "sign_agreement": 0.3333333333333333,
+          "correlation": -0.026733239425668156,
+          "mean_abs_fd": 0.11521021525065105,
+          "mean_abs_ad": 0.5038224415232738
+        }
+      ],
+      "descent": [
+        {
+          "step": 0.01,
+          "dL_along_minus_grad": -1.0951080322265625,
+          "dL_random_mean": 0.0,
+          "dL_random_min": 0.0
+        },
+        {
+          "step": 0.03,
+          "dL_along_minus_grad": -7.9180450439453125,
+          "dL_random_mean": -9.1552734375e-05,
+          "dL_random_min": -0.0003662109375
+        },
+        {
+          "step": 0.1,
+          "dL_along_minus_grad": -7.9180450439453125,
+          "dL_random_mean": -0.016529083251953125,
+          "dL_random_min": -0.0429229736328125
+        },
+        {
+          "step": 0.3,
+          "dL_along_minus_grad": -7.9177093505859375,
+          "dL_random_mean": -0.0615386962890625,
+          "dL_random_min": -0.149322509765625
+        }
+      ],
+      "sign_agreement_best_eps": 0.3333333333333333,
+      "best_eps": 0.1,
+      "descent_works": true
+    }
+  ],
+  "args": {
+    "only": [
+      "F00_lch",
+      "F05_lcl"
+    ],
+    "episodes": 256,
+    "horizons": [
+      48,
+      240
+    ],
+    "directions": 12,
+    "eps": [
+      0.003,
+      0.01,
+      0.03,
+      0.1
+    ],
+    "steps": [
+      0.01,
+      0.03,
+      0.1,
+      0.3
+    ],
+    "budget": "quick",
+    "seed": 0
+  }
+}

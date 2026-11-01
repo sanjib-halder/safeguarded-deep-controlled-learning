@@ -1,0 +1,6 @@
+numpy>=1.26
+scipy>=1.11        # scipy.optimize.milp (HiGHS) is used for the rolling-horizon MILP
+matplotlib>=3.8    # optional, for plots
+gymnasium>=0.29    # optional, only for the Gymnasium env wrapper
+pytest>=8          # optional, tests also run with `python tests/test_core.py`
+torch>=2.1         # for the neural policy (train_neural.py); CPU build is fine on an M4

@@ -1,0 +1,6031 @@
+{
+  "summary": {
+    "n": 40,
+    "gmi_gap": {
+      "mean": 4.133268518891953,
+      "median": 3.5205166403429247,
+      "p90": 8.12011269079233,
+      "max": 13.090854675262413
+    },
+    "single_gap_median": 105.78976197318363,
+    "table": {
+      "gap_mean": 2.7057664980707297,
+      "gap_median": 2.0364099672998814,
+      "share_all_runs_beat_gmi": 0.475,
+      "share_any_run_worse": 0.05,
+      "gap_closed_median_pct": 24.541794514496974,
+      "gap_closed_mean_pct": 27.152484641485103
+    },
+    "spearman_gmi_gap": [
+      {
+        "feature": "shock_rate",
+        "spearman_rho": 0.31706071990325835,
+        "p_value": 0.04621267378473412
+      },
+      {
+        "feature": "K_max",
+        "spearman_rho": 0.2913696060037524,
+        "p_value": 0.06812862087270487
+      },
+      {
+        "feature": "premium",
+        "spearman_rho": -0.2557223264540338,
+        "p_value": 0.11123790474796384
+      },
+      {
+        "feature": "has_shock",
+        "spearman_rho": 0.25122588745804175,
+        "p_value": 0.1178867595274479
+      },
+      {
+        "feature": "lead_gap",
+        "spearman_rho": 0.21274237340053387,
+        "p_value": 0.18750982420222945
+      },
+      {
+        "feature": "down_B",
+        "spearman_rho": 0.17992495309568482,
+        "p_value": 0.2665866189172994
+      },
+      {
+        "feature": "lead_C",
+        "spearman_rho": 0.16698887821127806,
+        "p_value": 0.3030595995782616
+      },
+      {
+        "feature": "down_C",
+        "spearman_rho": -0.1631408604449639,
+        "p_value": 0.31449529912433727
+      },
+      {
+        "feature": "down_A",
+        "spearman_rho": -0.12870544090056285,
+        "p_value": 0.4286565140795795
+      },
+      {
+        "feature": "outage_C",
+        "spearman_rho": 0.08670357855036613,
+        "p_value": 0.5947421923588601
+      },
+      {
+        "feature": "moq_c",
+        "spearman_rho": -0.08542231161331076,
+        "p_value": 0.6002186140898159
+      }
+    ],
+    "ols_gmi_gap": {
+      "r2": 0.37755806322145147,
+      "n": 40,
+      "coef": [
+        {
+          "feature": "premium",
+          "beta_per_sd": -1.3019768271829069,
+          "se": 0.5440547195781323,
+          "t": -2.3930990400974337
+        },
+        {
+          "feature": "K_max",
+          "beta_per_sd": 1.1123828629330297,
+          "se": 0.507263706692126,
+          "t": 2.19290843846664
+        },
+        {
+          "feature": "moq_c",
+          "beta_per_sd": 0.045998202080561316,
+          "se": 0.5163309907389142,
+          "t": 0.0890866574069744
+        },
+        {
+          "feature": "shock_rate",
+          "beta_per_sd": 1.7389190377890351,
+          "se": 1.2188280260109994,
+          "t": 1.4267140241927307
+        },
+        {
+          "feature": "has_shock",
+          "beta_per_sd": -1.2856313030019413,
+          "se": 1.2702668443283194,
+          "t": -1.012095457534945
+        },
+        {
+          "feature": "down_A",
+          "beta_per_sd": -0.0445645029105992,
+          "se": 0.5196356475720928,
+          "t": -0.08576105800058
+        },
+        {
+          "feature": "down_B",
+          "beta_per_sd": 0.6785448619450549,
+          "se": 0.5346678334633346,
+          "t": 1.269096099441312
+        },
+        {
+          "feature": "down_C",
+          "beta_per_sd": -0.8085243607799422,
+          "se": 0.5501624779270438,
+          "t": -1.46961014830815
+        },
+        {
+          "feature": "outage_C",
+          "beta_per_sd": 0.8328433511083883,
+          "se": 0.5734361323999413,
+          "t": 1.4523733403801702
+        },
+        {
+          "feature": "lead_C",
+          "beta_per_sd": 0.608312972112557,
+          "se": 0.8592492943539053,
+          "t": 0.7079586519415944
+        },
+        {
+          "feature": "lead_gap",
+          "beta_per_sd": -0.2940231619996351,
+          "se": 0.8079766590153967,
+          "t": -0.3639005641053205
+        }
+      ]
+    }
+  },
+  "rows": [
+    {
+      "instance": "R000",
+      "premium": 0.17798263314303092,
+      "K_max": 31.6207298341306,
+      "moq_c": 0,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.2243,
+      "down_B": 0.0235,
+      "down_C": 0.085,
+      "outage_C": 1.79,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 236.61725430166553,
+      "dp_excess": 36.617254301665525,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0051,
+        0.2636,
+        0.7313
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 5,
+          "cap": 6,
+          "trigger": 2
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 11,
+          "cap": 6,
+          "trigger": 6
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 64.09204300088761,
+          "gap_excess_ci": 6.7626331377129025,
+          "gap_total": 9.918442525263739,
+          "fill": 0.9906131967574383,
+          "volume_share": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "cost": 260.12557427455357
+        },
+        "GMI": {
+          "gap_excess": 0.3976682068289247,
+          "gap_excess_ci": 0.2596902715281679,
+          "gap_total": 0.061540388929445716,
+          "fill": 0.9994532500934497,
+          "volume_share": [
+            0.0076,
+            0.2817,
+            0.7106
+          ],
+          "cost": 236.80244308035714
+        },
+        "table0": {
+          "gap_excess": 0.4178387025072291,
+          "gap_excess_ci": 0.27194549765506026,
+          "gap_total": 0.06466183572259245,
+          "fill": 0.9994420919320914,
+          "volume_share": [
+            0.007,
+            0.2799,
+            0.7131
+          ],
+          "cost": 236.80982896205356,
+          "diff_vs_gmi": 0.0073858816964311735,
+          "diff_ci": 0.03856907174585876,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 0.6858421149503126,
+          "gap_excess_ci": 0.18535662114122,
+          "gap_total": 0.1061361953845939,
+          "fill": 0.9994560396337892,
+          "volume_share": [
+            0.0066,
+            0.2629,
+            0.7305
+          ],
+          "cost": 236.907964453125,
+          "diff_vs_gmi": 0.10552137276785656,
+          "diff_ci": 0.08498218084391597,
+          "beats_gmi": false,
+          "worse_than_gmi": true
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 117.8,
+          "lead_time": 0,
+          "fixed_cost": 14.2,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.072,
+          "p_recover": 0.249,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 108.61,
+          "lead_time": 0,
+          "fixed_cost": 14.8,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.014,
+          "p_recover": 0.583,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 31.6,
+          "moq": 0,
+          "capacity": 8,
+          "p_fail": 0.052,
+          "p_recover": 0.56,
+          "region": 1
+        }
+      ],
+      "seconds": 185.3
+    },
+    {
+      "instance": "R001",
+      "premium": 0.2305107550398493,
+      "K_max": 33.402428378129024,
+      "moq_c": 2,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.0692,
+      "down_B": 0.0714,
+      "down_C": 0.0805,
+      "outage_C": 2.43,
+      "lead_C": 2,
+      "lead_gap": 1,
+      "dp_g": 247.93174865918263,
+      "dp_excess": 47.93174865918263,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0211,
+        0.0425,
+        0.9364
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 7,
+          "cap": 3,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 8,
+          "cap": 6,
+          "trigger": 2
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 12,
+          "cap": 8,
+          "trigger": 3
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 80.18134186070303,
+          "gap_excess_ci": 9.177709456089223,
+          "gap_total": 15.501168954792814,
+          "fill": 0.9934758494667519,
+          "volume_share": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "cost": 286.2317667410714
+        },
+        "GMI": {
+          "gap_excess": 3.4657358128736364,
+          "gap_excess_ci": 0.39276281946363295,
+          "gap_total": 0.6700181755671033,
+          "fill": 0.9981698849681895,
+          "volume_share": [
+            0.0038,
+            0.0853,
+            0.9108
+          ],
+          "cost": 249.46063526785713
+        },
+        "table0": {
+          "gap_excess": 3.248527666167547,
+          "gap_excess_ci": 0.42286398947950626,
+          "gap_total": 0.6280261098032516,
+          "fill": 0.9972618126241615,
+          "volume_share": [
+            0.0325,
+            0.0338,
+            0.9337
+          ],
+          "cost": 249.3565236049107,
+          "diff_vs_gmi": -0.1041116629464316,
+          "diff_ci": 0.137356509146252,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 3.2383550916349155,
+          "gap_excess_ci": 0.491857223373656,
+          "gap_total": 0.6260594827441848,
+          "fill": 0.997077404086605,
+          "volume_share": [
+            0.0285,
+            0.0348,
+            0.9366
+          ],
+          "cost": 249.35164771205353,
+          "diff_vs_gmi": -0.10898755580358044,
+          "diff_ci": 0.14303605149172877,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 123.05,
+          "lead_time": 1,
+          "fixed_cost": 17.9,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.029,
+          "p_recover": 0.39,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 114.16,
+          "lead_time": 1,
+          "fixed_cost": 29.3,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.04,
+          "p_recover": 0.52,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 33.4,
+          "moq": 2,
+          "capacity": 8,
+          "p_fail": 0.036,
+          "p_recover": 0.411,
+          "region": 1
+        }
+      ],
+      "seconds": 213.2
+    },
+    {
+      "instance": "R002",
+      "premium": 0.10243180130962326,
+      "K_max": 25.53433673071646,
+      "moq_c": 0,
+      "shock_rate": 0.0236,
+      "has_shock": 1.0,
+      "down_A": 0.071,
+      "down_B": 0.0,
+      "down_C": 0.0748,
+      "outage_C": 1.84,
+      "lead_C": 3,
+      "lead_gap": 3,
+      "dp_g": 238.23866434698084,
+      "dp_excess": 38.23866434698084,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.1023,
+        0.2201,
+        0.6776
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 5,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 7,
+          "cap": 6,
+          "trigger": 2
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 12,
+          "cap": 8,
+          "trigger": 4
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 64.15152911208271,
+          "gap_excess_ci": 6.165642680649517,
+          "gap_total": 10.296686290558396,
+          "fill": 0.990239239264421,
+          "volume_share": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "cost": 262.47475357142855
+        },
+        "GMI": {
+          "gap_excess": 3.179793894610016,
+          "gap_excess_ci": 0.6285974041375326,
+          "gap_total": 0.5103750550392652,
+          "fill": 0.9975681953493832,
+          "volume_share": [
+            0.068,
+            0.268,
+            0.6639
+          ],
+          "cost": 239.1599763950893
+        },
+        "table0": {
+          "gap_excess": 2.329867059577872,
+          "gap_excess_ci": 0.5881898832150143,
+          "gap_total": 0.37395695072622454,
+          "fill": 0.9972942679289689,
+          "volume_share": [
+            0.1064,
+            0.2089,
+            0.6847
+          ],
+          "cost": 238.83497572544644,
+          "diff_vs_gmi": -0.3250006696428591,
+          "diff_ci": 0.18194585791731777,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 1.062393804361352,
+          "gap_excess_ci": 0.6727226166928428,
+          "gap_total": 0.1705202646289122,
+          "fill": 0.9976324844378478,
+          "volume_share": [
+            0.1028,
+            0.2243,
+            0.6729
+          ],
+          "cost": 238.35031088169643,
+          "diff_vs_gmi": -0.8096655133928561,
+          "diff_ci": 0.263088410149213,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 110.24,
+          "lead_time": 0,
+          "fixed_cost": 6.1,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.034,
+          "p_recover": 0.445,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 102.81,
+          "lead_time": 1,
+          "fixed_cost": 22.1,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.0,
+          "p_recover": 0.561,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 3,
+          "fixed_cost": 25.5,
+          "moq": 0,
+          "capacity": 8,
+          "p_fail": 0.044,
+          "p_recover": 0.544,
+          "region": 1
+        }
+      ],
+      "seconds": 237.6
+    },
+    {
+      "instance": "R003",
+      "premium": 0.0523655338229168,
+      "K_max": 27.286748493010343,
+      "moq_c": 2,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.0191,
+      "down_B": 0.0266,
+      "down_C": 0.0855,
+      "outage_C": 1.91,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 231.97168532043474,
+      "dp_excess": 31.971685320434744,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.3906,
+        0.0026,
+        0.6068
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 9,
+          "cap": 4,
+          "trigger": 4
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 10,
+          "cap": 6,
+          "trigger": 5
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 65.62584296681302,
+          "gap_excess_ci": 8.456956731907217,
+          "gap_total": 9.044934933868761,
+          "fill": 0.9911620936453913,
+          "volume_share": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cost": 252.39582008928568
+        },
+        "GMI": {
+          "gap_excess": 3.6247298488248076,
+          "gap_excess_ci": 1.033019708784977,
+          "gap_total": 0.49958132579038916,
+          "fill": 0.9973640349034273,
+          "volume_share": [
+            0.2723,
+            0.0465,
+            0.6811
+          ],
+          "cost": 232.57301930803573
+        },
+        "table0": {
+          "gap_excess": 0.8974470978862512,
+          "gap_excess_ci": 0.7534875210866993,
+          "gap_total": 0.1236913727885436,
+          "fill": 0.9976861772903624,
+          "volume_share": [
+            0.3078,
+            0.0012,
+            0.691
+          ],
+          "cost": 231.70106104910715,
+          "diff_vs_gmi": -0.8719582589285713,
+          "diff_ci": 0.27520794736223897,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 0.9372715029951227,
+          "gap_excess_ci": 0.8712077170391077,
+          "gap_total": 0.12918020366225796,
+          "fill": 0.9980531394876535,
+          "volume_share": [
+            0.2802,
+            0.0559,
+            0.6639
+          ],
+          "cost": 231.71379358258926,
+          "diff_vs_gmi": -0.8592257254464277,
+          "diff_ci": 0.27246951386561086,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 105.24,
+          "lead_time": 0,
+          "fixed_cost": 5.9,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.009,
+          "p_recover": 0.463,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 101.87,
+          "lead_time": 2,
+          "fixed_cost": 26.7,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.016,
+          "p_recover": 0.585,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 27.3,
+          "moq": 2,
+          "capacity": 8,
+          "p_fail": 0.049,
+          "p_recover": 0.524,
+          "region": 1
+        }
+      ],
+      "seconds": 193.9
+    },
+    {
+      "instance": "R004",
+      "premium": 0.05874668527147225,
+      "K_max": 39.923511530373474,
+      "moq_c": 4,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.0479,
+      "down_B": 0.0072,
+      "down_C": 0.0674,
+      "outage_C": 3.01,
+      "lead_C": 3,
+      "lead_gap": 3,
+      "dp_g": 239.49773746079745,
+      "dp_excess": 39.49773746079745,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.3336,
+        0.0282,
+        0.6382
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 5,
+          "cap": 3,
+          "trigger": 2
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 6,
+          "cap": 6,
+          "trigger": 2
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 12,
+          "cap": 6,
+          "trigger": 5
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 33.94837283380038,
+          "gap_excess_ci": 2.244402836398662,
+          "gap_total": 5.598733130538238,
+          "fill": 0.9947186731433096,
+          "volume_share": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "cost": 253.1108129464286
+        },
+        "GMI": {
+          "gap_excess": 11.121664959026306,
+          "gap_excess_ci": 0.5567339755440053,
+          "gap_total": 1.834174332233414,
+          "fill": 0.9975879895823457,
+          "volume_share": [
+            0.2575,
+            0.0946,
+            0.6479
+          ],
+          "cost": 244.09477979910713
+        },
+        "table0": {
+          "gap_excess": 4.903498969974839,
+          "gap_excess_ci": 0.4054163447212501,
+          "gap_total": 0.8086803533459653,
+          "fill": 0.9990184651248389,
+          "volume_share": [
+            0.3552,
+            0.0323,
+            0.6124
+          ],
+          "cost": 241.638744921875,
+          "diff_vs_gmi": -2.456034877232148,
+          "diff_ci": 0.18941978810063256,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 5.175420908540213,
+          "gap_excess_ci": 0.37646783646464077,
+          "gap_total": 0.8535254589956346,
+          "fill": 0.9991411569842341,
+          "volume_share": [
+            0.2775,
+            0.0377,
+            0.6848
+          ],
+          "cost": 241.74614793526786,
+          "diff_vs_gmi": -2.348631863839286,
+          "diff_ci": 0.19953639926854377,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 105.87,
+          "lead_time": 0,
+          "fixed_cost": 20.4,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.008,
+          "p_recover": 0.159,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 104.17,
+          "lead_time": 1,
+          "fixed_cost": 31.7,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.004,
+          "p_recover": 0.55,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 3,
+          "fixed_cost": 39.9,
+          "moq": 4,
+          "capacity": 8,
+          "p_fail": 0.024,
+          "p_recover": 0.332,
+          "region": 1
+        }
+      ],
+      "seconds": 203.6
+    },
+    {
+      "instance": "R005",
+      "premium": 0.06920576706499386,
+      "K_max": 7.0965363701789475,
+      "moq_c": 0,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.0249,
+      "down_B": 0.0583,
+      "down_C": 0.1132,
+      "outage_C": 4.26,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 225.04767232936592,
+      "dp_excess": 25.047672329365923,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.2712,
+        0.0859,
+        0.6429
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 4,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 8,
+          "cap": 3,
+          "trigger": 4
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 10,
+          "cap": 4,
+          "trigger": 3
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 117.66648062692326,
+          "gap_excess_ci": 9.486843101531225,
+          "gap_total": 13.096209440368758,
+          "fill": 0.9916240578458281,
+          "volume_share": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cost": 254.9218474330357
+        },
+        "GMI": {
+          "gap_excess": 4.3252513149318155,
+          "gap_excess_ci": 0.738319205731228,
+          "gap_total": 0.4813979036406791,
+          "fill": 0.9988408543126628,
+          "volume_share": [
+            0.1272,
+            0.1441,
+            0.7287
+          ],
+          "cost": 226.53250770089286
+        },
+        "table0": {
+          "gap_excess": 1.188075983872558,
+          "gap_excess_ci": 0.3969811899095461,
+          "gap_total": 0.13223215169662408,
+          "fill": 0.9982947183638213,
+          "volume_share": [
+            0.2746,
+            0.0895,
+            0.6359
+          ],
+          "cost": 225.74671830357144,
+          "diff_vs_gmi": -0.7857893973214236,
+          "diff_ci": 0.1648305232929918,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 2.315557247546314,
+          "gap_excess_ci": 0.643065950291209,
+          "gap_total": 0.2577201470075385,
+          "fill": 0.9979380581523329,
+          "volume_share": [
+            0.3089,
+            0.0742,
+            0.6169
+          ],
+          "cost": 226.0291261160714,
+          "diff_vs_gmi": -0.5033815848214269,
+          "diff_ci": 0.1946905146996607,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 106.92,
+          "lead_time": 0,
+          "fixed_cost": 2.3,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.013,
+          "p_recover": 0.51,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 103.0,
+          "lead_time": 1,
+          "fixed_cost": 5.8,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.013,
+          "p_recover": 0.21,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 7.1,
+          "moq": 0,
+          "capacity": 8,
+          "p_fail": 0.03,
+          "p_recover": 0.235,
+          "region": 1
+        }
+      ],
+      "seconds": 211.7
+    },
+    {
+      "instance": "R006",
+      "premium": 0.17720479186470567,
+      "K_max": 36.97152209613924,
+      "moq_c": 0,
+      "shock_rate": 0.0261,
+      "has_shock": 1.0,
+      "down_A": 0.2098,
+      "down_B": 0.0692,
+      "down_C": 0.1514,
+      "outage_C": 2.92,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 245.4552927307118,
+      "dp_excess": 45.45529273071179,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0529,
+        0.166,
+        0.7811
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 5,
+          "cap": 5,
+          "trigger": 2
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 8,
+          "cap": 6,
+          "trigger": 2
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 13,
+          "cap": 8,
+          "trigger": 5
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 74.64816117143963,
+          "gap_excess_ci": 4.835489222562535,
+          "gap_total": 13.823918727145802,
+          "fill": 0.9918602181785666,
+          "volume_share": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "cost": 279.08424319196433
+        },
+        "GMI": {
+          "gap_excess": 4.9960633554118745,
+          "gap_excess_ci": 0.7005124780671386,
+          "gap_total": 0.9252093112148814,
+          "fill": 0.9975549917288863,
+          "volume_share": [
+            0.0307,
+            0.2192,
+            0.7501
+          ],
+          "cost": 247.42367823660715
+        },
+        "table0": {
+          "gap_excess": 3.4949936581112566,
+          "gap_excess_ci": 0.6657918895534696,
+          "gap_total": 0.6472297176973884,
+          "fill": 0.997420865560871,
+          "volume_share": [
+            0.0505,
+            0.1594,
+            0.7901
+          ],
+          "cost": 246.74136261160714,
+          "diff_vs_gmi": -0.6823156250000051,
+          "diff_ci": 0.15128436001713774,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 3.7387872170909877,
+          "gap_excess_ci": 0.6597957764396998,
+          "gap_total": 0.692377277833496,
+          "fill": 0.9972699736218537,
+          "volume_share": [
+            0.0575,
+            0.1534,
+            0.789
+          ],
+          "cost": 246.85217968749998,
+          "diff_vs_gmi": -0.5714985491071478,
+          "diff_ci": 0.17134980212137874,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 117.72,
+          "lead_time": 0,
+          "fixed_cost": 8.5,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.073,
+          "p_recover": 0.275,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 107.38,
+          "lead_time": 1,
+          "fixed_cost": 17.7,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.044,
+          "p_recover": 0.592,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 37.0,
+          "moq": 0,
+          "capacity": 8,
+          "p_fail": 0.061,
+          "p_recover": 0.342,
+          "region": 1
+        }
+      ],
+      "seconds": 252.5
+    },
+    {
+      "instance": "R007",
+      "premium": 0.05117976982822239,
+      "K_max": 22.675144389693948,
+      "moq_c": 4,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.0583,
+      "down_B": 0.0883,
+      "down_C": 0.0468,
+      "outage_C": 2.89,
+      "lead_C": 2,
+      "lead_gap": 1,
+      "dp_g": 234.78239753469734,
+      "dp_excess": 34.78239753469734,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.9235,
+        0.0431,
+        0.0335
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 8,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 5,
+          "cap": 3,
+          "trigger": 2
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 10,
+          "cap": 8,
+          "trigger": 3
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 102.19919601775672,
+          "gap_excess_ci": 10.368890671362138,
+          "gap_total": 15.140543332643729,
+          "fill": 0.9904200834009683,
+          "volume_share": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cost": 269.7130147321428
+        },
+        "GMI": {
+          "gap_excess": 13.090854675262413,
+          "gap_excess_ci": 0.9752205790533428,
+          "gap_total": 1.939375848296452,
+          "fill": 0.9940947636506116,
+          "volume_share": [
+            0.9166,
+            0.0015,
+            0.0819
+          ],
+          "cost": 238.71899720982145
+        },
+        "table0": {
+          "gap_excess": 1.8448372530732728,
+          "gap_excess_ci": 0.5126313441765822,
+          "gap_total": 0.2733078092608308,
+          "fill": 0.9989225042680026,
+          "volume_share": [
+            0.9291,
+            0.0629,
+            0.008
+          ],
+          "cost": 234.80736272321428,
+          "diff_vs_gmi": -3.9116344866071486,
+          "diff_ci": 0.3253399613218835,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 1.670173204427995,
+          "gap_excess_ci": 0.4874627182441005,
+          "gap_total": 0.24743178772432728,
+          "fill": 0.9989672833114103,
+          "volume_share": [
+            0.9285,
+            0.06,
+            0.0116
+          ],
+          "cost": 234.74661037946427,
+          "diff_vs_gmi": -3.9723868303571463,
+          "diff_ci": 0.3346452041623833,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 105.12,
+          "lead_time": 1,
+          "fixed_cost": 4.6,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.031,
+          "p_recover": 0.501,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 103.43,
+          "lead_time": 1,
+          "fixed_cost": 17.5,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.046,
+          "p_recover": 0.475,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 22.7,
+          "moq": 4,
+          "capacity": 8,
+          "p_fail": 0.017,
+          "p_recover": 0.346,
+          "region": 1
+        }
+      ],
+      "seconds": 201.9
+    },
+    {
+      "instance": "R008",
+      "premium": 0.24167354676156083,
+      "K_max": 37.58313101206422,
+      "moq_c": 2,
+      "shock_rate": 0.0234,
+      "has_shock": 1.0,
+      "down_A": 0.1449,
+      "down_B": 0.0853,
+      "down_C": 0.0114,
+      "outage_C": 2.3,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 247.49698815635065,
+      "dp_excess": 47.49698815635065,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0466,
+        0.0203,
+        0.9331
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 13,
+          "cap": 6,
+          "trigger": 4
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 12,
+          "cap": 8,
+          "trigger": 3
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 68.68325985580475,
+          "gap_excess_ci": 7.362657826629404,
+          "gap_total": 13.180960318797338,
+          "fill": 0.9934524942079757,
+          "volume_share": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "cost": 279.64728125
+        },
+        "GMI": {
+          "gap_excess": 9.076125773992198,
+          "gap_excess_ci": 0.8988079128984876,
+          "gap_total": 1.7417934723331898,
+          "fill": 0.9969165165030723,
+          "volume_share": [
+            0.0285,
+            0.0315,
+            0.9401
+          ],
+          "cost": 251.33568783482144
+        },
+        "table0": {
+          "gap_excess": 7.685857992197233,
+          "gap_excess_ci": 0.6585892893708198,
+          "gap_total": 1.4749880745868698,
+          "fill": 0.9977027768139949,
+          "volume_share": [
+            0.0378,
+            0.0151,
+            0.9471
+          ],
+          "cost": 250.6753525111607,
+          "diff_vs_gmi": -0.6603353236607137,
+          "diff_ci": 0.3712198429631994,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 6.892641695605485,
+          "gap_excess_ci": 0.8798317287804132,
+          "gap_total": 1.322762444185089,
+          "fill": 0.9969444972970553,
+          "volume_share": [
+            0.0342,
+            0.0185,
+            0.9473
+          ],
+          "cost": 250.29859866071428,
+          "diff_vs_gmi": -1.0370891741071397,
+          "diff_ci": 0.25090759470902513,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 124.17,
+          "lead_time": 0,
+          "fixed_cost": 14.4,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.04,
+          "p_recover": 0.236,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 111.64,
+          "lead_time": 2,
+          "fixed_cost": 21.7,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.025,
+          "p_recover": 0.268,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 37.6,
+          "moq": 2,
+          "capacity": 8,
+          "p_fail": 0.005,
+          "p_recover": 0.435,
+          "region": 1
+        }
+      ],
+      "seconds": 281.6
+    },
+    {
+      "instance": "R009",
+      "premium": 0.23027185812199602,
+      "K_max": 31.455368820415472,
+      "moq_c": 4,
+      "shock_rate": 0.0185,
+      "has_shock": 1.0,
+      "down_A": 0.0636,
+      "down_B": 0.0055,
+      "down_C": 0.0529,
+      "outage_C": 2.0,
+      "lead_C": 2,
+      "lead_gap": 1,
+      "dp_g": 245.2999957279626,
+      "dp_excess": 45.299995727962596,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0074,
+        0.1293,
+        0.8633
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 7,
+          "cap": 4,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 8,
+          "cap": 5,
+          "trigger": 2
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 12,
+          "cap": 7,
+          "trigger": 4
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 62.60115018481137,
+          "gap_excess_ci": 7.667161114602575,
+          "gap_total": 11.560668101610707,
+          "fill": 0.9897648416748946,
+          "volume_share": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "cost": 274.4152483258929
+        },
+        "GMI": {
+          "gap_excess": 2.0577321299588873,
+          "gap_excess_ci": 0.6210039163636936,
+          "gap_total": 0.38000512971799877,
+          "fill": 0.9972409573210586,
+          "volume_share": [
+            0.008,
+            0.1677,
+            0.8243
+          ],
+          "cost": 246.98908253348213
+        },
+        "table0": {
+          "gap_excess": 2.06014277055991,
+          "gap_excess_ci": 0.6009704840720641,
+          "gap_total": 0.38045030709602484,
+          "fill": 0.997405053609423,
+          "volume_share": [
+            0.0101,
+            0.1694,
+            0.8205
+          ],
+          "cost": 246.99017455357145,
+          "diff_vs_gmi": 0.0010920200892798881,
+          "diff_ci": 0.09703085955634085,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 2.143021552816084,
+          "gap_excess_ci": 0.6175621111366518,
+          "gap_total": 0.3957556823407397,
+          "fill": 0.9974968362791862,
+          "volume_share": [
+            0.0081,
+            0.1607,
+            0.8313
+          ],
+          "cost": 247.02771863839286,
+          "diff_vs_gmi": 0.03863610491071423,
+          "diff_ci": 0.1545487277786818,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 123.03,
+          "lead_time": 1,
+          "fixed_cost": 17.9,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.03,
+          "p_recover": 0.442,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 106.8,
+          "lead_time": 1,
+          "fixed_cost": 21.7,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.003,
+          "p_recover": 0.541,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 31.5,
+          "moq": 4,
+          "capacity": 8,
+          "p_fail": 0.028,
+          "p_recover": 0.501,
+          "region": 1
+        }
+      ],
+      "seconds": 261.9
+    },
+    {
+      "instance": "R010",
+      "premium": 0.09148088767910444,
+      "K_max": 39.19081069916026,
+      "moq_c": 0,
+      "shock_rate": 0.0075,
+      "has_shock": 1.0,
+      "down_A": 0.03,
+      "down_B": 0.2419,
+      "down_C": 0.0272,
+      "outage_C": 2.15,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 231.5610662572044,
+      "dp_excess": 31.561066257204402,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.1904,
+        0.5521,
+        0.2575
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 6,
+          "cap": 6,
+          "trigger": 3
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 9,
+          "cap": 7,
+          "trigger": 6
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 124.40514833899252,
+          "gap_excess_ci": 5.7542281482673205,
+          "gap_total": 16.95604184644372,
+          "fill": 0.9949582269020981,
+          "volume_share": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cost": 271.26881501116065
+        },
+        "GMI": {
+          "gap_excess": 7.796692393655873,
+          "gap_excess_ci": 1.341156299358689,
+          "gap_total": 1.062665365989861,
+          "fill": 0.9958422103490201,
+          "volume_share": [
+            0.2929,
+            0.6898,
+            0.0173
+          ],
+          "cost": 234.46594296875003
+        },
+        "table0": {
+          "gap_excess": 5.558634399158871,
+          "gap_excess_ci": 0.6278569165644213,
+          "gap_total": 0.7576248952687247,
+          "fill": 0.9976129658341792,
+          "volume_share": [
+            0.2689,
+            0.5569,
+            0.1742
+          ],
+          "cost": 233.7595880022322,
+          "diff_vs_gmi": -0.7063549665178588,
+          "diff_ci": 0.4015740493019992,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 4.699294090198926,
+          "gap_excess_ci": 0.6802982853605811,
+          "gap_total": 0.6404994351603049,
+          "fill": 0.9978109558175592,
+          "volume_share": [
+            0.2548,
+            0.5753,
+            0.1699
+          ],
+          "cost": 233.48837103794645,
+          "diff_vs_gmi": -0.9775719308035722,
+          "diff_ci": 0.4631006766826031,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 109.15,
+          "lead_time": 0,
+          "fixed_cost": 5.0,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.016,
+          "p_recover": 0.517,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 102.68,
+          "lead_time": 0,
+          "fixed_cost": 12.6,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.067,
+          "p_recover": 0.21,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 39.2,
+          "moq": 0,
+          "capacity": 8,
+          "p_fail": 0.013,
+          "p_recover": 0.465,
+          "region": 1
+        }
+      ],
+      "seconds": 243.5
+    },
+    {
+      "instance": "R011",
+      "premium": 0.14604825390990814,
+      "K_max": 25.545349375327216,
+      "moq_c": 0,
+      "shock_rate": 0.0194,
+      "has_shock": 1.0,
+      "down_A": 0.0594,
+      "down_B": 0.2583,
+      "down_C": 0.245,
+      "outage_C": 4.44,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 245.436731063538,
+      "dp_excess": 45.43673106353799,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.1219,
+        0.148,
+        0.7301
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 5,
+          "cap": 6,
+          "trigger": 2
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 11,
+          "cap": 5,
+          "trigger": 3
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 12,
+          "cap": 8,
+          "trigger": 4
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 175.55160565129128,
+          "gap_excess_ci": 11.479819761867725,
+          "gap_total": 32.49917426452794,
+          "fill": 0.9918140655320857,
+          "volume_share": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cost": 324.48828125
+        },
+        "GMI": {
+          "gap_excess": 6.530638617482648,
+          "gap_excess_ci": 1.123935285554213,
+          "gap_total": 1.2089912917675625,
+          "fill": 0.9953772890504762,
+          "volume_share": [
+            0.1396,
+            0.1681,
+            0.6923
+          ],
+          "cost": 247.69067901785718
+        },
+        "table0": {
+          "gap_excess": 6.151888348607069,
+          "gap_excess_ci": 1.0613084807757964,
+          "gap_total": 1.1388747528429655,
+          "fill": 0.9955529409140589,
+          "volume_share": [
+            0.1703,
+            0.1161,
+            0.7136
+          ],
+          "cost": 247.5185872767857,
+          "diff_vs_gmi": -0.17209174107142422,
+          "diff_ci": 0.3576090990520869,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 5.651498420522409,
+          "gap_excess_ci": 1.0030012408865574,
+          "gap_total": 1.0462395450207105,
+          "fill": 0.9961022015033569,
+          "volume_share": [
+            0.1638,
+            0.1509,
+            0.6853
+          ],
+          "cost": 247.29122645089285,
+          "diff_vs_gmi": -0.3994525669642819,
+          "diff_ci": 0.4040632111547464,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 114.6,
+          "lead_time": 0,
+          "fixed_cost": 10.6,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.024,
+          "p_recover": 0.38,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 108.57,
+          "lead_time": 2,
+          "fixed_cost": 13.0,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.07,
+          "p_recover": 0.201,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 25.5,
+          "moq": 0,
+          "capacity": 8,
+          "p_fail": 0.073,
+          "p_recover": 0.225,
+          "region": 1
+        }
+      ],
+      "seconds": 300.8
+    },
+    {
+      "instance": "R012",
+      "premium": 0.2023789956298916,
+      "K_max": 31.731725126521706,
+      "moq_c": 2,
+      "shock_rate": 0.024,
+      "has_shock": 1.0,
+      "down_A": 0.1369,
+      "down_B": 0.0421,
+      "down_C": 0.0758,
+      "outage_C": 3.04,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 241.49887083833846,
+      "dp_excess": 41.49887083833846,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0697,
+        0.1051,
+        0.8253
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 5,
+          "cap": 5,
+          "trigger": 3
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 13,
+          "cap": 6,
+          "trigger": 5
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 108.74548652500775,
+          "gap_excess_ci": 5.084685015399403,
+          "gap_total": 18.686691510762763,
+          "fill": 0.9926781823191043,
+          "volume_share": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "cost": 287.2786861607143
+        },
+        "GMI": {
+          "gap_excess": 4.849106765845672,
+          "gap_excess_ci": 0.5613550533098981,
+          "gap_total": 0.833264580735243,
+          "fill": 0.9979935269677211,
+          "volume_share": [
+            0.029,
+            0.1076,
+            0.8634
+          ],
+          "cost": 244.16286171875
+        },
+        "table0": {
+          "gap_excess": 1.8207220061579859,
+          "gap_excess_ci": 0.39262074082022347,
+          "gap_total": 0.31287064450355084,
+          "fill": 0.9991484316950383,
+          "volume_share": [
+            0.1009,
+            0.0737,
+            0.8254
+          ],
+          "cost": 242.90611623883927,
+          "diff_vs_gmi": -1.2567454799107196,
+          "diff_ci": 0.24731447840400125,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 2.2547160381148115,
+          "gap_excess_ci": 0.4040134477500475,
+          "gap_total": 0.38744764858752556,
+          "fill": 0.9987337791543871,
+          "volume_share": [
+            0.064,
+            0.1271,
+            0.8089
+          ],
+          "cost": 243.08621886160714,
+          "diff_vs_gmi": -1.076642857142859,
+          "diff_ci": 0.1964118329975096,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 120.24,
+          "lead_time": 0,
+          "fixed_cost": 9.3,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.046,
+          "p_recover": 0.29,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 111.03,
+          "lead_time": 0,
+          "fixed_cost": 31.5,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.025,
+          "p_recover": 0.569,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 31.7,
+          "moq": 2,
+          "capacity": 8,
+          "p_fail": 0.027,
+          "p_recover": 0.329,
+          "region": 1
+        }
+      ],
+      "seconds": 282.4
+    },
+    {
+      "instance": "R013",
+      "premium": 0.153498943539425,
+      "K_max": 19.447922044139567,
+      "moq_c": 2,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.3258,
+      "down_B": 0.0136,
+      "down_C": 0.1178,
+      "outage_C": 2.34,
+      "lead_C": 3,
+      "lead_gap": 3,
+      "dp_g": 237.412611740229,
+      "dp_excess": 37.41261174022901,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0764,
+        0.2569,
+        0.6668
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 5,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 8,
+          "cap": 5,
+          "trigger": 2
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 13,
+          "cap": 4,
+          "trigger": 4
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 140.0437135736093,
+          "gap_excess_ci": 29.795705898941343,
+          "gap_total": 22.068756348639585,
+          "fill": 0.9910750495752887,
+          "volume_share": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "cost": 289.20116941964284
+        },
+        "GMI": {
+          "gap_excess": 4.99731754070032,
+          "gap_excess_ci": 0.8196660653701824,
+          "gap_total": 0.7875011336694577,
+          "fill": 0.9988476717095014,
+          "volume_share": [
+            0.0097,
+            0.3491,
+            0.6412
+          ],
+          "cost": 238.6767856026786
+        },
+        "table0": {
+          "gap_excess": 1.3745412624088926,
+          "gap_excess_ci": 0.7828941069128718,
+          "gap_total": 0.2166067682524646,
+          "fill": 0.9980757236314004,
+          "volume_share": [
+            0.0877,
+            0.2466,
+            0.6657
+          ],
+          "cost": 237.32141037946428,
+          "diff_vs_gmi": -1.3553752232142902,
+          "diff_ci": 0.24543834216789212,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 2.6956605625178365,
+          "gap_excess_ci": 0.8002037863380095,
+          "gap_total": 0.4247950488800341,
+          "fill": 0.9974967625728246,
+          "volume_share": [
+            0.0779,
+            0.2667,
+            0.6555
+          ],
+          "cost": 237.8156756138393,
+          "diff_vs_gmi": -0.8611099888393001,
+          "diff_ci": 0.25368007047889657,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 115.35,
+          "lead_time": 0,
+          "fixed_cost": 0.4,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.058,
+          "p_recover": 0.12,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 106.48,
+          "lead_time": 1,
+          "fixed_cost": 10.3,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.003,
+          "p_recover": 0.218,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 3,
+          "fixed_cost": 19.4,
+          "moq": 2,
+          "capacity": 8,
+          "p_fail": 0.057,
+          "p_recover": 0.427,
+          "region": 1
+        }
+      ],
+      "seconds": 251.4
+    },
+    {
+      "instance": "R014",
+      "premium": 0.2449897491981301,
+      "K_max": 26.808750513023746,
+      "moq_c": 0,
+      "shock_rate": 0.0069,
+      "has_shock": 1.0,
+      "down_A": 0.1111,
+      "down_B": 0.1549,
+      "down_C": 0.0466,
+      "outage_C": 3.76,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 242.95211594281704,
+      "dp_excess": 42.952115942817045,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0579,
+        0.0354,
+        0.9067
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 9,
+          "cap": 5,
+          "trigger": 3
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 13,
+          "cap": 7,
+          "trigger": 5
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 191.39633800200818,
+          "gap_excess_ci": 19.277728611386237,
+          "gap_total": 33.83744022557836,
+          "fill": 0.989749115749568,
+          "volume_share": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "cost": 325.05171651785713
+        },
+        "GMI": {
+          "gap_excess": 1.9768658035257607,
+          "gap_excess_ci": 0.7461883586957118,
+          "gap_total": 0.3494950799951617,
+          "fill": 0.9968761602733569,
+          "volume_share": [
+            0.061,
+            0.0291,
+            0.9099
+          ],
+          "cost": 243.69204520089286
+        },
+        "table0": {
+          "gap_excess": 2.089203447504748,
+          "gap_excess_ci": 0.614240981280457,
+          "gap_total": 0.36935553476092325,
+          "fill": 0.9981296044532164,
+          "volume_share": [
+            0.0634,
+            0.0345,
+            0.9022
+          ],
+          "cost": 243.74029659598216,
+          "diff_vs_gmi": 0.048251395089283555,
+          "diff_ci": 0.3999979655084548,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 1.5220455777320727,
+          "gap_excess_ci": 0.6862458854033552,
+          "gap_total": 0.2690862677663902,
+          "fill": 0.9976689846543816,
+          "volume_share": [
+            0.0529,
+            0.0403,
+            0.9068
+          ],
+          "cost": 243.49669029017855,
+          "diff_vs_gmi": -0.19535491071428712,
+          "diff_ci": 0.22129202721516195,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 124.5,
+          "lead_time": 0,
+          "fixed_cost": 11.3,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.051,
+          "p_recover": 0.408,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 116.53,
+          "lead_time": 2,
+          "fixed_cost": 11.7,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.035,
+          "p_recover": 0.191,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 26.8,
+          "moq": 0,
+          "capacity": 8,
+          "p_fail": 0.013,
+          "p_recover": 0.266,
+          "region": 1
+        }
+      ],
+      "seconds": 297.0
+    },
+    {
+      "instance": "R015",
+      "premium": 0.0937448232041263,
+      "K_max": 27.11120879433183,
+      "moq_c": 2,
+      "shock_rate": 0.0168,
+      "has_shock": 1.0,
+      "down_A": 0.1189,
+      "down_B": 0.1303,
+      "down_C": 0.0149,
+      "outage_C": 2.16,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 238.93665995112906,
+      "dp_excess": 38.93665995112906,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.1012,
+        0.0223,
+        0.8765
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 5,
+          "cap": 6,
+          "trigger": 2
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 9,
+          "cap": 6,
+          "trigger": 2
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 12,
+          "cap": 6,
+          "trigger": 4
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 77.30624160613381,
+          "gap_excess_ci": 8.277617427515867,
+          "gap_total": 12.597676899532777,
+          "fill": 0.9906630596994069,
+          "volume_share": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "cost": 268.89752455357143
+        },
+        "GMI": {
+          "gap_excess": 4.726402702553654,
+          "gap_excess_ci": 0.6568429292443368,
+          "gap_total": 0.7702055216602997,
+          "fill": 0.9968951389781626,
+          "volume_share": [
+            0.0904,
+            0.0152,
+            0.8944
+          ],
+          "cost": 240.63735948660712
+        },
+        "table0": {
+          "gap_excess": 5.022065897374047,
+          "gap_excess_ci": 0.6601168449684822,
+          "gap_total": 0.8183862289621457,
+          "fill": 0.9967386383325975,
+          "volume_share": [
+            0.092,
+            0.0121,
+            0.8959
+          ],
+          "cost": 240.752480859375,
+          "diff_vs_gmi": 0.11512137276786083,
+          "diff_ci": 0.12136273640224851,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 4.167200085529334,
+          "gap_excess_ci": 0.6277052015859609,
+          "gap_total": 0.6790789354457322,
+          "fill": 0.9971075327114296,
+          "volume_share": [
+            0.0858,
+            0.0137,
+            0.9006
+          ],
+          "cost": 240.41962466517856,
+          "diff_vs_gmi": -0.2177348214285737,
+          "diff_ci": 0.1451254262697046,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 109.37,
+          "lead_time": 0,
+          "fixed_cost": 1.5,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.078,
+          "p_recover": 0.578,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 102.64,
+          "lead_time": 2,
+          "fixed_cost": 17.8,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.058,
+          "p_recover": 0.387,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 27.1,
+          "moq": 2,
+          "capacity": 8,
+          "p_fail": 0.007,
+          "p_recover": 0.463,
+          "region": 1
+        }
+      ],
+      "seconds": 277.5
+    },
+    {
+      "instance": "R016",
+      "premium": 0.06766844965150134,
+      "K_max": 26.507423672246816,
+      "moq_c": 4,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.1324,
+      "down_B": 0.1156,
+      "down_C": 0.0368,
+      "outage_C": 1.91,
+      "lead_C": 3,
+      "lead_gap": 3,
+      "dp_g": 237.41086870628533,
+      "dp_excess": 37.41086870628533,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.1615,
+        0.2117,
+        0.6268
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 8,
+          "cap": 5,
+          "trigger": 3
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 13,
+          "cap": 6,
+          "trigger": 5
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 62.287112974440596,
+          "gap_excess_ci": 4.852829143704746,
+          "gap_total": 9.815115113635349,
+          "fill": 0.9949203642402559,
+          "volume_share": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "cost": 261.06974330357144
+        },
+        "GMI": {
+          "gap_excess": 4.244927138077319,
+          "gap_excess_ci": 0.8038179802617124,
+          "gap_total": 0.6689096109867939,
+          "fill": 0.997589750448613,
+          "volume_share": [
+            0.0528,
+            0.2698,
+            0.6774
+          ],
+          "cost": 239.3556573660714
+        },
+        "table0": {
+          "gap_excess": 2.814421258780864,
+          "gap_excess_ci": 0.9178873295408762,
+          "gap_total": 0.44349251898273223,
+          "fill": 0.9944188094203141,
+          "volume_share": [
+            0.1608,
+            0.0522,
+            0.787
+          ],
+          "cost": 238.82049268973213,
+          "diff_vs_gmi": -0.5351646763392894,
+          "diff_ci": 0.3636547621708496,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 4.274089607201893,
+          "gap_excess_ci": 0.7522395487330585,
+          "gap_total": 0.6735049916006455,
+          "fill": 0.9937389239977262,
+          "volume_share": [
+            0.1836,
+            0.0772,
+            0.7392
+          ],
+          "cost": 239.36656729910712,
+          "diff_vs_gmi": 0.010909933035705421,
+          "diff_ci": 0.3322456269144237,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 106.77,
+          "lead_time": 0,
+          "fixed_cost": 1.6,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.074,
+          "p_recover": 0.485,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 101.77,
+          "lead_time": 1,
+          "fixed_cost": 22.5,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.077,
+          "p_recover": 0.589,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 3,
+          "fixed_cost": 26.5,
+          "moq": 4,
+          "capacity": 8,
+          "p_fail": 0.02,
+          "p_recover": 0.523,
+          "region": 1
+        }
+      ],
+      "seconds": 239.1
+    },
+    {
+      "instance": "R017",
+      "premium": 0.20070360933514755,
+      "K_max": 35.49245843568088,
+      "moq_c": 4,
+      "shock_rate": 0.0193,
+      "has_shock": 1.0,
+      "down_A": 0.0086,
+      "down_B": 0.0608,
+      "down_C": 0.069,
+      "outage_C": 3.09,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 245.17504973542395,
+      "dp_excess": 45.175049735423954,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.1145,
+        0.0468,
+        0.8387
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 6,
+          "cap": 6,
+          "trigger": 3
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 11,
+          "cap": 6,
+          "trigger": 4
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 15,
+          "cap": 6,
+          "trigger": 6
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 193.91079084228718,
+          "gap_excess_ci": 16.408886554883768,
+          "gap_total": 35.7292866055858,
+          "fill": 0.987468043510953,
+          "volume_share": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cost": 333.14598705357145
+        },
+        "GMI": {
+          "gap_excess": 8.013889014881233,
+          "gap_excess_ci": 0.6789717260051112,
+          "gap_total": 1.476609611019159,
+          "fill": 0.9990976991327886,
+          "volume_share": [
+            0.0766,
+            0.0436,
+            0.8798
+          ],
+          "cost": 249.16696919642857
+        },
+        "table0": {
+          "gap_excess": 5.255501442787122,
+          "gap_excess_ci": 0.8666843552708341,
+          "gap_total": 0.9683592980554313,
+          "fill": 0.9977581722280705,
+          "volume_share": [
+            0.0964,
+            0.0443,
+            0.8593
+          ],
+          "cost": 247.92086623883932,
+          "diff_vs_gmi": -1.2461029575892675,
+          "diff_ci": 0.31876319535755604,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 5.9310324851706575,
+          "gap_excess_ci": 0.7650741511074665,
+          "gap_total": 1.0928301545737884,
+          "fill": 0.9982399563330938,
+          "volume_share": [
+            0.1058,
+            0.0497,
+            0.8445
+          ],
+          "cost": 248.2260377232143,
+          "diff_vs_gmi": -0.9409314732142775,
+          "diff_ci": 0.31254070963810804,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 120.07,
+          "lead_time": 0,
+          "fixed_cost": 15.7,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.003,
+          "p_recover": 0.344,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 110.47,
+          "lead_time": 2,
+          "fixed_cost": 34.3,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.011,
+          "p_recover": 0.17,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 35.5,
+          "moq": 4,
+          "capacity": 8,
+          "p_fail": 0.024,
+          "p_recover": 0.324,
+          "region": 1
+        }
+      ],
+      "seconds": 278.3
+    },
+    {
+      "instance": "R018",
+      "premium": 0.1748453016191326,
+      "K_max": 23.878554299103275,
+      "moq_c": 2,
+      "shock_rate": 0.0184,
+      "has_shock": 1.0,
+      "down_A": 0.0904,
+      "down_B": 0.1085,
+      "down_C": 0.0674,
+      "outage_C": 2.41,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 235.74045941889267,
+      "dp_excess": 35.74045941889267,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0316,
+        0.1934,
+        0.775
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 12,
+          "cap": 5,
+          "trigger": 5
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 143.30259435132905,
+          "gap_excess_ci": 12.296817490525658,
+          "gap_total": 21.726014154128908,
+          "fill": 0.9904144630148743,
+          "volume_share": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "cost": 287.2600613839286
+        },
+        "GMI": {
+          "gap_excess": 1.2027914864960063,
+          "gap_excess_ci": 0.5151369351556524,
+          "gap_total": 0.1823544436049188,
+          "fill": 0.99857052893216,
+          "volume_share": [
+            0.0259,
+            0.1485,
+            0.8257
+          ],
+          "cost": 236.47293900669644
+        },
+        "table0": {
+          "gap_excess": 1.3206814954344555,
+          "gap_excess_ci": 0.398796645337278,
+          "gap_total": 0.20022767203055178,
+          "fill": 0.9984005528402726,
+          "volume_share": [
+            0.0331,
+            0.1935,
+            0.7734
+          ],
+          "cost": 236.5150734375,
+          "diff_vs_gmi": 0.04213443080357537,
+          "diff_ci": 0.20155516186847722,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 1.3658207582559563,
+          "gap_excess_ci": 0.5058064140556534,
+          "gap_total": 0.20707120663232273,
+          "fill": 0.998300239081126,
+          "volume_share": [
+            0.0287,
+            0.1896,
+            0.7817
+          ],
+          "cost": 236.53120641741071,
+          "diff_vs_gmi": 0.0582674107142811,
+          "diff_ci": 0.2493804857943752,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 117.48,
+          "lead_time": 0,
+          "fixed_cost": 15.6,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.05,
+          "p_recover": 0.503,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 105.51,
+          "lead_time": 0,
+          "fixed_cost": 18.1,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.047,
+          "p_recover": 0.386,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 23.9,
+          "moq": 2,
+          "capacity": 8,
+          "p_fail": 0.03,
+          "p_recover": 0.415,
+          "region": 1
+        }
+      ],
+      "seconds": 243.1
+    },
+    {
+      "instance": "R019",
+      "premium": 0.15665557557108345,
+      "K_max": 33.333758288352996,
+      "moq_c": 0,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.1133,
+      "down_B": 0.0548,
+      "down_C": 0.1173,
+      "outage_C": 3.32,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 237.6963832628005,
+      "dp_excess": 37.69638326280051,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0582,
+        0.2421,
+        0.6997
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 4,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 4,
+          "cap": 4,
+          "trigger": 1
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 11,
+          "cap": 8,
+          "trigger": 5
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 196.60098268941962,
+          "gap_excess_ci": 7.882482530194977,
+          "gap_total": 31.179044003836196,
+          "fill": 0.9913453028725219,
+          "volume_share": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cost": 311.74955128348216
+        },
+        "GMI": {
+          "gap_excess": 0.9750267818186088,
+          "gap_excess_ci": 0.38327429367235094,
+          "gap_total": 0.1546299643032112,
+          "fill": 0.999366252823246,
+          "volume_share": [
+            0.0115,
+            0.2263,
+            0.7622
+          ],
+          "cost": 238.00564118303572
+        },
+        "table0": {
+          "gap_excess": 0.26191232332816494,
+          "gap_excess_ci": 0.30195231252680216,
+          "gap_total": 0.041536800795631545,
+          "fill": 0.9993048323920187,
+          "volume_share": [
+            0.0519,
+            0.2558,
+            0.6924
+          ],
+          "cost": 237.7368228236607,
+          "diff_vs_gmi": -0.2688183593750022,
+          "diff_ci": 0.10384493970267586,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 0.8235632826211524,
+          "gap_excess_ci": 0.36762328971090563,
+          "gap_total": 0.13060929542429286,
+          "fill": 0.9993718364988121,
+          "volume_share": [
+            0.0454,
+            0.1924,
+            0.7622
+          ],
+          "cost": 237.948544921875,
+          "diff_vs_gmi": -0.05709626116072197,
+          "diff_ci": 0.0688456909239365,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 115.67,
+          "lead_time": 0,
+          "fixed_cost": 9.3,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.057,
+          "p_recover": 0.446,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 107.64,
+          "lead_time": 0,
+          "fixed_cost": 18.5,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.02,
+          "p_recover": 0.345,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 33.3,
+          "moq": 0,
+          "capacity": 8,
+          "p_fail": 0.04,
+          "p_recover": 0.301,
+          "region": 1
+        }
+      ],
+      "seconds": 241.4
+    },
+    {
+      "instance": "R020",
+      "premium": 0.2260070283501257,
+      "K_max": 38.036312438598024,
+      "moq_c": 4,
+      "shock_rate": 0.0149,
+      "has_shock": 1.0,
+      "down_A": 0.1073,
+      "down_B": 0.072,
+      "down_C": 0.2509,
+      "outage_C": 4.65,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 244.14446219336912,
+      "dp_excess": 44.14446219336912,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0357,
+        0.2804,
+        0.6839
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 12,
+          "cap": 6,
+          "trigger": 5
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 152.5809316724353,
+          "gap_excess_ci": 9.193203190600892,
+          "gap_total": 27.588596968904724,
+          "fill": 0.9905121323940512,
+          "volume_share": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "cost": 310.94889196428574
+        },
+        "GMI": {
+          "gap_excess": 1.2055318642338093,
+          "gap_excess_ci": 0.4788594998931352,
+          "gap_total": 0.21797568261622674,
+          "fill": 0.9981242312423124,
+          "volume_share": [
+            0.0277,
+            0.261,
+            0.7113
+          ],
+          "cost": 244.12503582589284
+        },
+        "table0": {
+          "gap_excess": 0.8261099805413273,
+          "gap_excess_ci": 0.2921393190607779,
+          "gap_total": 0.14937132088086327,
+          "fill": 0.9984457117298445,
+          "volume_share": [
+            0.0345,
+            0.2924,
+            0.673
+          ],
+          "cost": 243.95754207589286,
+          "diff_vs_gmi": -0.16749374999999667,
+          "diff_ci": 0.17574070512276097,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 1.111986772444759,
+          "gap_excess_ci": 0.4582963121731674,
+          "gap_total": 0.20106152560132665,
+          "fill": 0.9982947556748295,
+          "volume_share": [
+            0.0263,
+            0.2532,
+            0.7205
+          ],
+          "cost": 244.0837408482143,
+          "diff_vs_gmi": -0.04129497767856982,
+          "diff_ci": 0.17184834719720155,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 122.6,
+          "lead_time": 0,
+          "fixed_cost": 8.5,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.063,
+          "p_recover": 0.524,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 115.66,
+          "lead_time": 0,
+          "fixed_cost": 10.8,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.034,
+          "p_recover": 0.438,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 38.0,
+          "moq": 4,
+          "capacity": 8,
+          "p_fail": 0.072,
+          "p_recover": 0.215,
+          "region": 1
+        }
+      ],
+      "seconds": 262.7
+    },
+    {
+      "instance": "R021",
+      "premium": 0.21126053685886823,
+      "K_max": 36.67542121583915,
+      "moq_c": 2,
+      "shock_rate": 0.0222,
+      "has_shock": 1.0,
+      "down_A": 0.0818,
+      "down_B": 0.0556,
+      "down_C": 0.0764,
+      "outage_C": 7.52,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 250.36356525142173,
+      "dp_excess": 50.36356525142173,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0729,
+        0.1266,
+        0.8005
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 9,
+          "cap": 6,
+          "trigger": 4
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 13,
+          "cap": 7,
+          "trigger": 4
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 244.02913647624845,
+          "gap_excess_ci": 16.632491065615646,
+          "gap_total": 49.08932066783566,
+          "fill": 0.98936774725489,
+          "volume_share": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "cost": 373.9512125
+        },
+        "GMI": {
+          "gap_excess": 7.042527128151607,
+          "gap_excess_ci": 1.331832910815868,
+          "gap_total": 1.4166868657481584,
+          "fill": 0.9963537807588816,
+          "volume_share": [
+            0.0501,
+            0.1378,
+            0.8122
+          ],
+          "cost": 254.5963068638393
+        },
+        "table0": {
+          "gap_excess": 1.9305003546708364,
+          "gap_excess_ci": 0.7312783728226909,
+          "gap_total": 0.3883427705733446,
+          "fill": 0.9975626876730491,
+          "volume_share": [
+            0.0755,
+            0.1374,
+            0.7872
+          ],
+          "cost": 252.02170792410715,
+          "diff_vs_gmi": -2.5745989397321374,
+          "diff_ci": 0.587615033726192,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 2.7520296662423003,
+          "gap_excess_ci": 1.109805937622726,
+          "gap_total": 0.5536030193948335,
+          "fill": 0.9970195152116145,
+          "volume_share": [
+            0.0919,
+            0.1358,
+            0.7723
+          ],
+          "cost": 252.435459375,
+          "diff_vs_gmi": -2.1608474888392872,
+          "diff_ci": 0.6915286690330436,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 121.13,
+          "lead_time": 0,
+          "fixed_cost": 29.6,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.031,
+          "p_recover": 0.348,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 110.84,
+          "lead_time": 1,
+          "fixed_cost": 30.8,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.016,
+          "p_recover": 0.272,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 36.7,
+          "moq": 2,
+          "capacity": 8,
+          "p_fail": 0.011,
+          "p_recover": 0.133,
+          "region": 1
+        }
+      ],
+      "seconds": 296.6
+    },
+    {
+      "instance": "R022",
+      "premium": 0.10975714938928188,
+      "K_max": 38.348469017904996,
+      "moq_c": 0,
+      "shock_rate": 0.0158,
+      "has_shock": 1.0,
+      "down_A": 0.1279,
+      "down_B": 0.0995,
+      "down_C": 0.1197,
+      "outage_C": 3.68,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 246.47137011154246,
+      "dp_excess": 46.471370111542456,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0846,
+        0.1168,
+        0.7985
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 6,
+          "cap": 3,
+          "trigger": 3
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 11,
+          "cap": 6,
+          "trigger": 3
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 13,
+          "cap": 7,
+          "trigger": 5
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 96.09884010103211,
+          "gap_excess_ci": 6.690323149648038,
+          "gap_total": 18.119121760892348,
+          "fill": 0.9923164484917473,
+          "volume_share": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "cost": 291.0515321428571
+        },
+        "GMI": {
+          "gap_excess": 5.4193855639921455,
+          "gap_excess_ci": 0.8200731190864614,
+          "gap_total": 1.0218074099537577,
+          "fill": 0.9960689455064895,
+          "volume_share": [
+            0.0928,
+            0.1142,
+            0.793
+          ],
+          "cost": 248.91154720982144
+        },
+        "table0": {
+          "gap_excess": 5.0781630897075205,
+          "gap_excess_ci": 0.7667020861717767,
+          "gap_total": 0.957471029279277,
+          "fill": 0.9973774370305891,
+          "volume_share": [
+            0.0948,
+            0.1125,
+            0.7927
+          ],
+          "cost": 248.75297645089285,
+          "diff_vs_gmi": -0.15857075892857075,
+          "diff_ci": 0.3405448429748878,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 4.268103807147365,
+          "gap_excess_ci": 0.6179136728871677,
+          "gap_total": 0.8047370029495364,
+          "fill": 0.9975727342729921,
+          "volume_share": [
+            0.072,
+            0.1109,
+            0.8171
+          ],
+          "cost": 248.37653080357143,
+          "diff_vs_gmi": -0.5350164062500062,
+          "diff_ci": 0.324571223799355,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 110.98,
+          "lead_time": 0,
+          "fixed_cost": 23.0,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.038,
+          "p_recover": 0.259,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 106.58,
+          "lead_time": 2,
+          "fixed_cost": 24.4,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.056,
+          "p_recover": 0.507,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 38.3,
+          "moq": 0,
+          "capacity": 8,
+          "p_fail": 0.037,
+          "p_recover": 0.272,
+          "region": 1
+        }
+      ],
+      "seconds": 304.0
+    },
+    {
+      "instance": "R023",
+      "premium": 0.1618663668972702,
+      "K_max": 17.278376692137236,
+      "moq_c": 2,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.2691,
+      "down_B": 0.0257,
+      "down_C": 0.062,
+      "outage_C": 1.69,
+      "lead_C": 2,
+      "lead_gap": 1,
+      "dp_g": 239.9141083184768,
+      "dp_excess": 39.91410831847679,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0009,
+        0.0736,
+        0.9255
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 8,
+          "cap": 2,
+          "trigger": 2
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 8,
+          "cap": 4,
+          "trigger": 2
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 12,
+          "cap": 5,
+          "trigger": 3
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 41.35143520915024,
+          "gap_excess_ci": 4.769845256356678,
+          "gap_total": 6.8795690075529645,
+          "fill": 0.9945068260764197,
+          "volume_share": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "cost": 256.69673660714284
+        },
+        "GMI": {
+          "gap_excess": 0.17763324406677572,
+          "gap_excess_ci": 0.13937729649974828,
+          "gap_total": 0.029552545260205836,
+          "fill": 0.9983509335888644,
+          "volume_share": [
+            0.0011,
+            0.0733,
+            0.9256
+          ],
+          "cost": 240.26258069196433
+        },
+        "table0": {
+          "gap_excess": 0.26323474522076823,
+          "gap_excess_ci": 0.13082697517251993,
+          "gap_total": 0.04379392361528416,
+          "fill": 0.9984874272614077,
+          "volume_share": [
+            0.0009,
+            0.074,
+            0.9251
+          ],
+          "cost": 240.29674776785714,
+          "diff_vs_gmi": 0.03416707589284673,
+          "diff_ci": 0.06952590234401808,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 0.2502973666765442,
+          "gap_excess_ci": 0.12242008866294593,
+          "gap_total": 0.04164155361841088,
+          "fill": 0.9984205732177129,
+          "volume_share": [
+            0.0019,
+            0.0739,
+            0.9241
+          ],
+          "cost": 240.2915839285714,
+          "diff_vs_gmi": 0.029003236607133775,
+          "diff_ci": 0.04087669754534784,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 116.19,
+          "lead_time": 1,
+          "fixed_cost": 11.2,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.067,
+          "p_recover": 0.182,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 111.23,
+          "lead_time": 1,
+          "fixed_cost": 14.3,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.015,
+          "p_recover": 0.568,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 17.3,
+          "moq": 2,
+          "capacity": 8,
+          "p_fail": 0.039,
+          "p_recover": 0.59,
+          "region": 1
+        }
+      ],
+      "seconds": 245.9
+    },
+    {
+      "instance": "R024",
+      "premium": 0.19945470397841908,
+      "K_max": 39.44255754987366,
+      "moq_c": 4,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.0759,
+      "down_B": 0.2746,
+      "down_C": 0.2521,
+      "outage_C": 5.52,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 250.47024026930285,
+      "dp_excess": 50.47024026930285,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0623,
+        0.1813,
+        0.7565
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 5,
+          "cap": 6,
+          "trigger": 2
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 9,
+          "cap": 7,
+          "trigger": 1
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 185.5948879614683,
+          "gap_excess_ci": 13.709773683591344,
+          "gap_total": 37.39773067689931,
+          "fill": 0.9903967998657286,
+          "volume_share": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cost": 343.12881361607145
+        },
+        "GMI": {
+          "gap_excess": 10.329819920050348,
+          "gap_excess_ci": 0.8665633318316717,
+          "gap_total": 2.0814787926223235,
+          "fill": 0.9973817083234262,
+          "volume_share": [
+            0.0779,
+            0.1745,
+            0.7475
+          ],
+          "cost": 254.67211266741072
+        },
+        "table0": {
+          "gap_excess": 7.405569913335116,
+          "gap_excess_ci": 0.7680352989042704,
+          "gap_total": 1.4922367322172885,
+          "fill": 0.9983020266584612,
+          "volume_share": [
+            0.0771,
+            0.1719,
+            0.7509
+          ],
+          "cost": 253.19623666294643,
+          "diff_vs_gmi": -1.4758760044642822,
+          "diff_ci": 0.3405320380582929,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 9.54160889580084,
+          "gap_excess_ci": 0.6586678784174503,
+          "gap_total": 1.9226527391398276,
+          "fill": 0.9988670853322517,
+          "volume_share": [
+            0.0915,
+            0.155,
+            0.7535
+          ],
+          "cost": 254.27430066964283,
+          "diff_vs_gmi": -0.3978119977678589,
+          "diff_ci": 0.5252315184377743,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 119.95,
+          "lead_time": 0,
+          "fixed_cost": 32.1,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.028,
+          "p_recover": 0.341,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 113.62,
+          "lead_time": 0,
+          "fixed_cost": 37.9,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.053,
+          "p_recover": 0.14,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 39.4,
+          "moq": 4,
+          "capacity": 8,
+          "p_fail": 0.061,
+          "p_recover": 0.181,
+          "region": 1
+        }
+      ],
+      "seconds": 259.6
+    },
+    {
+      "instance": "R025",
+      "premium": 0.15200529591833029,
+      "K_max": 32.58039643412219,
+      "moq_c": 0,
+      "shock_rate": 0.0273,
+      "has_shock": 1.0,
+      "down_A": 0.2052,
+      "down_B": 0.1038,
+      "down_C": 0.1037,
+      "outage_C": 1.9,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 245.28728480683776,
+      "dp_excess": 45.28728480683776,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0804,
+        0.0586,
+        0.861
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 5,
+          "cap": 6,
+          "trigger": 2
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 8,
+          "cap": 6,
+          "trigger": 3
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 13,
+          "cap": 8,
+          "trigger": 5
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 76.06739400033565,
+          "gap_excess_ci": 6.402500484259436,
+          "gap_total": 14.044289899983886,
+          "fill": 0.9912453124782178,
+          "volume_share": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "cost": 280.0862377232143
+        },
+        "GMI": {
+          "gap_excess": 5.728464091586672,
+          "gap_excess_ci": 0.9481531724060651,
+          "gap_total": 1.0576438359849172,
+          "fill": 0.9950287873084912,
+          "volume_share": [
+            0.0586,
+            0.0925,
+            0.849
+          ],
+          "cost": 248.23164620535715
+        },
+        "table0": {
+          "gap_excess": 4.583616176933139,
+          "gap_excess_ci": 0.810853414759884,
+          "gap_total": 0.8462710629842373,
+          "fill": 0.9960548143811078,
+          "volume_share": [
+            0.0796,
+            0.0369,
+            0.8834
+          ],
+          "cost": 247.71317566964285,
+          "diff_vs_gmi": -0.5184705357142882,
+          "diff_ci": 0.3688254922957517,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 3.7921851263472672,
+          "gap_excess_ci": 0.961549794516501,
+          "gap_total": 0.7001494920227324,
+          "fill": 0.9959767471038434,
+          "volume_share": [
+            0.0734,
+            0.0449,
+            0.8818
+          ],
+          "cost": 247.35475803571427,
+          "diff_vs_gmi": -0.8768881696428603,
+          "diff_ci": 0.4009146809269703,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 115.2,
+          "lead_time": 0,
+          "fixed_cost": 4.2,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.063,
+          "p_recover": 0.244,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 111.14,
+          "lead_time": 1,
+          "fixed_cost": 20.6,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.03,
+          "p_recover": 0.259,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 32.6,
+          "moq": 0,
+          "capacity": 8,
+          "p_fail": 0.061,
+          "p_recover": 0.527,
+          "region": 1
+        }
+      ],
+      "seconds": 294.7
+    },
+    {
+      "instance": "R026",
+      "premium": 0.22739316172482485,
+      "K_max": 36.571250991117054,
+      "moq_c": 2,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.0553,
+      "down_B": 0.2205,
+      "down_C": 0.0854,
+      "outage_C": 5.49,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 240.03320397044007,
+      "dp_excess": 40.03320397044007,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0509,
+        0.2294,
+        0.7197
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 4,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 11,
+          "cap": 7,
+          "trigger": 5
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 326.93090340315075,
+          "gap_excess_ci": 27.51796121160409,
+          "gap_total": 54.52617106169346,
+          "fill": 0.9857230426302591,
+          "volume_share": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cost": 371.2680231026785
+        },
+        "GMI": {
+          "gap_excess": 2.012623128831659,
+          "gap_excess_ci": 0.8728016996809635,
+          "gap_total": 0.3356691945088791,
+          "fill": 0.9983923098356088,
+          "volume_share": [
+            0.0473,
+            0.1822,
+            0.7705
+          ],
+          "cost": 241.1928252232143
+        },
+        "table0": {
+          "gap_excess": 1.372177641621587,
+          "gap_excess_ci": 0.8606686473906329,
+          "gap_total": 0.22885445222603173,
+          "fill": 0.9989662858735023,
+          "volume_share": [
+            0.0511,
+            0.1747,
+            0.7741
+          ],
+          "cost": 240.936434375,
+          "diff_vs_gmi": -0.2563908482142869,
+          "diff_ci": 0.16222515197361004,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 1.4469428670096756,
+          "gap_excess_ci": 0.8247677904333455,
+          "gap_total": 0.24132394173143312,
+          "fill": 0.9989607132906102,
+          "volume_share": [
+            0.0439,
+            0.2076,
+            0.7485
+          ],
+          "cost": 240.9663652901786,
+          "diff_vs_gmi": -0.2264599330357142,
+          "diff_ci": 0.1811133790917689,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 122.74,
+          "lead_time": 0,
+          "fixed_cost": 0.1,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.014,
+          "p_recover": 0.239,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 112.14,
+          "lead_time": 0,
+          "fixed_cost": 9.9,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.071,
+          "p_recover": 0.251,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 36.6,
+          "moq": 2,
+          "capacity": 8,
+          "p_fail": 0.017,
+          "p_recover": 0.182,
+          "region": 1
+        }
+      ],
+      "seconds": 225.9
+    },
+    {
+      "instance": "R027",
+      "premium": 0.12618722311462124,
+      "K_max": 32.45164507415976,
+      "moq_c": 4,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.1412,
+      "down_B": 0.0977,
+      "down_C": 0.1877,
+      "outage_C": 4.2,
+      "lead_C": 2,
+      "lead_gap": 1,
+      "dp_g": 245.79421435223026,
+      "dp_excess": 45.794214352230256,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0296,
+        0.1864,
+        0.784
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 7,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 8,
+          "cap": 6,
+          "trigger": 2
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 13,
+          "cap": 8,
+          "trigger": 5
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 78.49674956311075,
+          "gap_excess_ci": 5.389235247253502,
+          "gap_total": 14.624823391062922,
+          "fill": 0.9906221069913269,
+          "volume_share": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "cost": 281.1787550223214
+        },
+        "GMI": {
+          "gap_excess": 0.9783653157041352,
+          "gap_excess_ci": 0.4942775865912938,
+          "gap_total": 0.18228041331330083,
+          "fill": 0.9966577446628797,
+          "volume_share": [
+            0.0149,
+            0.2309,
+            0.7542
+          ],
+          "cost": 245.67981997767856
+        },
+        "table0": {
+          "gap_excess": 0.5551043850409536,
+          "gap_excess_ci": 0.4777476722016934,
+          "gap_total": 0.10342216257376984,
+          "fill": 0.997052102823996,
+          "volume_share": [
+            0.0201,
+            0.2136,
+            0.7663
+          ],
+          "cost": 245.48599095982144,
+          "diff_vs_gmi": -0.19382901785714202,
+          "diff_ci": 0.1541098330428237,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 0.6399860040086774,
+          "gap_excess_ci": 0.4608347425906266,
+          "gap_total": 0.11923655862786886,
+          "fill": 0.996864712775806,
+          "volume_share": [
+            0.0174,
+            0.23,
+            0.7526
+          ],
+          "cost": 245.52486183035714,
+          "diff_vs_gmi": -0.15495814732141922,
+          "diff_ci": 0.17014535100216788,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 112.62,
+          "lead_time": 1,
+          "fixed_cost": 12.6,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.048,
+          "p_recover": 0.292,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 106.0,
+          "lead_time": 1,
+          "fixed_cost": 20.1,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.055,
+          "p_recover": 0.508,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 32.5,
+          "moq": 4,
+          "capacity": 8,
+          "p_fail": 0.055,
+          "p_recover": 0.238,
+          "region": 1
+        }
+      ],
+      "seconds": 244.6
+    },
+    {
+      "instance": "R028",
+      "premium": 0.1055236542753677,
+      "K_max": 25.735744823227055,
+      "moq_c": 4,
+      "shock_rate": 0.0164,
+      "has_shock": 1.0,
+      "down_A": 0.1004,
+      "down_B": 0.1141,
+      "down_C": 0.04,
+      "outage_C": 4.17,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 240.71588503619523,
+      "dp_excess": 40.71588503619523,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0712,
+        0.0607,
+        0.8681
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 10,
+          "cap": 6,
+          "trigger": 2
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 11,
+          "cap": 8,
+          "trigger": 3
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 142.37563464345408,
+          "gap_excess_ci": 9.402989734651497,
+          "gap_total": 24.082124747299304,
+          "fill": 0.9888342487036516,
+          "volume_share": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cost": 298.5333275669643
+        },
+        "GMI": {
+          "gap_excess": 3.575297467812213,
+          "gap_excess_ci": 0.8244348049239497,
+          "gap_total": 0.6047436406108103,
+          "fill": 0.996273433991526,
+          "volume_share": [
+            0.0721,
+            0.0591,
+            0.8688
+          ],
+          "cost": 242.01954185267857
+        },
+        "table0": {
+          "gap_excess": 2.6233282837287444,
+          "gap_excess_ci": 0.760167902262926,
+          "gap_total": 0.44372282617093695,
+          "fill": 0.9971213951192027,
+          "volume_share": [
+            0.0726,
+            0.0554,
+            0.8721
+          ],
+          "cost": 241.63193917410712,
+          "diff_vs_gmi": -0.3876026785714308,
+          "diff_ci": 0.23658350944830245,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 2.698203357867598,
+          "gap_excess_ci": 0.7030347683861174,
+          "gap_total": 0.4563875695477846,
+          "fill": 0.9969177728747277,
+          "volume_share": [
+            0.0829,
+            0.0489,
+            0.8682
+          ],
+          "cost": 241.66242522321426,
+          "diff_vs_gmi": -0.3571166294642891,
+          "diff_ci": 0.24650296979663347,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 110.55,
+          "lead_time": 0,
+          "fixed_cost": 14.4,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.055,
+          "p_recover": 0.493,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 104.25,
+          "lead_time": 2,
+          "fixed_cost": 18.4,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.038,
+          "p_recover": 0.295,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 25.7,
+          "moq": 4,
+          "capacity": 8,
+          "p_fail": 0.01,
+          "p_recover": 0.24,
+          "region": 1
+        }
+      ],
+      "seconds": 273.2
+    },
+    {
+      "instance": "R029",
+      "premium": 0.22659391131615958,
+      "K_max": 32.30087440564618,
+      "moq_c": 0,
+      "shock_rate": 0.0173,
+      "has_shock": 1.0,
+      "down_A": 0.1081,
+      "down_B": 0.0643,
+      "down_C": 0.0625,
+      "outage_C": 4.17,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 248.08114808115306,
+      "dp_excess": 48.08114808115306,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0647,
+        0.0643,
+        0.871
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 5,
+          "cap": 4,
+          "trigger": 2
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 10,
+          "cap": 6,
+          "trigger": 2
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 14,
+          "cap": 8,
+          "trigger": 5
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 204.43795261759385,
+          "gap_excess_ci": 18.78212119057447,
+          "gap_total": 39.62256523417406,
+          "fill": 0.9888839967451762,
+          "volume_share": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "cost": 346.52451763392855
+        },
+        "GMI": {
+          "gap_excess": 6.127691908610222,
+          "gap_excess_ci": 0.9663155263257515,
+          "gap_total": 1.1876213260557484,
+          "fill": 0.9970517093397835,
+          "volume_share": [
+            0.0457,
+            0.0676,
+            0.8867
+          ],
+          "cost": 251.17466752232144
+        },
+        "table0": {
+          "gap_excess": 5.200944851223164,
+          "gap_excess_ci": 1.0087373149043486,
+          "gap_total": 1.00800645872442,
+          "fill": 0.9963466833123404,
+          "volume_share": [
+            0.0873,
+            0.07,
+            0.8428
+          ],
+          "cost": 250.72907689732142,
+          "diff_vs_gmi": -0.4455906249999999,
+          "diff_ci": 0.4027328980176023,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 4.643876020766718,
+          "gap_excess_ci": 0.9283876745701589,
+          "gap_total": 0.9000397343854576,
+          "fill": 0.9963801232820215,
+          "volume_share": [
+            0.0903,
+            0.0491,
+            0.8606
+          ],
+          "cost": 250.4612318080357,
+          "diff_vs_gmi": -0.7134357142857115,
+          "diff_ci": 0.40251071796524585,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 122.66,
+          "lead_time": 0,
+          "fixed_cost": 15.5,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.02,
+          "p_recover": 0.165,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 116.82,
+          "lead_time": 2,
+          "fixed_cost": 29.4,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.025,
+          "p_recover": 0.364,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 32.3,
+          "moq": 0,
+          "capacity": 8,
+          "p_fail": 0.016,
+          "p_recover": 0.24,
+          "region": 1
+        }
+      ],
+      "seconds": 309.7
+    },
+    {
+      "instance": "R030",
+      "premium": 0.18827004979835024,
+      "K_max": 29.71149983134734,
+      "moq_c": 0,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.0687,
+      "down_B": 0.1072,
+      "down_C": 0.1978,
+      "outage_C": 4.57,
+      "lead_C": 3,
+      "lead_gap": 3,
+      "dp_g": 241.48432923855853,
+      "dp_excess": 41.48432923855853,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0934,
+        0.246,
+        0.6606
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 7,
+          "cap": 6,
+          "trigger": 2
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 15,
+          "cap": 6,
+          "trigger": 6
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 145.1001028902587,
+          "gap_excess_ci": 10.433454203971545,
+          "gap_total": 24.926588237954604,
+          "fill": 0.992278186295037,
+          "volume_share": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "cost": 301.71481919642855
+        },
+        "GMI": {
+          "gap_excess": 2.703780222251191,
+          "gap_excess_ci": 0.5171535263872902,
+          "gap_total": 0.4644794520714668,
+          "fill": 0.998218901972608,
+          "volume_share": [
+            0.0771,
+            0.2254,
+            0.6974
+          ],
+          "cost": 242.64265987723215
+        },
+        "table0": {
+          "gap_excess": 1.5069388428271577,
+          "gap_excess_ci": 0.4464087054267886,
+          "gap_total": 0.25887537835408475,
+          "fill": 0.9981770266271364,
+          "volume_share": [
+            0.1058,
+            0.186,
+            0.7082
+          ],
+          "cost": 242.1461582589286,
+          "diff_vs_gmi": -0.4965016183035713,
+          "diff_ci": 0.16472448946141424,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 2.2781518269936427,
+          "gap_excess_ci": 0.5157632789875957,
+          "gap_total": 0.39136121480191516,
+          "fill": 0.9983221944914379,
+          "volume_share": [
+            0.1068,
+            0.1595,
+            0.7337
+          ],
+          "cost": 242.46609079241074,
+          "diff_vs_gmi": -0.17656908482143452,
+          "diff_ci": 0.20192010550052314,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 118.83,
+          "lead_time": 0,
+          "fixed_cost": 6.6,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.034,
+          "p_recover": 0.461,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 105.55,
+          "lead_time": 1,
+          "fixed_cost": 19.3,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.052,
+          "p_recover": 0.433,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 3,
+          "fixed_cost": 29.7,
+          "moq": 0,
+          "capacity": 8,
+          "p_fail": 0.054,
+          "p_recover": 0.219,
+          "region": 1
+        }
+      ],
+      "seconds": 252.0
+    },
+    {
+      "instance": "R031",
+      "premium": 0.2067229695047696,
+      "K_max": 17.546896206980662,
+      "moq_c": 4,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.1259,
+      "down_B": 0.0585,
+      "down_C": 0.131,
+      "outage_C": 6.85,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 233.6919558563468,
+      "dp_excess": 33.691955856346794,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0141,
+        0.2758,
+        0.7101
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 12,
+          "cap": 4,
+          "trigger": 5
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 102.83403742135951,
+          "gap_excess_ci": 5.7599127742071135,
+          "gap_total": 14.825841294512246,
+          "fill": 0.9911054496503925,
+          "volume_share": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "cost": 268.99779933035717
+        },
+        "GMI": {
+          "gap_excess": 0.7686241488405094,
+          "gap_excess_ci": 0.3808261273167835,
+          "gap_total": 0.11081447283010214,
+          "fill": 0.9990960822815439,
+          "volume_share": [
+            0.0139,
+            0.2629,
+            0.7233
+          ],
+          "cost": 234.60996534598215
+        },
+        "table0": {
+          "gap_excess": 1.2137897233140778,
+          "gap_excess_ci": 0.4920725666673348,
+          "gap_total": 0.17499511109369936,
+          "fill": 0.9990182062934924,
+          "volume_share": [
+            0.0134,
+            0.259,
+            0.7276
+          ],
+          "cost": 234.75995033482144,
+          "diff_vs_gmi": 0.14998498883928724,
+          "diff_ci": 0.09714652448278784,
+          "beats_gmi": false,
+          "worse_than_gmi": true
+        },
+        "table1": {
+          "gap_excess": 0.7991255146271911,
+          "gap_excess_ci": 0.40939432450172464,
+          "gap_total": 0.11521193129578794,
+          "fill": 0.9990571442875181,
+          "volume_share": [
+            0.016,
+            0.3135,
+            0.6704
+          ],
+          "cost": 234.6202418526786,
+          "diff_vs_gmi": 0.010276506696431653,
+          "diff_ci": 0.11137896003841276,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 120.67,
+          "lead_time": 0,
+          "fixed_cost": 9.3,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.072,
+          "p_recover": 0.5,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 108.39,
+          "lead_time": 0,
+          "fixed_cost": 16.2,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.037,
+          "p_recover": 0.596,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 17.5,
+          "moq": 4,
+          "capacity": 8,
+          "p_fail": 0.022,
+          "p_recover": 0.146,
+          "region": 1
+        }
+      ],
+      "seconds": 227.6
+    },
+    {
+      "instance": "R032",
+      "premium": 0.2282073606124471,
+      "K_max": 33.83679143106679,
+      "moq_c": 4,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.0287,
+      "down_B": 0.1706,
+      "down_C": 0.07,
+      "outage_C": 2.43,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 240.7816191478064,
+      "dp_excess": 40.781619147806396,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.1113,
+        0.0376,
+        0.8511
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 4,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 8,
+          "cap": 3,
+          "trigger": 1
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 11,
+          "cap": 7,
+          "trigger": 4
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 99.43554641634378,
+          "gap_excess_ci": 10.474273238458002,
+          "gap_total": 16.841578680538998,
+          "fill": 0.9880668391246592,
+          "volume_share": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "cost": 280.9182466517857
+        },
+        "GMI": {
+          "gap_excess": 1.3369601201926031,
+          "gap_excess_ci": 0.3420798117478917,
+          "gap_total": 0.22644335822009082,
+          "fill": 0.9987694889184088,
+          "volume_share": [
+            0.1324,
+            0.0315,
+            0.836
+          ],
+          "cost": 240.91205479910712
+        },
+        "table0": {
+          "gap_excess": 1.2379965934499513,
+          "gap_excess_ci": 0.37485470394096,
+          "gap_total": 0.2096817263670169,
+          "fill": 0.9988310144724883,
+          "volume_share": [
+            0.1361,
+            0.025,
+            0.839
+          ],
+          "cost": 240.87169587053572,
+          "diff_vs_gmi": -0.04035892857142587,
+          "diff_ci": 0.10406549727687187,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 1.2487322652919621,
+          "gap_excess_ci": 0.25071395818732917,
+          "gap_total": 0.21150004656066906,
+          "fill": 0.9989540655806474,
+          "volume_share": [
+            0.1356,
+            0.0451,
+            0.8193
+          ],
+          "cost": 240.8760740513393,
+          "diff_vs_gmi": -0.035980747767858645,
+          "diff_ci": 0.12712702875953102,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 122.82,
+          "lead_time": 0,
+          "fixed_cost": 1.5,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.014,
+          "p_recover": 0.474,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 110.51,
+          "lead_time": 2,
+          "fixed_cost": 8.3,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.072,
+          "p_recover": 0.35,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 33.8,
+          "moq": 4,
+          "capacity": 8,
+          "p_fail": 0.031,
+          "p_recover": 0.412,
+          "region": 1
+        }
+      ],
+      "seconds": 239.3
+    },
+    {
+      "instance": "R033",
+      "premium": 0.18480964243061887,
+      "K_max": 39.490224633803535,
+      "moq_c": 0,
+      "shock_rate": 0.0162,
+      "has_shock": 1.0,
+      "down_A": 0.0744,
+      "down_B": 0.0262,
+      "down_C": 0.0302,
+      "outage_C": 1.95,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 243.56800904131148,
+      "dp_excess": 43.568009041311484,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0327,
+        0.0829,
+        0.8844
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 6,
+          "cap": 3,
+          "trigger": 4
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 13,
+          "cap": 7,
+          "trigger": 6
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 53.961480341312544,
+          "gap_excess_ci": 4.240285242559072,
+          "gap_total": 9.652311371458087,
+          "fill": 0.9939415946259235,
+          "volume_share": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "cost": 266.8676925223215
+        },
+        "GMI": {
+          "gap_excess": 2.5929860309238646,
+          "gap_excess_ci": 0.28754076336534945,
+          "gap_total": 0.46381804935690174,
+          "fill": 0.9987737943940896,
+          "volume_share": [
+            0.0362,
+            0.0889,
+            0.875
+          ],
+          "cost": 244.48746227678572
+        },
+        "table0": {
+          "gap_excess": 2.1818080133031956,
+          "gap_excess_ci": 0.3201978517106289,
+          "gap_total": 0.3902689504428181,
+          "fill": 0.9994748823373323,
+          "volume_share": [
+            0.089,
+            0.027,
+            0.884
+          ],
+          "cost": 244.30832020089287,
+          "diff_vs_gmi": -0.17914207589285835,
+          "diff_ci": 0.1748815004924648,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 1.9451833976802624,
+          "gap_excess_ci": 0.32389344480491217,
+          "gap_total": 0.3479429346682742,
+          "fill": 0.9994637096211053,
+          "volume_share": [
+            0.0633,
+            0.0579,
+            0.8788
+          ],
+          "cost": 244.2052275669643,
+          "diff_vs_gmi": -0.2822347098214264,
+          "diff_ci": 0.1423102073434486,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 118.48,
+          "lead_time": 0,
+          "fixed_cost": 26.5,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.029,
+          "p_recover": 0.361,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 109.68,
+          "lead_time": 0,
+          "fixed_cost": 39.0,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.01,
+          "p_recover": 0.371,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 39.5,
+          "moq": 0,
+          "capacity": 8,
+          "p_fail": 0.016,
+          "p_recover": 0.513,
+          "region": 1
+        }
+      ],
+      "seconds": 236.7
+    },
+    {
+      "instance": "R034",
+      "premium": 0.18223905277380514,
+      "K_max": 13.831710150541072,
+      "moq_c": 2,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.0215,
+      "down_B": 0.0019,
+      "down_C": 0.0615,
+      "outage_C": 2.43,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 231.42044545593444,
+      "dp_excess": 31.42044545593444,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.1212,
+        0.1235,
+        0.7553
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 9,
+          "cap": 3,
+          "trigger": 4
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 11,
+          "cap": 7,
+          "trigger": 4
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 13.021988331800141,
+          "gap_excess_ci": 1.7736019616087766,
+          "gap_total": 1.7680230167262814,
+          "fill": 0.9992549266926001,
+          "volume_share": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "cost": 235.4850268973214
+        },
+        "GMI": {
+          "gap_excess": 1.2724952014923216,
+          "gap_excess_ci": 0.3531109303104576,
+          "gap_total": 0.17276937650282492,
+          "fill": 0.9996735072023754,
+          "volume_share": [
+            0.0572,
+            0.2717,
+            0.6711
+          ],
+          "cost": 231.79328381696428
+        },
+        "table0": {
+          "gap_excess": 1.0417260182265125,
+          "gap_excess_ci": 0.3003096218994566,
+          "gap_total": 0.14143735429783547,
+          "fill": 0.9997404800839393,
+          "volume_share": [
+            0.079,
+            0.1812,
+            0.7398
+          ],
+          "cost": 231.72077511160717,
+          "diff_vs_gmi": -0.07250870535713894,
+          "diff_ci": 0.08606087918875474,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 1.05402039016336,
+          "gap_excess_ci": 0.3014922805454597,
+          "gap_total": 0.14310658729103806,
+          "fill": 0.9998186151124308,
+          "volume_share": [
+            0.0568,
+            0.2846,
+            0.6586
+          ],
+          "cost": 231.7246380580357,
+          "diff_vs_gmi": -0.06864575892857205,
+          "diff_ci": 0.04852895289431109,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 118.22,
+          "lead_time": 0,
+          "fixed_cost": 2.7,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.011,
+          "p_recover": 0.5,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 104.74,
+          "lead_time": 1,
+          "fixed_cost": 6.0,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.001,
+          "p_recover": 0.517,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 13.8,
+          "moq": 2,
+          "capacity": 8,
+          "p_fail": 0.027,
+          "p_recover": 0.412,
+          "region": 1
+        }
+      ],
+      "seconds": 198.2
+    },
+    {
+      "instance": "R035",
+      "premium": 0.1779219843579774,
+      "K_max": 27.04711157109488,
+      "moq_c": 0,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.1641,
+      "down_B": 0.0892,
+      "down_C": 0.0693,
+      "outage_C": 2.98,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 240.52739233424836,
+      "dp_excess": 40.52739233424836,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0693,
+        0.0699,
+        0.8609
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 5,
+          "cap": 6,
+          "trigger": 2
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 7,
+          "cap": 6,
+          "trigger": 2
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 12,
+          "cap": 6,
+          "trigger": 4
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 143.01692541853734,
+          "gap_excess_ci": 12.210440377059028,
+          "gap_total": 24.097475928315298,
+          "fill": 0.9915133619110734,
+          "volume_share": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "cost": 298.1069921875
+        },
+        "GMI": {
+          "gap_excess": 4.978618334549889,
+          "gap_excess_ci": 0.5774875491098463,
+          "gap_total": 0.8388666944278668,
+          "fill": 0.9980566018214814,
+          "volume_share": [
+            0.0664,
+            0.0669,
+            0.8667
+          ],
+          "cost": 242.16366590401788
+        },
+        "table0": {
+          "gap_excess": 4.741909220726819,
+          "gap_excess_ci": 0.5187316438918924,
+          "gap_total": 0.7989826586351008,
+          "fill": 0.9980370280268777,
+          "volume_share": [
+            0.0848,
+            0.038,
+            0.8773
+          ],
+          "cost": 242.06773387276786,
+          "diff_vs_gmi": -0.0959320312499985,
+          "diff_ci": 0.20826980419727922,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 3.9296700567468714,
+          "gap_excess_ci": 0.5164694289964639,
+          "gap_total": 0.6621253346172489,
+          "fill": 0.9981600633072443,
+          "volume_share": [
+            0.0732,
+            0.0476,
+            0.8792
+          ],
+          "cost": 241.73855452008928,
+          "diff_vs_gmi": -0.4251113839285705,
+          "diff_ci": 0.1946426221904915,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 117.79,
+          "lead_time": 0,
+          "fixed_cost": 6.8,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.074,
+          "p_recover": 0.377,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 110.22,
+          "lead_time": 1,
+          "fixed_cost": 17.5,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.019,
+          "p_recover": 0.194,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 27.0,
+          "moq": 0,
+          "capacity": 8,
+          "p_fail": 0.025,
+          "p_recover": 0.336,
+          "region": 1
+        }
+      ],
+      "seconds": 236.7
+    },
+    {
+      "instance": "R036",
+      "premium": 0.10678496381005037,
+      "K_max": 33.560386634589435,
+      "moq_c": 4,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.0388,
+      "down_B": 0.1018,
+      "down_C": 0.1505,
+      "outage_C": 2.72,
+      "lead_C": 2,
+      "lead_gap": 1,
+      "dp_g": 245.22882106693578,
+      "dp_excess": 45.22882106693578,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.1741,
+        0.0073,
+        0.8186
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 8,
+          "cap": 4,
+          "trigger": 2
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 8,
+          "cap": 6,
+          "trigger": 3
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 12,
+          "cap": 5,
+          "trigger": 4
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 144.21029242889074,
+          "gap_excess_ci": 12.48598839423889,
+          "gap_total": 26.597450837544343,
+          "fill": 0.9896760095435592,
+          "volume_share": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "cost": 310.48210267857144
+        },
+        "GMI": {
+          "gap_excess": 2.6368481818642726,
+          "gap_excess_ci": 0.43953405633464504,
+          "gap_total": 0.4863275616598972,
+          "fill": 0.9975806631435771,
+          "volume_share": [
+            0.0944,
+            0.129,
+            0.7766
+          ],
+          "cost": 246.45010290178573
+        },
+        "table0": {
+          "gap_excess": 1.5458255003349732,
+          "gap_excess_ci": 0.3895321627230514,
+          "gap_total": 0.28510460006767835,
+          "fill": 0.9982300934287689,
+          "volume_share": [
+            0.2189,
+            0.0077,
+            0.7734
+          ],
+          "cost": 245.95664620535712,
+          "diff_vs_gmi": -0.4934566964285714,
+          "diff_ci": 0.10759280712890443,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 1.8317397071382533,
+          "gap_excess_ci": 0.4288959797580609,
+          "gap_total": 0.33783723746216604,
+          "fill": 0.9982077953932259,
+          "volume_share": [
+            0.2133,
+            0.0031,
+            0.7836
+          ],
+          "cost": 246.08596183035715,
+          "diff_vs_gmi": -0.3641410714285671,
+          "diff_ci": 0.11683330083061436,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 110.68,
+          "lead_time": 1,
+          "fixed_cost": 7.4,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.009,
+          "p_recover": 0.223,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 106.25,
+          "lead_time": 1,
+          "fixed_cost": 25.4,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.023,
+          "p_recover": 0.203,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 33.6,
+          "moq": 4,
+          "capacity": 8,
+          "p_fail": 0.065,
+          "p_recover": 0.367,
+          "region": 1
+        }
+      ],
+      "seconds": 225.3
+    },
+    {
+      "instance": "R037",
+      "premium": 0.19244397519696954,
+      "K_max": 34.40746281509065,
+      "moq_c": 4,
+      "shock_rate": 0.0098,
+      "has_shock": 1.0,
+      "down_A": 0.0809,
+      "down_B": 0.0567,
+      "down_C": 0.1397,
+      "outage_C": 2.54,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 243.18346668228628,
+      "dp_excess": 43.18346668228628,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0945,
+        0.0982,
+        0.8073
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 5,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 10,
+          "cap": 5,
+          "trigger": 3
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 12,
+          "cap": 7,
+          "trigger": 4
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 96.95857850987106,
+          "gap_excess_ci": 6.151660398762431,
+          "gap_total": 17.217484402889472,
+          "fill": 0.9923590308063145,
+          "volume_share": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "cost": 285.0142042410714
+        },
+        "GMI": {
+          "gap_excess": 1.8183701499334446,
+          "gap_excess_ci": 0.6128693038852724,
+          "gap_total": 0.322898295089707,
+          "fill": 0.997854286550278,
+          "volume_share": [
+            0.0687,
+            0.0931,
+            0.8382
+          ],
+          "cost": 243.92936406249999
+        },
+        "table0": {
+          "gap_excess": 1.4958759529488543,
+          "gap_excess_ci": 0.5564968260446946,
+          "gap_total": 0.26563117244888507,
+          "fill": 0.996984854607014,
+          "volume_share": [
+            0.0995,
+            0.1097,
+            0.7908
+          ],
+          "cost": 243.79009988839286,
+          "diff_vs_gmi": -0.1392641741071472,
+          "diff_ci": 0.20551432218690766,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 1.2483430154988022,
+          "gap_excess_ci": 0.6081193394245195,
+          "gap_total": 0.22167534558706908,
+          "fill": 0.9968566691281994,
+          "volume_share": [
+            0.102,
+            0.0978,
+            0.8002
+          ],
+          "cost": 243.68320658482145,
+          "diff_vs_gmi": -0.2461574776785751,
+          "diff_ci": 0.2817698487428627,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 119.24,
+          "lead_time": 0,
+          "fixed_cost": 2.7,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.039,
+          "p_recover": 0.443,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 110.0,
+          "lead_time": 2,
+          "fixed_cost": 12.4,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.031,
+          "p_recover": 0.516,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 34.4,
+          "moq": 4,
+          "capacity": 8,
+          "p_fail": 0.064,
+          "p_recover": 0.394,
+          "region": 1
+        }
+      ],
+      "seconds": 233.3
+    },
+    {
+      "instance": "R038",
+      "premium": 0.13230560580159811,
+      "K_max": 17.719258582200546,
+      "moq_c": 4,
+      "shock_rate": 0.023,
+      "has_shock": 1.0,
+      "down_A": 0.0281,
+      "down_B": 0.2024,
+      "down_C": 0.0773,
+      "outage_C": 2.99,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 236.7189447214073,
+      "dp_excess": 36.7189447214073,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.1352,
+        0.0674,
+        0.7974
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 5,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 11,
+          "cap": 6,
+          "trigger": 5
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 12,
+          "cap": 6,
+          "trigger": 5
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 120.87351948787256,
+          "gap_excess_ci": 7.454802558768262,
+          "gap_total": 18.749441814133625,
+          "fill": 0.9888071571686098,
+          "volume_share": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "cost": 281.1744583705357
+        },
+        "GMI": {
+          "gap_excess": 2.574032246432013,
+          "gap_excess_ci": 1.0515547519470982,
+          "gap_total": 0.3992741175789364,
+          "fill": 0.9964867142546198,
+          "volume_share": [
+            0.1312,
+            0.066,
+            0.8028
+          ],
+          "cost": 237.73613504464288
+        },
+        "table0": {
+          "gap_excess": 1.916641507684699,
+          "gap_excess_ci": 0.7831951446347862,
+          "gap_total": 0.2973021599697287,
+          "fill": 0.9973685238618796,
+          "volume_share": [
+            0.1243,
+            0.0664,
+            0.8093
+          ],
+          "cost": 237.49474810267859,
+          "diff_vs_gmi": -0.24138694196427712,
+          "diff_ci": 0.28809335219062837,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 3.045242513537341,
+          "gap_excess_ci": 0.9756998688487355,
+          "gap_total": 0.4723664666951557,
+          "fill": 0.9965453155259882,
+          "volume_share": [
+            0.125,
+            0.0784,
+            0.7966
+          ],
+          "cost": 237.90915848214289,
+          "diff_vs_gmi": 0.17302343750000126,
+          "diff_ci": 0.20373873525147315,
+          "beats_gmi": false,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 113.23,
+          "lead_time": 0,
+          "fixed_cost": 9.4,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.017,
+          "p_recover": 0.589,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 105.7,
+          "lead_time": 2,
+          "fixed_cost": 14.0,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.067,
+          "p_recover": 0.264,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 17.7,
+          "moq": 4,
+          "capacity": 8,
+          "p_fail": 0.028,
+          "p_recover": 0.334,
+          "region": 1
+        }
+      ],
+      "seconds": 225.8
+    },
+    {
+      "instance": "R039",
+      "premium": 0.24705150785553412,
+      "K_max": 36.6156845504115,
+      "moq_c": 2,
+      "shock_rate": 0.0,
+      "has_shock": 0.0,
+      "down_A": 0.1088,
+      "down_B": 0.064,
+      "down_C": 0.1205,
+      "outage_C": 3.12,
+      "lead_C": 2,
+      "lead_gap": 2,
+      "dp_g": 242.5960952227183,
+      "dp_excess": 42.596095222718304,
+      "dp_boundary_hits": 0.0,
+      "dp_volume_share": [
+        0.0768,
+        0.0827,
+        0.8405
+      ],
+      "gmi_params": [
+        {
+          "supplier": "A_fast",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 1
+        },
+        {
+          "supplier": "B_mid",
+          "active": true,
+          "S": 4,
+          "cap": 6,
+          "trigger": 2
+        },
+        {
+          "supplier": "C_slow",
+          "active": true,
+          "S": 13,
+          "cap": 7,
+          "trigger": 6
+        }
+      ],
+      "policies": {
+        "single": {
+          "gap_excess": 147.5857045978619,
+          "gap_excess_ci": 8.72495315109337,
+          "gap_total": 25.913750675958052,
+          "fill": 0.9873891031351315,
+          "volume_share": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "cost": 305.4421205357143
+        },
+        "GMI": {
+          "gap_excess": 1.4014082694004188,
+          "gap_excess_ci": 0.30374580077050717,
+          "gap_total": 0.2460654613359783,
+          "fill": 0.9987852656917144,
+          "volume_share": [
+            0.0369,
+            0.1158,
+            0.8473
+          ],
+          "cost": 243.17331847098214
+        },
+        "table0": {
+          "gap_excess": 0.17412559235109606,
+          "gap_excess_ci": 0.22307320381724244,
+          "gap_total": 0.03057374153401021,
+          "fill": 0.9995504086813012,
+          "volume_share": [
+            0.073,
+            0.0805,
+            0.8465
+          ],
+          "cost": 242.65054397321427,
+          "diff_vs_gmi": -0.5227744977678559,
+          "diff_ci": 0.10182145350003527,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        },
+        "table1": {
+          "gap_excess": 0.05546060317444228,
+          "gap_excess_ci": 0.22580671102680858,
+          "gap_total": 0.009738017966691102,
+          "fill": 0.9994945588280467,
+          "volume_share": [
+            0.0737,
+            0.0823,
+            0.844
+          ],
+          "cost": 242.59999732142856,
+          "diff_vs_gmi": -0.5733211495535717,
+          "diff_ci": 0.09271238095131448,
+          "beats_gmi": true,
+          "worse_than_gmi": false
+        }
+      },
+      "groups": {
+        "table": [
+          "table0",
+          "table1"
+        ],
+        "es": []
+      },
+      "saa": {},
+      "suppliers": [
+        {
+          "name": "A_fast",
+          "price": 124.71,
+          "lead_time": 0,
+          "fixed_cost": 3.6,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.047,
+          "p_recover": 0.385,
+          "region": 0
+        },
+        {
+          "name": "B_mid",
+          "price": 118.25,
+          "lead_time": 0,
+          "fixed_cost": 20.2,
+          "moq": 0,
+          "capacity": 6,
+          "p_fail": 0.033,
+          "p_recover": 0.483,
+          "region": 1
+        },
+        {
+          "name": "C_slow",
+          "price": 100.0,
+          "lead_time": 2,
+          "fixed_cost": 36.6,
+          "moq": 2,
+          "capacity": 8,
+          "p_fail": 0.044,
+          "p_recover": 0.321,
+          "region": 1
+        }
+      ],
+      "seconds": 198.9
+    }
+  ]
+}

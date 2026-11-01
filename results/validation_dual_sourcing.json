@@ -1,0 +1,1158 @@
+{
+  "rows": [
+    {
+      "instance": "dual_ce105_lr2",
+      "policy": "DP-optimal",
+      "avg_cost": 216.82479473684208,
+      "ci95": 0.1938034391161778,
+      "excess_cost": 16.82479473684208,
+      "fill_rate": 1.0,
+      "cvar95_block50": 255.87633507853405,
+      "active_suppliers_per_period": 1.361926842105263,
+      "order_freq": [
+        0.4115,
+        0.9504
+      ],
+      "volume_share": [
+        0.353,
+        0.647
+      ],
+      "holding": 13.242894736842107,
+      "backorder": 0.0,
+      "ordering": 203.58190000000002,
+      "projections": 0,
+      "sim_seconds": 0.49,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 0.0,
+      "paired_diff_ci95": 0.0,
+      "paired_gap_total_pct": 0.0,
+      "paired_gap_excess_pct": 0.0,
+      "paired_gap_excess_ci95": 0.0,
+      "gap_total_pct": 0.025369196327827154,
+      "gap_excess_pct": 0.32792728685010053,
+      "dp_g": 216.76980198019828
+    },
+    {
+      "instance": "dual_ce105_lr2",
+      "policy": "single[expedited](s=4,S=4)",
+      "avg_cost": 220.05063421052628,
+      "ci95": 0.20466214481813627,
+      "excess_cost": 20.050634210526283,
+      "fill_rate": 1.0,
+      "cvar95_block50": 260.88838409912233,
+      "active_suppliers_per_period": 0.7998526315789474,
+      "order_freq": [
+        0.7999,
+        0.0
+      ],
+      "volume_share": [
+        1.0,
+        0.0
+      ],
+      "holding": 9.997415789473683,
+      "backorder": 0.0,
+      "ordering": 210.05321842105266,
+      "projections": 0,
+      "sim_seconds": 0.59,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 3.2258394736842098,
+      "paired_diff_ci95": 0.013686720650014566,
+      "paired_gap_total_pct": 1.4881406193187772,
+      "paired_gap_excess_pct": 19.236002175179344,
+      "paired_gap_excess_ci95": 0.08161527885765016,
+      "gap_total_pct": 1.5135098156466016,
+      "gap_excess_pct": 19.563929462029407,
+      "dp_g": 216.76980198019828
+    },
+    {
+      "instance": "dual_ce105_lr2",
+      "policy": "single[regular](s=11,S=11)",
+      "avg_cost": 229.08275526315788,
+      "ci95": 0.2105716245565976,
+      "excess_cost": 29.08275526315788,
+      "fill_rate": 0.9959613068412321,
+      "cvar95_block50": 277.38995793901154,
+      "active_suppliers_per_period": 0.7998526315789474,
+      "order_freq": [
+        0.0,
+        0.7999
+      ],
+      "volume_share": [
+        0.0,
+        1.0
+      ],
+      "holding": 25.03273157894737,
+      "backorder": 3.9993394736842105,
+      "ordering": 200.0506842105263,
+      "projections": 0,
+      "sim_seconds": 0.59,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 12.257960526315792,
+      "paired_diff_ci95": 0.07134509450119815,
+      "paired_gap_total_pct": 5.654828492870767,
+      "paired_gap_excess_pct": 73.09543989123989,
+      "paired_gap_excess_ci95": 0.4254379066934849,
+      "gap_total_pct": 5.680197689198597,
+      "gap_excess_pct": 73.42336717809003,
+      "dp_g": 216.76980198019828
+    },
+    {
+      "instance": "dual_ce105_lr2",
+      "policy": "DI(Se=4,Sr=7)",
+      "avg_cost": 217.07252105263157,
+      "ci95": 0.19536970733124198,
+      "excess_cost": 17.072521052631572,
+      "fill_rate": 1.0,
+      "cvar95_block50": 256.38065693430656,
+      "active_suppliers_per_period": 1.1453452631578946,
+      "order_freq": [
+        0.4396,
+        0.7058
+      ],
+      "volume_share": [
+        0.4009,
+        0.5991
+      ],
+      "holding": 13.011994736842105,
+      "backorder": 0.0,
+      "ordering": 204.06052631578947,
+      "projections": 0,
+      "sim_seconds": 0.58,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 0.2477263157894734,
+      "paired_diff_ci95": 0.005061383964190118,
+      "paired_gap_total_pct": 0.11428082395540638,
+      "paired_gap_excess_pct": 1.477216702272261,
+      "paired_gap_excess_ci95": 0.030181536849192264,
+      "gap_total_pct": 0.1396500202832423,
+      "gap_excess_pct": 1.8051439891224752,
+      "dp_g": 216.76980198019828
+    },
+    {
+      "instance": "dual_ce105_lr2",
+      "policy": "CDI(Se=4,Sr=7,cap=2)",
+      "avg_cost": 216.8343,
+      "ci95": 0.19564905147725203,
+      "excess_cost": 16.834300000000013,
+      "fill_rate": 1.0,
+      "cvar95_block50": 256.29710982658963,
+      "active_suppliers_per_period": 1.267272105263158,
+      "order_freq": [
+        0.4527,
+        0.8146
+      ],
+      "volume_share": [
+        0.4053,
+        0.5947
+      ],
+      "holding": 12.730078947368419,
+      "backorder": 0.0,
+      "ordering": 204.10422105263157,
+      "projections": 0,
+      "sim_seconds": 0.58,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 0.009505263157894888,
+      "paired_diff_ci95": 0.004577396015833942,
+      "paired_gap_total_pct": 0.00438495725468402,
+      "paired_gap_excess_pct": 0.056680831229364945,
+      "paired_gap_excess_ci95": 0.027295468492942933,
+      "gap_total_pct": 0.029754153582529006,
+      "gap_excess_pct": 0.38460811807969597,
+      "dp_g": 216.76980198019828
+    },
+    {
+      "instance": "dual_ce105_lr3",
+      "policy": "DP-optimal",
+      "avg_cost": 216.93050263157892,
+      "ci95": 0.19796595072398,
+      "excess_cost": 16.930502631578918,
+      "fill_rate": 1.0,
+      "cvar95_block50": 256.698382045929,
+      "active_suppliers_per_period": 1.5149478947368422,
+      "order_freq": [
+        0.5288,
+        0.9862
+      ],
+      "volume_share": [
+        0.5042,
+        0.4958
+      ],
+      "holding": 11.835605263157895,
+      "backorder": 0.0,
+      "ordering": 205.09489736842104,
+      "projections": 0,
+      "sim_seconds": 0.5,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 0.0,
+      "paired_diff_ci95": 0.0,
+      "paired_gap_total_pct": 0.0,
+      "paired_gap_excess_pct": 0.0,
+      "paired_gap_excess_ci95": 0.0,
+      "gap_total_pct": 0.024798776677367677,
+      "gap_excess_pct": 0.31868025229341346,
+      "dp_g": 216.8767198581561
+    },
+    {
+      "instance": "dual_ce105_lr3",
+      "policy": "single[expedited](s=4,S=4)",
+      "avg_cost": 220.05063421052628,
+      "ci95": 0.20466214481813627,
+      "excess_cost": 20.050634210526283,
+      "fill_rate": 1.0,
+      "cvar95_block50": 260.88838409912233,
+      "active_suppliers_per_period": 0.7998526315789474,
+      "order_freq": [
+        0.7999,
+        0.0
+      ],
+      "volume_share": [
+        1.0,
+        0.0
+      ],
+      "holding": 9.997415789473683,
+      "backorder": 0.0,
+      "ordering": 210.05321842105266,
+      "projections": 0,
+      "sim_seconds": 0.6,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 3.1201315789473676,
+      "paired_diff_ci95": 0.009868893859361958,
+      "paired_gap_total_pct": 1.438665976222818,
+      "paired_gap_excess_pct": 18.487784386842723,
+      "paired_gap_excess_ci95": 0.05847637421434456,
+      "gap_total_pct": 1.4634647529001847,
+      "gap_excess_pct": 18.806464639136124,
+      "dp_g": 216.8767198581561
+    },
+    {
+      "instance": "dual_ce105_lr3",
+      "policy": "single[regular](s=14,S=14)",
+      "avg_cost": 234.94998684210523,
+      "ci95": 0.2211619884226044,
+      "excess_cost": 34.94998684210523,
+      "fill_rate": 0.9950917946993698,
+      "cvar95_block50": 292.2964397905759,
+      "active_suppliers_per_period": 0.7998526315789474,
+      "order_freq": [
+        0.0,
+        0.7999
+      ],
+      "volume_share": [
+        0.0,
+        1.0
+      ],
+      "holding": 30.03892368421053,
+      "backorder": 4.860378947368421,
+      "ordering": 200.0506842105263,
+      "projections": 0,
+      "sim_seconds": 0.59,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 18.019484210526315,
+      "paired_diff_ci95": 0.10223253689267209,
+      "paired_gap_total_pct": 8.308630000634277,
+      "paired_gap_excess_pct": 106.77124679425162,
+      "paired_gap_excess_ci95": 0.6057607032166602,
+      "gap_total_pct": 8.333428777311644,
+      "gap_excess_pct": 107.08992704654503,
+      "dp_g": 216.8767198581561
+    },
+    {
+      "instance": "dual_ce105_lr3",
+      "policy": "DI(Se=4,Sr=8)",
+      "avg_cost": 217.5105789473684,
+      "ci95": 0.19586366476238376,
+      "excess_cost": 17.5105789473684,
+      "fill_rate": 1.0,
+      "cvar95_block50": 256.9199580932426,
+      "active_suppliers_per_period": 1.1161773684210525,
+      "order_freq": [
+        0.4506,
+        0.6655
+      ],
+      "volume_share": [
+        0.4366,
+        0.5634
+      ],
+      "holding": 13.092342105263155,
+      "backorder": 0.0,
+      "ordering": 204.41823684210524,
+      "projections": 0,
+      "sim_seconds": 0.59,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 0.5800763157894739,
+      "paired_diff_ci95": 0.0065627436261043144,
+      "paired_gap_total_pct": 0.26746822626645284,
+      "paired_gap_excess_pct": 3.4371389740710647,
+      "paired_gap_excess_ci95": 0.038886369396791916,
+      "gap_total_pct": 0.2922670029438249,
+      "gap_excess_pct": 3.7558192263645345,
+      "dp_g": 216.8767198581561
+    },
+    {
+      "instance": "dual_ce105_lr3",
+      "policy": "CDI(Se=4,Sr=9,cap=1)",
+      "avg_cost": 216.9311763157895,
+      "ci95": 0.19804047014037643,
+      "excess_cost": 16.931176315789486,
+      "fill_rate": 1.0,
+      "cvar95_block50": 256.6998959958398,
+      "active_suppliers_per_period": 1.5174194736842106,
+      "order_freq": [
+        0.5307,
+        0.9867
+      ],
+      "volume_share": [
+        0.5068,
+        0.4932
+      ],
+      "holding": 11.811405263157894,
+      "backorder": 0.0,
+      "ordering": 205.11977105263156,
+      "projections": 0,
+      "sim_seconds": 0.59,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 0.0006736842105260621,
+      "paired_diff_ci95": 0.0007964627021802128,
+      "paired_gap_total_pct": 0.00031063002565082684,
+      "paired_gap_excess_pct": 0.003991795895103914,
+      "paired_gap_excess_ci95": 0.004719297996733071,
+      "gap_total_pct": 0.0251094067030379,
+      "gap_excess_pct": 0.3226720481887666,
+      "dp_g": 216.8767198581561
+    },
+    {
+      "instance": "dual_ce105_lr4",
+      "policy": "DP-optimal",
+      "avg_cost": 216.9461894736842,
+      "ci95": 0.1974894648689673,
+      "excess_cost": 16.9461894736842,
+      "fill_rate": 1.0,
+      "cvar95_block50": 256.68734971249347,
+      "active_suppliers_per_period": 1.523002105263158,
+      "order_freq": [
+        0.5267,
+        0.9963
+      ],
+      "volume_share": [
+        0.5016,
+        0.4984
+      ],
+      "holding": 11.87782105263158,
+      "backorder": 0.0,
+      "ordering": 205.06836842105267,
+      "projections": 0,
+      "sim_seconds": 0.51,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 0.0,
+      "paired_diff_ci95": 0.0,
+      "paired_gap_total_pct": 0.0,
+      "paired_gap_excess_pct": 0.0,
+      "paired_gap_excess_ci95": 0.0,
+      "gap_total_pct": 0.024499892381226233,
+      "gap_excess_pct": 0.3145587161223111,
+      "dp_g": 216.89305090962898
+    },
+    {
+      "instance": "dual_ce105_lr4",
+      "policy": "single[expedited](s=4,S=4)",
+      "avg_cost": 220.05063421052628,
+      "ci95": 0.20466214481813627,
+      "excess_cost": 20.050634210526283,
+      "fill_rate": 1.0,
+      "cvar95_block50": 260.88838409912233,
+      "active_suppliers_per_period": 0.7998526315789474,
+      "order_freq": [
+        0.7999,
+        0.0
+      ],
+      "volume_share": [
+        1.0,
+        0.0
+      ],
+      "holding": 9.997415789473683,
+      "backorder": 0.0,
+      "ordering": 210.05321842105266,
+      "projections": 0,
+      "sim_seconds": 0.6,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 3.104444736842104,
+      "paired_diff_ci95": 0.01076669210329661,
+      "paired_gap_total_pct": 1.4313251272100955,
+      "paired_gap_excess_pct": 18.377051921820595,
+      "paired_gap_excess_ci95": 0.06373444418592045,
+      "gap_total_pct": 1.455825019591312,
+      "gap_excess_pct": 18.69161063794278,
+      "dp_g": 216.89305090962898
+    },
+    {
+      "instance": "dual_ce105_lr4",
+      "policy": "single[regular](s=17,S=17)",
+      "avg_cost": 239.6522947368421,
+      "ci95": 0.21857004833084975,
+      "excess_cost": 39.652294736842094,
+      "fill_rate": 0.9953869815747615,
+      "cvar95_block50": 301.6769916142558,
+      "active_suppliers_per_period": 0.7998526315789474,
+      "order_freq": [
+        0.0,
+        0.7999
+      ],
+      "volume_share": [
+        0.0,
+        1.0
+      ],
+      "holding": 35.03354210526316,
+      "backorder": 4.568068421052632,
+      "ordering": 200.0506842105263,
+      "projections": 0,
+      "sim_seconds": 0.6,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 22.706105263157898,
+      "paired_diff_ci95": 0.12435593027173927,
+      "paired_gap_total_pct": 10.468802558648438,
+      "paired_gap_excess_pct": 134.4109207071382,
+      "paired_gap_excess_ci95": 0.7361365980425526,
+      "gap_total_pct": 10.493302451029663,
+      "gap_excess_pct": 134.72547942326048,
+      "dp_g": 216.89305090962898
+    },
+    {
+      "instance": "dual_ce105_lr4",
+      "policy": "DI(Se=4,Sr=8)",
+      "avg_cost": 217.72000263157895,
+      "ci95": 0.19844265962784308,
+      "excess_cost": 17.72000263157895,
+      "fill_rate": 1.0,
+      "cvar95_block50": 257.6267922553637,
+      "active_suppliers_per_period": 1.1164384210526315,
+      "order_freq": [
+        0.5359,
+        0.5805
+      ],
+      "volume_share": [
+        0.5535,
+        0.4465
+      ],
+      "holding": 12.132897368421052,
+      "backorder": 0.0,
+      "ordering": 205.5871052631579,
+      "projections": 0,
+      "sim_seconds": 0.59,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 0.7738131578947361,
+      "paired_diff_ci95": 0.006448991467603809,
+      "paired_gap_total_pct": 0.35677176131251637,
+      "paired_gap_excess_pct": 4.580659598046113,
+      "paired_gap_excess_ci95": 0.03817541012634909,
+      "gap_total_pct": 0.3812716536937491,
+      "gap_excess_pct": 4.895218314168507,
+      "dp_g": 216.89305090962898
+    },
+    {
+      "instance": "dual_ce105_lr4",
+      "policy": "CDI(Se=4,Sr=11,cap=1)",
+      "avg_cost": 216.94612368421053,
+      "ci95": 0.19757139272561783,
+      "excess_cost": 16.946123684210534,
+      "fill_rate": 1.0,
+      "cvar95_block50": 256.690182767624,
+      "active_suppliers_per_period": 1.5232705263157895,
+      "order_freq": [
+        0.5269,
+        0.9964
+      ],
+      "volume_share": [
+        0.5019,
+        0.4981
+      ],
+      "holding": 11.874413157894738,
+      "backorder": 0.0,
+      "ordering": 205.0717105263158,
+      "projections": 0,
+      "sim_seconds": 0.59,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": -6.578947368453214e-05,
+      "paired_diff_ci95": 0.0003762251791410654,
+      "paired_gap_total_pct": -3.0332679359074574e-05,
+      "paired_gap_excess_pct": -0.00038944696275693076,
+      "paired_gap_excess_ci95": 0.0022271002505924987,
+      "gap_total_pct": 0.02446955970187561,
+      "gap_excess_pct": 0.3141692691596627,
+      "dp_g": 216.89305090962898
+    },
+    {
+      "instance": "dual_ce110_lr2",
+      "policy": "DP-optimal",
+      "avg_cost": 219.78900789473687,
+      "ci95": 0.19376818479090152,
+      "excess_cost": 19.78900789473687,
+      "fill_rate": 1.0,
+      "cvar95_block50": 259.1394681960375,
+      "active_suppliers_per_period": 1.2534447368421053,
+      "order_freq": [
+        0.2974,
+        0.956
+      ],
+      "volume_share": [
+        0.2316,
+        0.7684
+      ],
+      "holding": 15.103571052631578,
+      "backorder": 0.0,
+      "ordering": 204.68543684210528,
+      "projections": 0,
+      "sim_seconds": 0.49,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 0.0,
+      "paired_diff_ci95": 0.0,
+      "paired_gap_total_pct": 0.0,
+      "paired_gap_excess_pct": 0.0,
+      "paired_gap_excess_ci95": 0.0,
+      "gap_total_pct": 0.0253373307359291,
+      "gap_excess_pct": 0.2821346017081863,
+      "dp_g": 219.73333333333312
+    },
+    {
+      "instance": "dual_ce110_lr2",
+      "policy": "single[expedited](s=4,S=4)",
+      "avg_cost": 230.05316842105262,
+      "ci95": 0.21489554811037076,
+      "excess_cost": 30.053168421052618,
+      "fill_rate": 1.0,
+      "cvar95_block50": 272.92989158492514,
+      "active_suppliers_per_period": 0.7998526315789474,
+      "order_freq": [
+        0.7999,
+        0.0
+      ],
+      "volume_share": [
+        1.0,
+        0.0
+      ],
+      "holding": 9.997415789473683,
+      "backorder": 0.0,
+      "ordering": 220.05575263157894,
+      "projections": 0,
+      "sim_seconds": 0.59,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 10.264160526315786,
+      "paired_diff_ci95": 0.024492964520540863,
+      "paired_gap_total_pct": 4.6711895599131354,
+      "paired_gap_excess_pct": 52.014326991465694,
+      "paired_gap_excess_ci95": 0.12411975263787732,
+      "gap_total_pct": 4.696526890649048,
+      "gap_excess_pct": 52.296461593173696,
+      "dp_g": 219.73333333333312
+    },
+    {
+      "instance": "dual_ce110_lr2",
+      "policy": "single[regular](s=11,S=11)",
+      "avg_cost": 229.08275526315788,
+      "ci95": 0.2105716245565976,
+      "excess_cost": 29.08275526315788,
+      "fill_rate": 0.9959613068412321,
+      "cvar95_block50": 277.38995793901154,
+      "active_suppliers_per_period": 0.7998526315789474,
+      "order_freq": [
+        0.0,
+        0.7999
+      ],
+      "volume_share": [
+        0.0,
+        1.0
+      ],
+      "holding": 25.03273157894737,
+      "backorder": 3.9993394736842105,
+      "ordering": 200.0506842105263,
+      "projections": 0,
+      "sim_seconds": 0.58,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 9.293747368421052,
+      "paired_diff_ci95": 0.06975063319082762,
+      "paired_gap_total_pct": 4.229557358201332,
+      "paired_gap_excess_pct": 47.09669274537746,
+      "paired_gap_excess_ci95": 0.3534660465751438,
+      "gap_total_pct": 4.254894688937242,
+      "gap_excess_pct": 47.378827347085426,
+      "dp_g": 219.73333333333312
+    },
+    {
+      "instance": "dual_ce110_lr2",
+      "policy": "DI(Se=4,Sr=8)",
+      "avg_cost": 220.17650789473686,
+      "ci95": 0.1957458156154881,
+      "excess_cost": 20.176507894736858,
+      "fill_rate": 1.0,
+      "cvar95_block50": 259.79386470896696,
+      "active_suppliers_per_period": 1.0608147368421053,
+      "order_freq": [
+        0.2989,
+        0.7619
+      ],
+      "volume_share": [
+        0.2533,
+        0.7467
+      ],
+      "holding": 15.059065789473685,
+      "backorder": 0.0,
+      "ordering": 205.1174421052632,
+      "projections": 0,
+      "sim_seconds": 0.58,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 0.38749999999999885,
+      "paired_diff_ci95": 0.00747310026763552,
+      "paired_gap_total_pct": 0.17635012135922296,
+      "paired_gap_excess_pct": 1.9636824324324478,
+      "paired_gap_excess_ci95": 0.03787044054545068,
+      "gap_total_pct": 0.2016874520951474,
+      "gap_excess_pct": 2.245817034140582,
+      "dp_g": 219.73333333333312
+    },
+    {
+      "instance": "dual_ce110_lr2",
+      "policy": "CDI(Se=4,Sr=9,cap=2)",
+      "avg_cost": 219.85568684210529,
+      "ci95": 0.1908984481231786,
+      "excess_cost": 19.855686842105285,
+      "fill_rate": 1.0,
+      "cvar95_block50": 258.7194210526316,
+      "active_suppliers_per_period": 1.160257894736842,
+      "order_freq": [
+        0.2574,
+        0.9029
+      ],
+      "volume_share": [
+        0.1917,
+        0.8083
+      ],
+      "holding": 15.97066052631579,
+      "backorder": 0.0,
+      "ordering": 203.88502631578947,
+      "projections": 0,
+      "sim_seconds": 0.58,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 0.06667894736842016,
+      "paired_diff_ci95": 0.005283347711370096,
+      "paired_gap_total_pct": 0.030345394736841724,
+      "paired_gap_excess_pct": 0.3379000711237544,
+      "paired_gap_excess_ci95": 0.026773721510321723,
+      "gap_total_pct": 0.055682725472769014,
+      "gap_excess_pct": 0.6200346728319205,
+      "dp_g": 219.73333333333312
+    },
+    {
+      "instance": "dual_ce110_lr3",
+      "policy": "DP-optimal",
+      "avg_cost": 220.39770000000001,
+      "ci95": 0.19580819302664787,
+      "excess_cost": 20.397700000000015,
+      "fill_rate": 1.0,
+      "cvar95_block50": 260.0913270637409,
+      "active_suppliers_per_period": 1.2623542105263157,
+      "order_freq": [
+        0.334,
+        0.9284
+      ],
+      "volume_share": [
+        0.2763,
+        0.7237
+      ],
+      "holding": 14.81947894736842,
+      "backorder": 0.0,
+      "ordering": 205.57822105263156,
+      "projections": 0,
+      "sim_seconds": 0.51,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 0.0,
+      "paired_diff_ci95": 0.0,
+      "paired_gap_total_pct": 0.0,
+      "paired_gap_excess_pct": 0.0,
+      "paired_gap_excess_ci95": 0.0,
+      "gap_total_pct": 0.025709536936020353,
+      "gap_excess_pct": 0.27849427761942686,
+      "dp_g": 220.34105133602156
+    },
+    {
+      "instance": "dual_ce110_lr3",
+      "policy": "single[expedited](s=4,S=4)",
+      "avg_cost": 230.05316842105262,
+      "ci95": 0.21489554811037076,
+      "excess_cost": 30.053168421052618,
+      "fill_rate": 1.0,
+      "cvar95_block50": 272.92989158492514,
+      "active_suppliers_per_period": 0.7998526315789474,
+      "order_freq": [
+        0.7999,
+        0.0
+      ],
+      "volume_share": [
+        1.0,
+        0.0
+      ],
+      "holding": 9.997415789473683,
+      "backorder": 0.0,
+      "ordering": 220.05575263157894,
+      "projections": 0,
+      "sim_seconds": 0.6,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 9.65546842105263,
+      "paired_diff_ci95": 0.023822150942744903,
+      "paired_gap_total_pct": 4.382056072850436,
+      "paired_gap_excess_pct": 47.467892694189075,
+      "paired_gap_excess_ci95": 0.11711366609924792,
+      "gap_total_pct": 4.407765609786445,
+      "gap_excess_pct": 47.74638697180838,
+      "dp_g": 220.34105133602156
+    },
+    {
+      "instance": "dual_ce110_lr3",
+      "policy": "single[regular](s=14,S=14)",
+      "avg_cost": 234.94998684210523,
+      "ci95": 0.2211619884226044,
+      "excess_cost": 34.94998684210523,
+      "fill_rate": 0.9950917946993698,
+      "cvar95_block50": 292.2964397905759,
+      "active_suppliers_per_period": 0.7998526315789474,
+      "order_freq": [
+        0.0,
+        0.7999
+      ],
+      "volume_share": [
+        0.0,
+        1.0
+      ],
+      "holding": 30.03892368421053,
+      "backorder": 4.860378947368421,
+      "ordering": 200.0506842105263,
+      "projections": 0,
+      "sim_seconds": 0.6,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 14.552286842105264,
+      "paired_diff_ci95": 0.09953698433083434,
+      "paired_gap_total_pct": 6.604437418206256,
+      "paired_gap_excess_pct": 71.54146853921414,
+      "paired_gap_excess_ci95": 0.4893404115969476,
+      "gap_total_pct": 6.630146955142255,
+      "gap_excess_pct": 71.81996281683332,
+      "dp_g": 220.34105133602156
+    },
+    {
+      "instance": "dual_ce110_lr3",
+      "policy": "DI(Se=4,Sr=9)",
+      "avg_cost": 221.1927605263158,
+      "ci95": 0.19888942461677575,
+      "excess_cost": 21.192760526315794,
+      "fill_rate": 1.0,
+      "cvar95_block50": 261.3557015239096,
+      "active_suppliers_per_period": 1.0747047368421052,
+      "order_freq": [
+        0.353,
+        0.7217
+      ],
+      "volume_share": [
+        0.323,
+        0.677
+      ],
+      "holding": 14.68112894736842,
+      "backorder": 0.0,
+      "ordering": 206.51163157894737,
+      "projections": 0,
+      "sim_seconds": 0.59,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 0.79506052631579,
+      "paired_diff_ci95": 0.007593098879593367,
+      "paired_gap_total_pct": 0.36083177487581175,
+      "paired_gap_excess_pct": 3.908650114401084,
+      "paired_gap_excess_ci95": 0.03732894015240451,
+      "gap_total_pct": 0.3865413118118274,
+      "gap_excess_pct": 4.18714439202046,
+      "dp_g": 220.34105133602156
+    },
+    {
+      "instance": "dual_ce110_lr3",
+      "policy": "CDI(Se=4,Sr=10,cap=2)",
+      "avg_cost": 220.51863157894738,
+      "ci95": 0.19355510269856144,
+      "excess_cost": 20.518631578947378,
+      "fill_rate": 1.0,
+      "cvar95_block50": 259.93731030873886,
+      "active_suppliers_per_period": 1.147192105263158,
+      "order_freq": [
+        0.2975,
+        0.8497
+      ],
+      "volume_share": [
+        0.2423,
+        0.7577
+      ],
+      "holding": 15.620136842105264,
+      "backorder": 0.0,
+      "ordering": 204.8984947368421,
+      "projections": 0,
+      "sim_seconds": 0.59,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 0.12093157894736833,
+      "paired_diff_ci95": 0.005729934859827597,
+      "paired_gap_total_pct": 0.054883816798598675,
+      "paired_gap_excess_pct": 0.5945198060299519,
+      "paired_gap_excess_ci95": 0.028169315170453204,
+      "gap_total_pct": 0.08059335373461683,
+      "gap_excess_pct": 0.873014083649355,
+      "dp_g": 220.34105133602156
+    },
+    {
+      "instance": "dual_ce110_lr4",
+      "policy": "DP-optimal",
+      "avg_cost": 220.6650157894737,
+      "ci95": 0.19618165482411806,
+      "excess_cost": 20.6650157894737,
+      "fill_rate": 1.0,
+      "cvar95_block50": 260.5408686551544,
+      "active_suppliers_per_period": 1.3303152631578947,
+      "order_freq": [
+        0.3532,
+        0.9771
+      ],
+      "volume_share": [
+        0.2976,
+        0.7024
+      ],
+      "holding": 14.661726315789474,
+      "backorder": 0.0,
+      "ordering": 206.0032894736842,
+      "projections": 0,
+      "sim_seconds": 0.51,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 0.0,
+      "paired_diff_ci95": 0.0,
+      "paired_gap_total_pct": 0.0,
+      "paired_gap_excess_pct": 0.0,
+      "paired_gap_excess_ci95": 0.0,
+      "gap_total_pct": 0.023926137071607713,
+      "gap_excess_pct": 0.2560808818711451,
+      "dp_g": 220.61223180449542
+    },
+    {
+      "instance": "dual_ce110_lr4",
+      "policy": "single[expedited](s=4,S=4)",
+      "avg_cost": 230.05316842105262,
+      "ci95": 0.21489554811037076,
+      "excess_cost": 30.053168421052618,
+      "fill_rate": 1.0,
+      "cvar95_block50": 272.92989158492514,
+      "active_suppliers_per_period": 0.7998526315789474,
+      "order_freq": [
+        0.7999,
+        0.0
+      ],
+      "volume_share": [
+        1.0,
+        0.0
+      ],
+      "holding": 9.997415789473683,
+      "backorder": 0.0,
+      "ordering": 220.05575263157894,
+      "projections": 0,
+      "sim_seconds": 0.6,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 9.388152631578945,
+      "paired_diff_ci95": 0.024081258444752226,
+      "paired_gap_total_pct": 4.255499595280211,
+      "paired_gap_excess_pct": 45.54651199649054,
+      "paired_gap_excess_ci95": 0.11682994191584935,
+      "gap_total_pct": 4.2794257323518075,
+      "gap_excess_pct": 45.80259287836155,
+      "dp_g": 220.61223180449542
+    },
+    {
+      "instance": "dual_ce110_lr4",
+      "policy": "single[regular](s=17,S=17)",
+      "avg_cost": 239.6522947368421,
+      "ci95": 0.21857004833084975,
+      "excess_cost": 39.652294736842094,
+      "fill_rate": 0.9953869815747615,
+      "cvar95_block50": 301.6769916142558,
+      "active_suppliers_per_period": 0.7998526315789474,
+      "order_freq": [
+        0.0,
+        0.7999
+      ],
+      "volume_share": [
+        0.0,
+        1.0
+      ],
+      "holding": 35.03354210526316,
+      "backorder": 4.568068421052632,
+      "ordering": 200.0506842105263,
+      "projections": 0,
+      "sim_seconds": 0.6,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 18.987278947368424,
+      "paired_diff_ci95": 0.12199349731025065,
+      "paired_gap_total_pct": 8.606630190929204,
+      "paired_gap_excess_pct": 92.1165603388343,
+      "paired_gap_excess_ci95": 0.591850016375444,
+      "gap_total_pct": 8.6305563280008,
+      "gap_excess_pct": 92.37264122070533,
+      "dp_g": 220.61223180449542
+    },
+    {
+      "instance": "dual_ce110_lr4",
+      "policy": "DI(Se=4,Sr=11)",
+      "avg_cost": 221.7299894736842,
+      "ci95": 0.1955411643622432,
+      "excess_cost": 21.729989473684213,
+      "fill_rate": 1.0,
+      "cvar95_block50": 261.24475890985326,
+      "active_suppliers_per_period": 1.0337915789473684,
+      "order_freq": [
+        0.3054,
+        0.7284
+      ],
+      "volume_share": [
+        0.2781,
+        0.7219
+      ],
+      "holding": 16.11527894736842,
+      "backorder": 0.0,
+      "ordering": 205.61471052631575,
+      "projections": 0,
+      "sim_seconds": 0.6,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 1.0649736842105277,
+      "paired_diff_ci95": 0.009042528636917362,
+      "paired_gap_total_pct": 0.48273555618361985,
+      "paired_gap_excess_pct": 5.166707294540819,
+      "paired_gap_excess_ci95": 0.04386972125427598,
+      "gap_total_pct": 0.5066616932552215,
+      "gap_excess_pct": 5.422788176411899,
+      "dp_g": 220.61223180449542
+    },
+    {
+      "instance": "dual_ce110_lr4",
+      "policy": "CDI(Se=4,Sr=11,cap=2)",
+      "avg_cost": 220.91018684210525,
+      "ci95": 0.19621308721278943,
+      "excess_cost": 20.910186842105247,
+      "fill_rate": 1.0,
+      "cvar95_block50": 260.8096706743335,
+      "active_suppliers_per_period": 1.1848673684210527,
+      "order_freq": [
+        0.3372,
+        0.8477
+      ],
+      "volume_share": [
+        0.2899,
+        0.7101
+      ],
+      "holding": 15.059297368421053,
+      "backorder": 0.0,
+      "ordering": 205.85088947368422,
+      "projections": 0,
+      "sim_seconds": 0.6,
+      "episodes": 200,
+      "periods": 9500,
+      "paired_diff_vs_ref": 0.24517105263157832,
+      "paired_diff_ci95": 0.006985988568043732,
+      "paired_gap_total_pct": 0.11113212110960678,
+      "paired_gap_excess_pct": 1.1894444762556364,
+      "paired_gap_excess_ci95": 0.03389244131496776,
+      "gap_total_pct": 0.13505825818120076,
+      "gap_excess_pct": 1.4455253581266347,
+      "dp_g": 220.61223180449542
+    }
+  ],
+  "dp_checks": [
+    {
+      "sim_avg_cost": 216.87858974358974,
+      "g_star": 216.76980198019828,
+      "rel_diff": 0.0005018584802758408,
+      "boundary_hit_share": 0.0,
+      "max_order_used": [
+        4,
+        2
+      ],
+      "capacity_binding": [
+        false,
+        false
+      ],
+      "instance": "dual_ce105_lr2",
+      "g": 216.76980198019828,
+      "g_lower": 216.76980198019646,
+      "g_upper": 216.7698019802001,
+      "iterations": 9,
+      "seconds": 0.0,
+      "converged": true,
+      "states": 333,
+      "actions": 81,
+      "I_range": [
+        -12,
+        24
+      ]
+    },
+    {
+      "sim_avg_cost": 216.9951923076923,
+      "g_star": 216.8767198581561,
+      "rel_diff": 0.000546266328694367,
+      "boundary_hit_share": 0.0,
+      "max_order_used": [
+        4,
+        2
+      ],
+      "capacity_binding": [
+        false,
+        false
+      ],
+      "instance": "dual_ce105_lr3",
+      "g": 216.8767198581561,
+      "g_lower": 216.8767198483929,
+      "g_upper": 216.8767198679193,
+      "iterations": 10,
+      "seconds": 0.1,
+      "converged": true,
+      "states": 2997,
+      "actions": 81,
+      "I_range": [
+        -12,
+        24
+      ]
+    },
+    {
+      "sim_avg_cost": 217.01608974358973,
+      "g_star": 216.89305090962898,
+      "rel_diff": 0.0005672788198824996,
+      "boundary_hit_share": 0.0,
+      "max_order_used": [
+        4,
+        2
+      ],
+      "capacity_binding": [
+        false,
+        false
+      ],
+      "instance": "dual_ce105_lr4",
+      "g": 216.89305090962898,
+      "g_lower": 216.89305090837843,
+      "g_upper": 216.89305091087954,
+      "iterations": 9,
+      "seconds": 0.4,
+      "converged": true,
+      "states": 26973,
+      "actions": 81,
+      "I_range": [
+        -12,
+        24
+      ]
+    },
+    {
+      "sim_avg_cost": 219.8490384615385,
+      "g_star": 219.73333333333312,
+      "rel_diff": 0.0005265706684103311,
+      "boundary_hit_share": 0.0,
+      "max_order_used": [
+        3,
+        2
+      ],
+      "capacity_binding": [
+        false,
+        false
+      ],
+      "instance": "dual_ce110_lr2",
+      "g": 219.73333333333312,
+      "g_lower": 219.73333333333176,
+      "g_upper": 219.73333333333449,
+      "iterations": 8,
+      "seconds": 0.0,
+      "converged": true,
+      "states": 333,
+      "actions": 81,
+      "I_range": [
+        -12,
+        24
+      ]
+    },
+    {
+      "sim_avg_cost": 220.4699358974359,
+      "g_star": 220.34105133602156,
+      "rel_diff": 0.000584932134220395,
+      "boundary_hit_share": 0.0,
+      "max_order_used": [
+        4,
+        2
+      ],
+      "capacity_binding": [
+        false,
+        false
+      ],
+      "instance": "dual_ce110_lr3",
+      "g": 220.34105133602156,
+      "g_lower": 220.34105133601543,
+      "g_upper": 220.3410513360277,
+      "iterations": 8,
+      "seconds": 0.0,
+      "converged": true,
+      "states": 2997,
+      "actions": 81,
+      "I_range": [
+        -12,
+        24
+      ]
+    },
+    {
+      "sim_avg_cost": 220.75615384615384,
+      "g_star": 220.61223180449542,
+      "rel_diff": 0.0006523756207041931,
+      "boundary_hit_share": 0.0,
+      "max_order_used": [
+        4,
+        2
+      ],
+      "capacity_binding": [
+        false,
+        false
+      ],
+      "instance": "dual_ce110_lr4",
+      "g": 220.61223180449542,
+      "g_lower": 220.61223178471346,
+      "g_upper": 220.6122318242774,
+      "iterations": 9,
+      "seconds": 0.3,
+      "converged": true,
+      "states": 26973,
+      "actions": 81,
+      "I_range": [
+        -12,
+        24
+      ]
+    }
+  ]
+}

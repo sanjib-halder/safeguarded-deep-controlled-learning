@@ -1,0 +1,37 @@
+{
+ "train_seed": 101,
+ "iteration": 1,
+ "threshold": 0.8,
+ "val_score": -0.00233161793996487,
+ "labelled_states": 76800,
+ "share_changed": 0.25859375,
+ "config": {
+  "fresh_train": 48,
+  "fresh_val": 8,
+  "iterations": 2,
+  "episodes": 8,
+  "periods": 400,
+  "every": 8,
+  "M": 16,
+  "H": 36,
+  "confirm_M": 0,
+  "z": 1.0,
+  "deltas": [
+   -2,
+   -1,
+   0,
+   1,
+   2
+  ],
+  "epochs": 40,
+  "thresholds": [
+   0.0,
+   0.5,
+   0.65,
+   0.8
+  ],
+  "budget": "quick",
+  "table_runs": 2
+ },
+ "train_minutes": 25.54063755273819
+}

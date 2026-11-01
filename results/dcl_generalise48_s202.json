@@ -1,0 +1,1216 @@
+{
+  "meta": {
+    "mode": "generalise",
+    "iterations": 2,
+    "labelled_states": 76800,
+    "share_changed": 0.0876171875,
+    "M": 16,
+    "H": 36,
+    "z": 1.0,
+    "confirm_M": 64,
+    "thresholds": [
+      0.0,
+      0.5,
+      0.65,
+      0.8
+    ],
+    "deltas": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "episodes": 8,
+    "periods": 400,
+    "every": 8,
+    "epochs": 40,
+    "device": "cpu",
+    "minutes": 103.40169376532236,
+    "instances": [
+      "F00_lcl",
+      "F00_lch",
+      "F01_lcl",
+      "F01_lch",
+      "F02_lcl",
+      "F02_lch",
+      "F03_lcl",
+      "F03_lch",
+      "F04_lcl",
+      "F04_lch",
+      "F05_lcl",
+      "F05_lch",
+      "F06_lcl",
+      "F06_lch",
+      "F07_lcl",
+      "F07_lch"
+    ],
+    "split": {
+      "scheme": "fresh-instance generalisation",
+      "train": {
+        "seed": 202,
+        "replicates": [
+          0,
+          47
+        ],
+        "n": 96
+      },
+      "validation": {
+        "seed": 202,
+        "replicates": [
+          48,
+          55
+        ],
+        "n": 16
+      },
+      "test": {
+        "seed": 7,
+        "replicates": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "n": 16
+      },
+      "held_out_rule": "every test instance is held out: training and validation use a different seed, so no test instance (or its supplier configuration) is seen"
+    }
+  },
+  "summary": {
+    "n": 16,
+    "GMI": 8.1797331448758,
+    "Status-table": 3.9556222822256264,
+    "DCL": 3.008739017911285,
+    "Selected": 3.0385830152151945,
+    "dcl_beats_table": 0.75,
+    "dcl_worse_table": 0.0,
+    "dcl_beats_gmi": 0.875,
+    "dcl_selected": 0.8125
+  },
+  "rows": [
+    {
+      "instance": "F00_lcl",
+      "val": {
+        "GMI": 233.8249708333336,
+        "Status-table": 232.32693819444432,
+        "DCL": 230.76142708333296
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 16.230383134539245,
+        "gap_ci": 2.0552914863024494,
+        "gap_total": 2.2218325304307833,
+        "fill": 0.9960999008164432,
+        "volume_share": [
+          0.04,
+          0.2019,
+          0.7581
+        ]
+      },
+      "Status-table": {
+        "gap": 7.494680534503414,
+        "gap_ci": 0.8816111068523479,
+        "gap_total": 1.0259723925623014,
+        "fill": 0.9975736451918389,
+        "volume_share": [
+          0.1983,
+          0.1067,
+          0.695
+        ]
+      },
+      "DCL": {
+        "gap": 3.497996247888719,
+        "gap_ci": 0.8964688506204309,
+        "gap_total": 0.47885264263076877,
+        "fill": 0.9973747177191145,
+        "volume_share": [
+          0.1771,
+          0.0969,
+          0.726
+        ]
+      },
+      "Selected": {
+        "gap": 3.497996247888719,
+        "gap_ci": 0.8964688506204309,
+        "gap_total": 0.47885264263076877,
+        "fill": 0.9973747177191145,
+        "volume_share": [
+          0.1771,
+          0.0969,
+          0.726
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -12.732386886650527,
+        "ci": 1.9188549404863704,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -3.996684286614695,
+        "ci": 0.4560695750359475,
+        "better": true,
+        "worse": false
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": true,
+      "replicate": 0
+    },
+    {
+      "instance": "F00_lch",
+      "val": {
+        "GMI": 241.3989090277781,
+        "Status-table": 240.42938784722236,
+        "DCL": 239.0184090277783
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 13.77241562165716,
+        "gap_ci": 1.0932517485245052,
+        "gap_total": 2.154326615833076,
+        "fill": 0.9973674039802611,
+        "volume_share": [
+          0.0371,
+          0.1283,
+          0.8346
+        ]
+      },
+      "Status-table": {
+        "gap": 9.078710165383955,
+        "gap_ci": 1.1017410557756409,
+        "gap_total": 1.4201217479935149,
+        "fill": 0.9984176417540931,
+        "volume_share": [
+          0.0721,
+          0.1301,
+          0.7978
+        ]
+      },
+      "DCL": {
+        "gap": 5.632150900511339,
+        "gap_ci": 0.9782801860071119,
+        "gap_total": 0.8809995953273334,
+        "fill": 0.9983672303409492,
+        "volume_share": [
+          0.0688,
+          0.1175,
+          0.8137
+        ]
+      },
+      "Selected": {
+        "gap": 5.632150900511339,
+        "gap_ci": 0.9782801860071119,
+        "gap_total": 0.8809995953273334,
+        "fill": 0.9983672303409492,
+        "volume_share": [
+          0.0688,
+          0.1175,
+          0.8137
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -8.140264721145822,
+        "ci": 1.381345689002184,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -3.446559264872614,
+        "ci": 0.7291812649038424,
+        "better": true,
+        "worse": false
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": true,
+      "replicate": 0
+    },
+    {
+      "instance": "F01_lcl",
+      "val": {
+        "GMI": 233.4050517361113,
+        "Status-table": 230.17097569444437,
+        "DCL": 229.79100381944468
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 13.363574672549229,
+        "gap_ci": 1.957030298146505,
+        "gap_total": 1.6526569824699187,
+        "fill": 0.9958404752466403,
+        "volume_share": [
+          0.0557,
+          0.0873,
+          0.857
+        ]
+      },
+      "Status-table": {
+        "gap": 5.17480681361711,
+        "gap_ci": 1.3611542352123218,
+        "gap_total": 0.6399620478063164,
+        "fill": 0.9961978035476,
+        "volume_share": [
+          0.0814,
+          0.2206,
+          0.698
+        ]
+      },
+      "DCL": {
+        "gap": 3.4328453543243675,
+        "gap_ci": 1.3820928550561715,
+        "gap_total": 0.4245357985103659,
+        "fill": 0.9959325989492315,
+        "volume_share": [
+          0.0757,
+          0.2236,
+          0.7007
+        ]
+      },
+      "Selected": {
+        "gap": 3.4328453543243675,
+        "gap_ci": 1.3820928550561715,
+        "gap_total": 0.4245357985103659,
+        "fill": 0.9959325989492315,
+        "volume_share": [
+          0.0757,
+          0.2236,
+          0.7007
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -9.930729318224863,
+        "ci": 2.091758066462259,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -1.741961459292743,
+        "ci": 0.749849179646143,
+        "better": true,
+        "worse": false
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": true,
+      "replicate": 1
+    },
+    {
+      "instance": "F01_lch",
+      "val": {
+        "GMI": 236.5413565972222,
+        "Status-table": 234.4404017361108,
+        "DCL": 234.48835312499966
+      },
+      "selected": "Status-table",
+      "GMI": {
+        "gap": 8.054062843007326,
+        "gap_ci": 1.7543405661047284,
+        "gap_total": 1.1133958093436587,
+        "fill": 0.9963146197916085,
+        "volume_share": [
+          0.0339,
+          0.0826,
+          0.8835
+        ]
+      },
+      "Status-table": {
+        "gap": 4.779517034121772,
+        "gap_ci": 1.267829901125341,
+        "gap_total": 0.6607217177474628,
+        "fill": 0.9963146197916085,
+        "volume_share": [
+          0.0417,
+          0.1437,
+          0.8146
+        ]
+      },
+      "DCL": {
+        "gap": 4.742332279492585,
+        "gap_ci": 1.2342504881687562,
+        "gap_total": 0.6555812872861392,
+        "fill": 0.9962867002445752,
+        "volume_share": [
+          0.0417,
+          0.1431,
+          0.8152
+        ]
+      },
+      "Selected": {
+        "gap": 4.779517034121772,
+        "gap_ci": 1.267829901125341,
+        "gap_total": 0.6607217177474628,
+        "fill": 0.9963146197916085,
+        "volume_share": [
+          0.0417,
+          0.1437,
+          0.8146
+        ],
+        "chosen": "Status-table"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -3.311730563514741,
+        "ci": 1.6461007911850962,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -0.03718475462918844,
+        "ci": 0.16156689215770467,
+        "better": false,
+        "worse": false
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": true,
+      "replicate": 1
+    },
+    {
+      "instance": "F02_lcl",
+      "val": {
+        "GMI": 238.43340277777753,
+        "Status-table": 235.7918003472221,
+        "DCL": 234.81541250000006
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 12.033645119322573,
+        "gap_ci": 1.3764931436655643,
+        "gap_total": 1.7678826890333375,
+        "fill": 0.9969954708677952,
+        "volume_share": [
+          0.034,
+          0.173,
+          0.7929
+        ]
+      },
+      "Status-table": {
+        "gap": 5.826593407279207,
+        "gap_ci": 1.0435868707005553,
+        "gap_total": 0.8559944654030609,
+        "fill": 0.9969898862411554,
+        "volume_share": [
+          0.1382,
+          0.1586,
+          0.7032
+        ]
+      },
+      "DCL": {
+        "gap": 3.4000041142192328,
+        "gap_ci": 1.066759100260474,
+        "gap_total": 0.49950022263151816,
+        "fill": 0.9970038478077549,
+        "volume_share": [
+          0.1092,
+          0.177,
+          0.7138
+        ]
+      },
+      "Selected": {
+        "gap": 3.4000041142192328,
+        "gap_ci": 1.066759100260474,
+        "gap_total": 0.49950022263151816,
+        "fill": 0.9970038478077549,
+        "volume_share": [
+          0.1092,
+          0.177,
+          0.7138
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -8.633641005103343,
+        "ci": 1.3347810930948356,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -2.4265892930599744,
+        "ci": 0.7951846995638857,
+        "better": true,
+        "worse": false
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": true,
+      "replicate": 2
+    },
+    {
+      "instance": "F02_lch",
+      "val": {
+        "GMI": 246.01077430555517,
+        "Status-table": 240.52264236111122,
+        "DCL": 240.35934548611144
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 15.489990417180929,
+        "gap_ci": 1.371900679360568,
+        "gap_total": 2.5121850893673177,
+        "fill": 0.9975322549612828,
+        "volume_share": [
+          0.0296,
+          0.145,
+          0.8254
+        ]
+      },
+      "Status-table": {
+        "gap": 5.60653077647305,
+        "gap_ci": 0.9815055712625312,
+        "gap_total": 0.9092738368716095,
+        "fill": 0.9969327462795606,
+        "volume_share": [
+          0.0812,
+          0.1736,
+          0.7452
+        ]
+      },
+      "DCL": {
+        "gap": 4.915983705298262,
+        "gap_ci": 0.9647527274436893,
+        "gap_total": 0.7972800906529278,
+        "fill": 0.9968769780300981,
+        "volume_share": [
+          0.0778,
+          0.1747,
+          0.7475
+        ]
+      },
+      "Selected": {
+        "gap": 4.915983705298262,
+        "gap_ci": 0.9647527274436893,
+        "gap_total": 0.7972800906529278,
+        "fill": 0.9968769780300981,
+        "volume_share": [
+          0.0778,
+          0.1747,
+          0.7475
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -10.574006711882667,
+        "ci": 1.829984355164898,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -0.690547071174787,
+        "ci": 0.3402433595905207,
+        "better": true,
+        "worse": false
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": true,
+      "replicate": 2
+    },
+    {
+      "instance": "F03_lcl",
+      "val": {
+        "GMI": 250.43228541666642,
+        "Status-table": 245.02196284722243,
+        "DCL": 244.98601076388908
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 9.666815531234517,
+        "gap_ci": 2.134133488160488,
+        "gap_total": 1.6484083790555306,
+        "fill": 0.9936968634990081,
+        "volume_share": [
+          0.1033,
+          0.1431,
+          0.7536
+        ]
+      },
+      "Status-table": {
+        "gap": 1.678320810622044,
+        "gap_ci": 0.9964828343830845,
+        "gap_total": 0.2861912568863657,
+        "fill": 0.9964619844695627,
+        "volume_share": [
+          0.1551,
+          0.1598,
+          0.6852
+        ]
+      },
+      "DCL": {
+        "gap": 1.5930137934610364,
+        "gap_ci": 0.9816494977439189,
+        "gap_total": 0.2716445013983689,
+        "fill": 0.99648151610104,
+        "volume_share": [
+          0.1551,
+          0.1597,
+          0.6852
+        ]
+      },
+      "Selected": {
+        "gap": 1.5930137934610364,
+        "gap_ci": 0.9816494977439189,
+        "gap_total": 0.2716445013983689,
+        "fill": 0.99648151610104,
+        "volume_share": [
+          0.1551,
+          0.1597,
+          0.6852
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -8.07380173777348,
+        "ci": 2.1138022146874365,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -0.08530701716100751,
+        "ci": 0.06852760841574104,
+        "better": true,
+        "worse": false
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": true,
+      "replicate": 3
+    },
+    {
+      "instance": "F03_lch",
+      "val": {
+        "GMI": 250.57397222222207,
+        "Status-table": 248.54786250000026,
+        "DCL": 248.56881979166693
+      },
+      "selected": "Status-table",
+      "GMI": {
+        "gap": 4.421118170282693,
+        "gap_ci": 1.04792726782131,
+        "gap_total": 0.8363665584289385,
+        "fill": 0.9959532574743418,
+        "volume_share": [
+          0.0574,
+          0.1294,
+          0.8131
+        ]
+      },
+      "Status-table": {
+        "gap": 1.2511426840016087,
+        "gap_ci": 0.6763923036995425,
+        "gap_total": 0.2366853498184287,
+        "fill": 0.997130187416332,
+        "volume_share": [
+          0.0753,
+          0.1544,
+          0.7703
+        ]
+      },
+      "DCL": {
+        "gap": 1.1836546500155827,
+        "gap_ci": 0.6788881040496011,
+        "gap_total": 0.22391827765568242,
+        "fill": 0.9971357652833557,
+        "volume_share": [
+          0.0753,
+          0.1542,
+          0.7705
+        ]
+      },
+      "Selected": {
+        "gap": 1.2511426840016087,
+        "gap_ci": 0.6763923036995425,
+        "gap_total": 0.2366853498184287,
+        "fill": 0.997130187416332,
+        "volume_share": [
+          0.0753,
+          0.1544,
+          0.7703
+        ],
+        "chosen": "Status-table"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -3.23746352026711,
+        "ci": 1.339382702468176,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -0.06748803398602603,
+        "ci": 0.05449187075067475,
+        "better": true,
+        "worse": false
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": true,
+      "replicate": 3
+    },
+    {
+      "instance": "F04_lcl",
+      "val": {
+        "GMI": 230.92561527777778,
+        "Status-table": 229.35230069444444,
+        "DCL": 229.2413333333334
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 5.992458362833769,
+        "gap_ci": 1.3637083439554998,
+        "gap_total": 0.7840018863744034,
+        "fill": 0.9971775339503937,
+        "volume_share": [
+          0.0423,
+          0.0788,
+          0.8789
+        ]
+      },
+      "Status-table": {
+        "gap": 1.4169146809113053,
+        "gap_ci": 0.4468803193936681,
+        "gap_total": 0.18537697142057966,
+        "fill": 0.9969518481162198,
+        "volume_share": [
+          0.085,
+          0.0914,
+          0.8235
+        ]
+      },
+      "DCL": {
+        "gap": 1.0934288973324486,
+        "gap_ci": 0.42786974920949,
+        "gap_total": 0.14305486433443304,
+        "fill": 0.9969156269329573,
+        "volume_share": [
+          0.0844,
+          0.0905,
+          0.8251
+        ]
+      },
+      "Selected": {
+        "gap": 1.0934288973324486,
+        "gap_ci": 0.42786974920949,
+        "gap_total": 0.14305486433443304,
+        "fill": 0.9969156269329573,
+        "volume_share": [
+          0.0844,
+          0.0905,
+          0.8251
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -4.899029465501321,
+        "ci": 1.293131425688621,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -0.3234857835788567,
+        "ci": 0.1552946662192653,
+        "better": true,
+        "worse": false
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": true,
+      "replicate": 4
+    },
+    {
+      "instance": "F04_lch",
+      "val": {
+        "GMI": 232.39410590277782,
+        "Status-table": 232.143370138889,
+        "DCL": 232.1241590277779
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 2.840890955648248,
+        "gap_ci": 1.1353543651750382,
+        "gap_total": 0.4017055344421902,
+        "fill": 0.997218347190447,
+        "volume_share": [
+          0.0422,
+          0.0781,
+          0.8797
+        ]
+      },
+      "Status-table": {
+        "gap": 1.8698605579451462,
+        "gap_ci": 0.5496681858502765,
+        "gap_total": 0.2644006216670607,
+        "fill": 0.9973020478767926,
+        "volume_share": [
+          0.0602,
+          0.067,
+          0.8728
+        ]
+      },
+      "DCL": {
+        "gap": 1.7611780711406997,
+        "gap_ci": 0.5137169742502385,
+        "gap_total": 0.24903278209564558,
+        "fill": 0.9973048378996707,
+        "volume_share": [
+          0.0602,
+          0.0671,
+          0.8727
+        ]
+      },
+      "Selected": {
+        "gap": 1.7611780711406997,
+        "gap_ci": 0.5137169742502385,
+        "gap_total": 0.24903278209564558,
+        "fill": 0.9973048378996707,
+        "volume_share": [
+          0.0602,
+          0.0671,
+          0.8727
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -1.079712884507548,
+        "ci": 1.0844502586843432,
+        "better": false,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -0.1086824868044466,
+        "ci": 0.15415955639203588,
+        "better": false,
+        "worse": false
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": true,
+      "replicate": 4
+    },
+    {
+      "instance": "F05_lcl",
+      "val": {
+        "GMI": 233.5255642361111,
+        "Status-table": 232.61428819444444,
+        "DCL": 232.38368229166682
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 7.049384842871362,
+        "gap_ci": 0.9165752988968188,
+        "gap_total": 0.9077105769185685,
+        "fill": 0.9970017125102499,
+        "volume_share": [
+          0.128,
+          0.0514,
+          0.8206
+        ]
+      },
+      "Status-table": {
+        "gap": 6.857126361153301,
+        "gap_ci": 0.5888170179742501,
+        "gap_total": 0.882954507949761,
+        "fill": 0.9979974228673112,
+        "volume_share": [
+          0.1219,
+          0.0625,
+          0.8157
+        ]
+      },
+      "DCL": {
+        "gap": 5.979620319341549,
+        "gap_ci": 0.6013920760312249,
+        "gap_total": 0.7699628734714774,
+        "fill": 0.9980336812276523,
+        "volume_share": [
+          0.1167,
+          0.064,
+          0.8193
+        ]
+      },
+      "Selected": {
+        "gap": 5.979620319341549,
+        "gap_ci": 0.6013920760312249,
+        "gap_total": 0.7699628734714774,
+        "fill": 0.9980336812276523,
+        "volume_share": [
+          0.1167,
+          0.064,
+          0.8193
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -1.069764523529812,
+        "ci": 0.8257186222929997,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -0.8775060418117513,
+        "ci": 0.31705067014827554,
+        "better": true,
+        "worse": false
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": true,
+      "replicate": 5
+    },
+    {
+      "instance": "F05_lch",
+      "val": {
+        "GMI": 233.61917361111128,
+        "Status-table": 233.66302499999938,
+        "DCL": 233.66147708333264
+      },
+      "selected": "GMI",
+      "GMI": {
+        "gap": 0.8671622380230977,
+        "gap_ci": 0.4065856093665819,
+        "gap_total": 0.12208029433954234,
+        "fill": 0.9984778026830818,
+        "volume_share": [
+          0.0484,
+          0.0462,
+          0.9054
+        ]
+      },
+      "Status-table": {
+        "gap": 0.5055961282154647,
+        "gap_ci": 0.45539012908373394,
+        "gap_total": 0.07117851936240895,
+        "fill": 0.9985447124552541,
+        "volume_share": [
+          0.0494,
+          0.0491,
+          0.9016
+        ]
+      },
+      "DCL": {
+        "gap": 0.4943310697757576,
+        "gap_ci": 0.45483235977947173,
+        "gap_total": 0.06959260891823786,
+        "fill": 0.9985475003624279,
+        "volume_share": [
+          0.0494,
+          0.0491,
+          0.9016
+        ]
+      },
+      "Selected": {
+        "gap": 0.8671622380230977,
+        "gap_ci": 0.4065856093665819,
+        "gap_total": 0.12208029433954234,
+        "fill": 0.9984778026830818,
+        "volume_share": [
+          0.0484,
+          0.0462,
+          0.9054
+        ],
+        "chosen": "GMI"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -0.3728311682473401,
+        "ci": 0.27952577032042103,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -0.011265058439707185,
+        "ci": 0.018453920586740082,
+        "better": false,
+        "worse": false
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": true,
+      "replicate": 5
+    },
+    {
+      "instance": "F06_lcl",
+      "val": {
+        "GMI": 225.59050555555544,
+        "Status-table": 225.0623180555555,
+        "DCL": 225.01757361111123
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 4.759589551342555,
+        "gap_ci": 0.9198570262796915,
+        "gap_total": 0.5456803920155102,
+        "fill": 0.9976692056340541,
+        "volume_share": [
+          0.0361,
+          0.32,
+          0.644
+        ]
+      },
+      "Status-table": {
+        "gap": 3.5246593312835373,
+        "gap_ci": 0.7693949637314929,
+        "gap_total": 0.40409734177044826,
+        "fill": 0.9983550613924544,
+        "volume_share": [
+          0.0351,
+          0.301,
+          0.6639
+        ]
+      },
+      "DCL": {
+        "gap": 3.3355801288931746,
+        "gap_ci": 0.7837330407264659,
+        "gap_total": 0.3824196714231702,
+        "fill": 0.9983188169824577,
+        "volume_share": [
+          0.0337,
+          0.3012,
+          0.6651
+        ]
+      },
+      "Selected": {
+        "gap": 3.3355801288931746,
+        "gap_ci": 0.7837330407264659,
+        "gap_total": 0.3824196714231702,
+        "fill": 0.9983188169824577,
+        "volume_share": [
+          0.0337,
+          0.3012,
+          0.6651
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -1.4240094224493802,
+        "ci": 0.7314940134029447,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -0.18907920239036283,
+        "ci": 0.12291661685746028,
+        "better": true,
+        "worse": false
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": true,
+      "replicate": 6
+    },
+    {
+      "instance": "F06_lch",
+      "val": {
+        "GMI": 229.41588784722222,
+        "Status-table": 229.24236354166675,
+        "DCL": 229.24163368055562
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 0.6671170309886846,
+        "gap_ci": 0.5284783062128048,
+        "gap_total": 0.08962465658893701,
+        "fill": 0.9988031185719812,
+        "volume_share": [
+          0.0136,
+          0.133,
+          0.8534
+        ]
+      },
+      "Status-table": {
+        "gap": 0.3497529979218035,
+        "gap_ci": 0.47687153040780716,
+        "gap_total": 0.046987995919151586,
+        "fill": 0.9988003351267999,
+        "volume_share": [
+          0.0175,
+          0.1936,
+          0.7889
+        ]
+      },
+      "DCL": {
+        "gap": 0.3546688285456029,
+        "gap_ci": 0.47754874299527567,
+        "gap_total": 0.04764841921977464,
+        "fill": 0.998794768236437,
+        "volume_share": [
+          0.0175,
+          0.1936,
+          0.7889
+        ]
+      },
+      "Selected": {
+        "gap": 0.3546688285456029,
+        "gap_ci": 0.47754874299527567,
+        "gap_total": 0.04764841921977464,
+        "fill": 0.998794768236437,
+        "volume_share": [
+          0.0175,
+          0.1936,
+          0.7889
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -0.31244820244308175,
+        "ci": 0.5193567067049996,
+        "better": false,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": 0.004915830623799385,
+        "ci": 0.03651739835175923,
+        "better": false,
+        "worse": false
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": true,
+      "replicate": 6
+    },
+    {
+      "instance": "F07_lcl",
+      "val": {
+        "GMI": 229.24719305555575,
+        "Status-table": 228.80077708333337,
+        "DCL": 228.76433958333334
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 5.169098176795023,
+        "gap_ci": 0.8703016871473906,
+        "gap_total": 0.639019111991172,
+        "fill": 0.9972676073599126,
+        "volume_share": [
+          0.0633,
+          0.1661,
+          0.7705
+        ]
+      },
+      "Status-table": {
+        "gap": 3.327256272356056,
+        "gap_ci": 0.9620518142650388,
+        "gap_total": 0.41132520138093254,
+        "fill": 0.9968191718705609,
+        "volume_share": [
+          0.1091,
+          0.1698,
+          0.7211
+        ]
+      },
+      "DCL": {
+        "gap": 3.0773452387623204,
+        "gap_ci": 0.8295511370262478,
+        "gap_total": 0.38043046475534925,
+        "fill": 0.9968637368881362,
+        "volume_share": [
+          0.109,
+          0.1697,
+          0.7212
+        ]
+      },
+      "Selected": {
+        "gap": 3.0773452387623204,
+        "gap_ci": 0.8295511370262478,
+        "gap_total": 0.38043046475534925,
+        "fill": 0.9968637368881362,
+        "volume_share": [
+          0.109,
+          0.1697,
+          0.7212
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -2.091752938032703,
+        "ci": 0.7880668128652862,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -0.24991103359373526,
+        "ci": 0.22309738540632565,
+        "better": true,
+        "worse": false
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": true,
+      "replicate": 7
+    },
+    {
+      "instance": "F07_lch",
+      "val": {
+        "GMI": 235.05432083333332,
+        "Status-table": 233.57546423611154,
+        "DCL": 233.23971631944457
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 10.498023649736425,
+        "gap_ci": 0.7220788491951697,
+        "gap_total": 1.4530481330625133,
+        "fill": 0.9988860940426969,
+        "volume_share": [
+          0.0413,
+          0.1115,
+          0.8472
+        ]
+      },
+      "Status-table": {
+        "gap": 4.548487959821248,
+        "gap_ci": 0.601089157224176,
+        "gap_total": 0.6295634453482606,
+        "fill": 0.9985455012437221,
+        "volume_share": [
+          0.0386,
+          0.1032,
+          0.8582
+        ]
+      },
+      "DCL": {
+        "gap": 3.645690687577883,
+        "gap_ci": 0.5787286679830348,
+        "gap_total": 0.504605840494695,
+        "fill": 0.9985231672896909,
+        "volume_share": [
+          0.0341,
+          0.104,
+          0.8619
+        ]
+      },
+      "Selected": {
+        "gap": 3.645690687577883,
+        "gap_ci": 0.5787286679830348,
+        "gap_total": 0.504605840494695,
+        "fill": 0.9985231672896909,
+        "volume_share": [
+          0.0341,
+          0.104,
+          0.8619
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -6.85233296215854,
+        "ci": 0.5612342401283573,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -0.9027972722433643,
+        "ci": 0.11763074103240616,
+        "better": true,
+        "worse": false
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": true,
+      "replicate": 7
+    }
+  ]
+}

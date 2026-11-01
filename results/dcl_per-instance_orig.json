@@ -1,0 +1,1449 @@
+{
+  "meta": {
+    "mode": "per-instance",
+    "iterations": 3,
+    "labelled_states": 76800,
+    "share_changed": 0.3732421875,
+    "M": 16,
+    "H": 36,
+    "z": 1.0,
+    "confirm_M": 0,
+    "thresholds": [
+      0.0
+    ],
+    "deltas": [
+      "abs",
+      8
+    ],
+    "rounds": 2,
+    "episodes": 32,
+    "periods": 400,
+    "every": 8,
+    "epochs": 40,
+    "device": "cpu",
+    "minutes": 48.32909817695618,
+    "instances": [
+      "F00_lcl",
+      "F00_lch",
+      "F01_lcl",
+      "F01_lch",
+      "F02_lcl",
+      "F02_lch",
+      "F03_lcl",
+      "F03_lch",
+      "F04_lcl",
+      "F04_lch",
+      "F05_lcl",
+      "F05_lch",
+      "F06_lcl",
+      "F06_lch",
+      "F07_lcl",
+      "F07_lch"
+    ],
+    "split": {
+      "scheme": "per-instance (one network per instance)",
+      "train": {
+        "seed": 7,
+        "replicates": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "n": 16
+      },
+      "test": {
+        "seed": 7,
+        "replicates": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "n": 16
+      },
+      "held_out_rule": "nothing is held out; each network is trained and tested on its own instance (test uses separate random seeds)"
+    },
+    "n_suppliers": 3,
+    "target": "factorial-hard",
+    "search": "sh",
+    "compare_ensemble": {
+      "seeds": [
+        101,
+        202,
+        303
+      ],
+      "rule": "mean probability, threshold 0"
+    },
+    "main_label": "Original DCL (per instance)"
+  },
+  "summary": {
+    "n": 16,
+    "GMI": 8.1797331448758,
+    "Status-table": 3.9556222822256264,
+    "DCL": 2.822737110994669,
+    "Selected": 2.9341798842134157,
+    "dcl_beats_table": 0.4375,
+    "dcl_worse_table": 0.0,
+    "dcl_beats_gmi": 0.8125,
+    "dcl_selected": 0.6875,
+    "members": [
+      {
+        "name": "S-DCL ensemble (trained across instances)",
+        "gap": 2.828947254458889,
+        "better": 0.8125,
+        "worse": 0.0,
+        "dmain": 0.0062101434642199,
+        "bmain": 0.125,
+        "wmain": 0.125
+      },
+      {
+        "name": "Original DCL (per instance)",
+        "gap": 2.822737110994669,
+        "better": 0.4375,
+        "worse": 0.0,
+        "dmain": 0.0,
+        "bmain": NaN,
+        "wmain": NaN
+      }
+    ]
+  },
+  "rows": [
+    {
+      "instance": "F00_lcl",
+      "val": {
+        "GMI": 233.8249708333336,
+        "Status-table": 232.32693819444432,
+        "DCL": 230.84033333333326
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 16.230383134539245,
+        "gap_ci": 2.0552914863024494,
+        "gap_total": 2.2218325304307833,
+        "fill": 0.9960999008164432,
+        "volume_share": [
+          0.04,
+          0.2019,
+          0.7581
+        ]
+      },
+      "Status-table": {
+        "gap": 7.494680534503414,
+        "gap_ci": 0.8816111068523479,
+        "gap_total": 1.0259723925623014,
+        "fill": 0.9975736451918389,
+        "volume_share": [
+          0.1983,
+          0.1067,
+          0.695
+        ]
+      },
+      "DCL": {
+        "gap": 3.010201845752442,
+        "gap_ci": 0.8261432076660937,
+        "gap_total": 0.41207680241526407,
+        "fill": 0.996859187367265,
+        "volume_share": [
+          0.1464,
+          0.1576,
+          0.696
+        ]
+      },
+      "Selected": {
+        "gap": 3.010201845752442,
+        "gap_ci": 0.8261432076660937,
+        "gap_total": 0.41207680241526407,
+        "fill": 0.996859187367265,
+        "volume_share": [
+          0.1464,
+          0.1576,
+          0.696
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -13.220181288786804,
+        "ci": 2.1068763359172644,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -4.484478688750972,
+        "ci": 0.8152064593442181,
+        "better": true,
+        "worse": false
+      },
+      "members": {
+        "S-DCL ensemble (trained across instances)": {
+          "gap": 2.4101947537110795,
+          "diff_vs_table": -5.084485780792335,
+          "ci": 0.47225040314775446,
+          "better": true,
+          "worse": false,
+          "diff_vs_main": -0.6000070920413628,
+          "ci_main": 0.8927555241086162,
+          "better_than_main": false,
+          "worse_than_main": false
+        }
+      },
+      "iteration": 3,
+      "threshold": 0.0,
+      "holdout": false,
+      "replicate": 0
+    },
+    {
+      "instance": "F00_lch",
+      "val": {
+        "GMI": 241.3989090277781,
+        "Status-table": 240.42938784722236,
+        "DCL": 238.8999170138888
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 13.77241562165716,
+        "gap_ci": 1.0932517485245052,
+        "gap_total": 2.154326615833076,
+        "fill": 0.9973674039802611,
+        "volume_share": [
+          0.0371,
+          0.1283,
+          0.8346
+        ]
+      },
+      "Status-table": {
+        "gap": 9.078710165383955,
+        "gap_ci": 1.1017410557756409,
+        "gap_total": 1.4201217479935149,
+        "fill": 0.9984176417540931,
+        "volume_share": [
+          0.0721,
+          0.1301,
+          0.7978
+        ]
+      },
+      "DCL": {
+        "gap": 5.61237830250743,
+        "gap_ci": 1.078818834289193,
+        "gap_total": 0.8779067004195581,
+        "fill": 0.9974850306109303,
+        "volume_share": [
+          0.0543,
+          0.1209,
+          0.8248
+        ]
+      },
+      "Selected": {
+        "gap": 5.61237830250743,
+        "gap_ci": 1.078818834289193,
+        "gap_total": 0.8779067004195581,
+        "fill": 0.9974850306109303,
+        "volume_share": [
+          0.0543,
+          0.1209,
+          0.8248
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -8.160037319149732,
+        "ci": 1.3154993817248815,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -3.466331862876523,
+        "ci": 0.922138376403477,
+        "better": true,
+        "worse": false
+      },
+      "members": {
+        "S-DCL ensemble (trained across instances)": {
+          "gap": 4.646982152938518,
+          "diff_vs_table": -4.431728012445435,
+          "ci": 0.6968341630214011,
+          "better": true,
+          "worse": false,
+          "diff_vs_main": -0.9653961495689116,
+          "ci_main": 0.9220488177803895,
+          "better_than_main": true,
+          "worse_than_main": false
+        }
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": false,
+      "replicate": 0
+    },
+    {
+      "instance": "F01_lcl",
+      "val": {
+        "GMI": 233.4050517361113,
+        "Status-table": 230.17097569444437,
+        "DCL": 229.8124065972226
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 13.363574672549229,
+        "gap_ci": 1.957030298146505,
+        "gap_total": 1.6526569824699187,
+        "fill": 0.9958404752466403,
+        "volume_share": [
+          0.0557,
+          0.0873,
+          0.857
+        ]
+      },
+      "Status-table": {
+        "gap": 5.17480681361711,
+        "gap_ci": 1.3611542352123218,
+        "gap_total": 0.6399620478063164,
+        "fill": 0.9961978035476,
+        "volume_share": [
+          0.0814,
+          0.2206,
+          0.698
+        ]
+      },
+      "DCL": {
+        "gap": 3.974048585606028,
+        "gap_ci": 1.3093068477350178,
+        "gap_total": 0.49146574210922916,
+        "fill": 0.9958544333833965,
+        "volume_share": [
+          0.0702,
+          0.2209,
+          0.7089
+        ]
+      },
+      "Selected": {
+        "gap": 3.974048585606028,
+        "gap_ci": 1.3093068477350178,
+        "gap_total": 0.49146574210922916,
+        "fill": 0.9958544333833965,
+        "volume_share": [
+          0.0702,
+          0.2209,
+          0.7089
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -9.389526086943201,
+        "ci": 1.9846039399719835,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -1.2007582280110827,
+        "ci": 0.6657907319386575,
+        "better": true,
+        "worse": false
+      },
+      "members": {
+        "S-DCL ensemble (trained across instances)": {
+          "gap": 4.072764259350291,
+          "diff_vs_table": -1.1020425542668189,
+          "ci": 0.5243168678099378,
+          "better": true,
+          "worse": false,
+          "diff_vs_main": 0.0987156737442636,
+          "ci_main": 0.5312861457180318,
+          "better_than_main": false,
+          "worse_than_main": false
+        }
+      },
+      "iteration": 3,
+      "threshold": 0.0,
+      "holdout": false,
+      "replicate": 1
+    },
+    {
+      "instance": "F01_lch",
+      "val": {
+        "GMI": 236.5413565972222,
+        "Status-table": 234.4404017361108,
+        "DCL": 234.17290902777788
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 8.054062843007326,
+        "gap_ci": 1.7543405661047284,
+        "gap_total": 1.1133958093436587,
+        "fill": 0.9963146197916085,
+        "volume_share": [
+          0.0339,
+          0.0826,
+          0.8835
+        ]
+      },
+      "Status-table": {
+        "gap": 4.779517034121772,
+        "gap_ci": 1.267829901125341,
+        "gap_total": 0.6607217177474628,
+        "fill": 0.9963146197916085,
+        "volume_share": [
+          0.0417,
+          0.1437,
+          0.8146
+        ]
+      },
+      "DCL": {
+        "gap": 4.7978952121383385,
+        "gap_ci": 1.3634155611422363,
+        "gap_total": 0.6632623220096684,
+        "fill": 0.9962783243804653,
+        "volume_share": [
+          0.0403,
+          0.133,
+          0.8267
+        ]
+      },
+      "Selected": {
+        "gap": 4.7978952121383385,
+        "gap_ci": 1.3634155611422363,
+        "gap_total": 0.6632623220096684,
+        "fill": 0.9962783243804653,
+        "volume_share": [
+          0.0403,
+          0.133,
+          0.8267
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -3.2561676308689864,
+        "ci": 1.725704701941092,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": 0.018378178016565695,
+        "ci": 0.7233938750987953,
+        "better": false,
+        "worse": false
+      },
+      "members": {
+        "S-DCL ensemble (trained across instances)": {
+          "gap": 4.708492095144869,
+          "diff_vs_table": -0.07102493897690336,
+          "ci": 0.15492300158617958,
+          "better": false,
+          "worse": false,
+          "diff_vs_main": -0.08940311699346905,
+          "ci_main": 0.7106380532690341,
+          "better_than_main": false,
+          "worse_than_main": false
+        }
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": false,
+      "replicate": 1
+    },
+    {
+      "instance": "F02_lcl",
+      "val": {
+        "GMI": 238.43340277777753,
+        "Status-table": 235.7918003472221,
+        "DCL": 235.55675590277795
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 12.033645119322573,
+        "gap_ci": 1.3764931436655643,
+        "gap_total": 1.7678826890333375,
+        "fill": 0.9969954708677952,
+        "volume_share": [
+          0.034,
+          0.173,
+          0.7929
+        ]
+      },
+      "Status-table": {
+        "gap": 5.826593407279207,
+        "gap_ci": 1.0435868707005553,
+        "gap_total": 0.8559944654030609,
+        "fill": 0.9969898862411554,
+        "volume_share": [
+          0.1382,
+          0.1586,
+          0.7032
+        ]
+      },
+      "DCL": {
+        "gap": 6.51985190779253,
+        "gap_ci": 1.1188579419665912,
+        "gap_total": 0.9578422172629486,
+        "fill": 0.9955797680146093,
+        "volume_share": [
+          0.0751,
+          0.2661,
+          0.6588
+        ]
+      },
+      "Selected": {
+        "gap": 6.51985190779253,
+        "gap_ci": 1.1188579419665912,
+        "gap_total": 0.9578422172629486,
+        "fill": 0.9955797680146093,
+        "volume_share": [
+          0.0751,
+          0.2661,
+          0.6588
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -5.513793211530045,
+        "ci": 1.401533304703507,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": 0.6932585005133239,
+        "ci": 0.9205393765660576,
+        "better": false,
+        "worse": false
+      },
+      "members": {
+        "S-DCL ensemble (trained across instances)": {
+          "gap": 3.1823471722762573,
+          "diff_vs_table": -2.644246235002949,
+          "ci": 0.805251971144784,
+          "better": true,
+          "worse": false,
+          "diff_vs_main": -3.3375047355162732,
+          "ci_main": 1.0537484539909878,
+          "better_than_main": true,
+          "worse_than_main": false
+        }
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": false,
+      "replicate": 2
+    },
+    {
+      "instance": "F02_lch",
+      "val": {
+        "GMI": 246.01077430555517,
+        "Status-table": 240.52264236111122,
+        "DCL": 240.68617361111146
+      },
+      "selected": "Status-table",
+      "GMI": {
+        "gap": 15.489990417180929,
+        "gap_ci": 1.371900679360568,
+        "gap_total": 2.5121850893673177,
+        "fill": 0.9975322549612828,
+        "volume_share": [
+          0.0296,
+          0.145,
+          0.8254
+        ]
+      },
+      "Status-table": {
+        "gap": 5.60653077647305,
+        "gap_ci": 0.9815055712625312,
+        "gap_total": 0.9092738368716095,
+        "fill": 0.9969327462795606,
+        "volume_share": [
+          0.0812,
+          0.1736,
+          0.7452
+        ]
+      },
+      "DCL": {
+        "gap": 3.726994469976481,
+        "gap_ci": 0.7757683027476229,
+        "gap_total": 0.6044484007714027,
+        "fill": 0.997381680687734,
+        "volume_share": [
+          0.0558,
+          0.1262,
+          0.818
+        ]
+      },
+      "Selected": {
+        "gap": 5.60653077647305,
+        "gap_ci": 0.9815055712625312,
+        "gap_total": 0.9092738368716095,
+        "fill": 0.9969327462795606,
+        "volume_share": [
+          0.0812,
+          0.1736,
+          0.7452
+        ],
+        "chosen": "Status-table"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -11.762995947204448,
+        "ci": 1.3929989207172082,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -1.879536306496568,
+        "ci": 0.9609698782280212,
+        "better": true,
+        "worse": false
+      },
+      "members": {
+        "S-DCL ensemble (trained across instances)": {
+          "gap": 4.3917377704802,
+          "diff_vs_table": -1.2147930059928504,
+          "ci": 0.537699102782778,
+          "better": true,
+          "worse": false,
+          "diff_vs_main": 0.6647433005037177,
+          "ci_main": 0.8921796545769212,
+          "better_than_main": false,
+          "worse_than_main": false
+        }
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": false,
+      "replicate": 2
+    },
+    {
+      "instance": "F03_lcl",
+      "val": {
+        "GMI": 250.43228541666642,
+        "Status-table": 245.02196284722243,
+        "DCL": 245.58922743055572
+      },
+      "selected": "Status-table",
+      "GMI": {
+        "gap": 9.666815531234517,
+        "gap_ci": 2.134133488160488,
+        "gap_total": 1.6484083790555306,
+        "fill": 0.9936968634990081,
+        "volume_share": [
+          0.1033,
+          0.1431,
+          0.7536
+        ]
+      },
+      "Status-table": {
+        "gap": 1.678320810622044,
+        "gap_ci": 0.9964828343830845,
+        "gap_total": 0.2861912568863657,
+        "fill": 0.9964619844695627,
+        "volume_share": [
+          0.1551,
+          0.1598,
+          0.6852
+        ]
+      },
+      "DCL": {
+        "gap": 1.724959366947491,
+        "gap_ci": 0.9665888105060729,
+        "gap_total": 0.2941441744511537,
+        "fill": 0.9962555072225183,
+        "volume_share": [
+          0.1656,
+          0.1485,
+          0.6859
+        ]
+      },
+      "Selected": {
+        "gap": 1.678320810622044,
+        "gap_ci": 0.9964828343830845,
+        "gap_total": 0.2861912568863657,
+        "fill": 0.9964619844695627,
+        "volume_share": [
+          0.1551,
+          0.1598,
+          0.6852
+        ],
+        "chosen": "Status-table"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -7.941856164287025,
+        "ci": 2.0906195577092483,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": 0.04663855632544719,
+        "ci": 0.508764985010197,
+        "better": false,
+        "worse": false
+      },
+      "members": {
+        "S-DCL ensemble (trained across instances)": {
+          "gap": 1.592759447481643,
+          "diff_vs_table": -0.0855613631404007,
+          "ci": 0.06850852319488128,
+          "better": true,
+          "worse": false,
+          "diff_vs_main": -0.1321999194658479,
+          "ci_main": 0.5021408179890637,
+          "better_than_main": false,
+          "worse_than_main": false
+        }
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": false,
+      "replicate": 3
+    },
+    {
+      "instance": "F03_lch",
+      "val": {
+        "GMI": 250.57397222222207,
+        "Status-table": 248.54786250000026,
+        "DCL": 248.46340902777766
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 4.421118170282693,
+        "gap_ci": 1.04792726782131,
+        "gap_total": 0.8363665584289385,
+        "fill": 0.9959532574743418,
+        "volume_share": [
+          0.0574,
+          0.1294,
+          0.8131
+        ]
+      },
+      "Status-table": {
+        "gap": 1.2511426840016087,
+        "gap_ci": 0.6763923036995425,
+        "gap_total": 0.2366853498184287,
+        "fill": 0.997130187416332,
+        "volume_share": [
+          0.0753,
+          0.1544,
+          0.7703
+        ]
+      },
+      "DCL": {
+        "gap": 0.8975904095316193,
+        "gap_ci": 0.6843185888851998,
+        "gap_total": 0.16980197605774022,
+        "fill": 0.9963827532351629,
+        "volume_share": [
+          0.0755,
+          0.136,
+          0.7885
+        ]
+      },
+      "Selected": {
+        "gap": 0.8975904095316193,
+        "gap_ci": 0.6843185888851998,
+        "gap_total": 0.16980197605774022,
+        "fill": 0.9963827532351629,
+        "volume_share": [
+          0.0755,
+          0.136,
+          0.7885
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -3.523527760751073,
+        "ci": 1.3496995658195925,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -0.3535522744699894,
+        "ci": 0.4965089468919984,
+        "better": false,
+        "worse": false
+      },
+      "members": {
+        "S-DCL ensemble (trained across instances)": {
+          "gap": 1.144921642455344,
+          "diff_vs_table": -0.10622104154626492,
+          "ci": 0.09822359716404934,
+          "better": true,
+          "worse": false,
+          "diff_vs_main": 0.2473312329237245,
+          "ci_main": 0.501285556275817,
+          "better_than_main": false,
+          "worse_than_main": false
+        }
+      },
+      "iteration": 3,
+      "threshold": 0.0,
+      "holdout": false,
+      "replicate": 3
+    },
+    {
+      "instance": "F04_lcl",
+      "val": {
+        "GMI": 230.92561527777778,
+        "Status-table": 229.35230069444444,
+        "DCL": 229.00211597222233
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 5.992458362833769,
+        "gap_ci": 1.3637083439554998,
+        "gap_total": 0.7840018863744034,
+        "fill": 0.9971775339503937,
+        "volume_share": [
+          0.0423,
+          0.0788,
+          0.8789
+        ]
+      },
+      "Status-table": {
+        "gap": 1.4169146809113053,
+        "gap_ci": 0.4468803193936681,
+        "gap_total": 0.18537697142057966,
+        "fill": 0.9969518481162198,
+        "volume_share": [
+          0.085,
+          0.0914,
+          0.8235
+        ]
+      },
+      "DCL": {
+        "gap": 1.2698866753683102,
+        "gap_ci": 0.4557950029194593,
+        "gap_total": 0.16614108746175238,
+        "fill": 0.9967791009345065,
+        "volume_share": [
+          0.0862,
+          0.0921,
+          0.8217
+        ]
+      },
+      "Selected": {
+        "gap": 1.2698866753683102,
+        "gap_ci": 0.4557950029194593,
+        "gap_total": 0.16614108746175238,
+        "fill": 0.9967791009345065,
+        "volume_share": [
+          0.0862,
+          0.0921,
+          0.8217
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -4.722571687465459,
+        "ci": 1.2425927290968772,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -0.14702800554299503,
+        "ci": 0.3209991680457317,
+        "better": false,
+        "worse": false
+      },
+      "members": {
+        "S-DCL ensemble (trained across instances)": {
+          "gap": 1.1083139471581172,
+          "diff_vs_table": -0.30860073375318803,
+          "ci": 0.06639398812387945,
+          "better": true,
+          "worse": false,
+          "diff_vs_main": -0.161572728210193,
+          "ci_main": 0.3099547164957138,
+          "better_than_main": false,
+          "worse_than_main": false
+        }
+      },
+      "iteration": 3,
+      "threshold": 0.0,
+      "holdout": false,
+      "replicate": 4
+    },
+    {
+      "instance": "F04_lch",
+      "val": {
+        "GMI": 232.39410590277782,
+        "Status-table": 232.143370138889,
+        "DCL": 232.08598784722219
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 2.840890955648248,
+        "gap_ci": 1.1353543651750382,
+        "gap_total": 0.4017055344421902,
+        "fill": 0.997218347190447,
+        "volume_share": [
+          0.0422,
+          0.0781,
+          0.8797
+        ]
+      },
+      "Status-table": {
+        "gap": 1.8698605579451462,
+        "gap_ci": 0.5496681858502765,
+        "gap_total": 0.2644006216670607,
+        "fill": 0.9973020478767926,
+        "volume_share": [
+          0.0602,
+          0.067,
+          0.8728
+        ]
+      },
+      "DCL": {
+        "gap": 1.8399635601167328,
+        "gap_ci": 0.6006279956020399,
+        "gap_total": 0.26017314877972514,
+        "fill": 0.9972127671446905,
+        "volume_share": [
+          0.0561,
+          0.0671,
+          0.8768
+        ]
+      },
+      "Selected": {
+        "gap": 1.8399635601167328,
+        "gap_ci": 0.6006279956020399,
+        "gap_total": 0.26017314877972514,
+        "fill": 0.9972127671446905,
+        "volume_share": [
+          0.0561,
+          0.0671,
+          0.8768
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -1.000927395531515,
+        "ci": 1.0439484450812766,
+        "better": false,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -0.029896997828413523,
+        "ci": 0.2551136822426123,
+        "better": false,
+        "worse": false
+      },
+      "members": {
+        "S-DCL ensemble (trained across instances)": {
+          "gap": 1.7313717139143243,
+          "diff_vs_table": -0.13848884403082193,
+          "ci": 0.2741834373850611,
+          "better": false,
+          "worse": false,
+          "diff_vs_main": -0.10859184620240839,
+          "ci_main": 0.3504388502857312,
+          "better_than_main": false,
+          "worse_than_main": false
+        }
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": false,
+      "replicate": 4
+    },
+    {
+      "instance": "F05_lcl",
+      "val": {
+        "GMI": 233.5255642361111,
+        "Status-table": 232.61428819444444,
+        "DCL": 231.05528819444476
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 7.049384842871362,
+        "gap_ci": 0.9165752988968188,
+        "gap_total": 0.9077105769185685,
+        "fill": 0.9970017125102499,
+        "volume_share": [
+          0.128,
+          0.0514,
+          0.8206
+        ]
+      },
+      "Status-table": {
+        "gap": 6.857126361153301,
+        "gap_ci": 0.5888170179742501,
+        "gap_total": 0.882954507949761,
+        "fill": 0.9979974228673112,
+        "volume_share": [
+          0.1219,
+          0.0625,
+          0.8157
+        ]
+      },
+      "DCL": {
+        "gap": 2.4109165278052935,
+        "gap_ci": 0.48810634190422175,
+        "gap_total": 0.310440482557804,
+        "fill": 0.997938851669837,
+        "volume_share": [
+          0.0859,
+          0.0485,
+          0.8657
+        ]
+      },
+      "Selected": {
+        "gap": 2.4109165278052935,
+        "gap_ci": 0.48810634190422175,
+        "gap_total": 0.310440482557804,
+        "fill": 0.997938851669837,
+        "volume_share": [
+          0.0859,
+          0.0485,
+          0.8657
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -4.638468315066069,
+        "ci": 0.8739573181428598,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -4.446209833348008,
+        "ci": 0.5368852501051662,
+        "better": true,
+        "worse": false
+      },
+      "members": {
+        "S-DCL ensemble (trained across instances)": {
+          "gap": 5.841318018818742,
+          "diff_vs_table": -1.0158083423345587,
+          "ci": 0.2715380353528238,
+          "better": true,
+          "worse": false,
+          "diff_vs_main": 3.4304014910134493,
+          "ci_main": 0.5446371993331715,
+          "better_than_main": false,
+          "worse_than_main": true
+        }
+      },
+      "iteration": 3,
+      "threshold": 0.0,
+      "holdout": false,
+      "replicate": 5
+    },
+    {
+      "instance": "F05_lch",
+      "val": {
+        "GMI": 233.61917361111128,
+        "Status-table": 233.66302499999938,
+        "DCL": 233.80508333333316
+      },
+      "selected": "GMI",
+      "GMI": {
+        "gap": 0.8671622380230977,
+        "gap_ci": 0.4065856093665819,
+        "gap_total": 0.12208029433954234,
+        "fill": 0.9984778026830818,
+        "volume_share": [
+          0.0484,
+          0.0462,
+          0.9054
+        ]
+      },
+      "Status-table": {
+        "gap": 0.5055961282154647,
+        "gap_ci": 0.45539012908373394,
+        "gap_total": 0.07117851936240895,
+        "fill": 0.9985447124552541,
+        "volume_share": [
+          0.0494,
+          0.0491,
+          0.9016
+        ]
+      },
+      "DCL": {
+        "gap": 0.8714106459011948,
+        "gap_ci": 0.4726295416101222,
+        "gap_total": 0.12267839105258062,
+        "fill": 0.9980707682357008,
+        "volume_share": [
+          0.0639,
+          0.0513,
+          0.8848
+        ]
+      },
+      "Selected": {
+        "gap": 0.8671622380230977,
+        "gap_ci": 0.4065856093665819,
+        "gap_total": 0.12208029433954234,
+        "fill": 0.9984778026830818,
+        "volume_share": [
+          0.0484,
+          0.0462,
+          0.9054
+        ],
+        "chosen": "GMI"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": 0.004248407878096997,
+        "ci": 0.42947237748264766,
+        "better": false,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": 0.3658145176857299,
+        "ci": 0.4103161107813097,
+        "better": false,
+        "worse": false
+      },
+      "members": {
+        "S-DCL ensemble (trained across instances)": {
+          "gap": 0.49725018985941005,
+          "diff_vs_table": -0.008345938356054771,
+          "ci": 0.016678026982283153,
+          "better": false,
+          "worse": false,
+          "diff_vs_main": -0.37416045604178466,
+          "ci_main": 0.41245387056115107,
+          "better_than_main": false,
+          "worse_than_main": false
+        }
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": false,
+      "replicate": 5
+    },
+    {
+      "instance": "F06_lcl",
+      "val": {
+        "GMI": 225.59050555555544,
+        "Status-table": 225.0623180555555,
+        "DCL": 224.64391180555566
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 4.759589551342555,
+        "gap_ci": 0.9198570262796915,
+        "gap_total": 0.5456803920155102,
+        "fill": 0.9976692056340541,
+        "volume_share": [
+          0.0361,
+          0.32,
+          0.644
+        ]
+      },
+      "Status-table": {
+        "gap": 3.5246593312835373,
+        "gap_ci": 0.7693949637314929,
+        "gap_total": 0.40409734177044826,
+        "fill": 0.9983550613924544,
+        "volume_share": [
+          0.0351,
+          0.301,
+          0.6639
+        ]
+      },
+      "DCL": {
+        "gap": 1.5724892217501323,
+        "gap_ci": 0.7110307690592108,
+        "gap_total": 0.1802837252474294,
+        "fill": 0.9980929864278625,
+        "volume_share": [
+          0.0886,
+          0.2902,
+          0.6212
+        ]
+      },
+      "Selected": {
+        "gap": 1.5724892217501323,
+        "gap_ci": 0.7110307690592108,
+        "gap_total": 0.1802837252474294,
+        "fill": 0.9980929864278625,
+        "volume_share": [
+          0.0886,
+          0.2902,
+          0.6212
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -3.1871003295924227,
+        "ci": 0.8649621842424248,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -1.9521701095334052,
+        "ci": 0.6901247217759751,
+        "better": true,
+        "worse": false
+      },
+      "members": {
+        "S-DCL ensemble (trained across instances)": {
+          "gap": 3.1953388889023153,
+          "diff_vs_table": -0.32932044238122155,
+          "ci": 0.16590741545925422,
+          "better": true,
+          "worse": false,
+          "diff_vs_main": 1.6228496671521835,
+          "ci_main": 0.6782440735538322,
+          "better_than_main": false,
+          "worse_than_main": true
+        }
+      },
+      "iteration": 3,
+      "threshold": 0.0,
+      "holdout": false,
+      "replicate": 6
+    },
+    {
+      "instance": "F06_lch",
+      "val": {
+        "GMI": 229.41588784722222,
+        "Status-table": 229.24236354166675,
+        "DCL": 229.3159555555557
+      },
+      "selected": "Status-table",
+      "GMI": {
+        "gap": 0.6671170309886846,
+        "gap_ci": 0.5284783062128048,
+        "gap_total": 0.08962465658893701,
+        "fill": 0.9988031185719812,
+        "volume_share": [
+          0.0136,
+          0.133,
+          0.8534
+        ]
+      },
+      "Status-table": {
+        "gap": 0.3497529979218035,
+        "gap_ci": 0.47687153040780716,
+        "gap_total": 0.046987995919151586,
+        "fill": 0.9988003351267999,
+        "volume_share": [
+          0.0175,
+          0.1936,
+          0.7889
+        ]
+      },
+      "DCL": {
+        "gap": 0.6069485801714107,
+        "gap_ci": 0.39038092506631095,
+        "gap_total": 0.0815412521913689,
+        "fill": 0.9987418827779896,
+        "volume_share": [
+          0.016,
+          0.1722,
+          0.8118
+        ]
+      },
+      "Selected": {
+        "gap": 0.3497529979218035,
+        "gap_ci": 0.47687153040780716,
+        "gap_total": 0.046987995919151586,
+        "fill": 0.9988003351267999,
+        "volume_share": [
+          0.0175,
+          0.1936,
+          0.7889
+        ],
+        "chosen": "Status-table"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -0.06016845081727388,
+        "ci": 0.43936244939172436,
+        "better": false,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": 0.25719558224960726,
+        "ci": 0.4246983149151587,
+        "better": false,
+        "worse": false
+      },
+      "members": {
+        "S-DCL ensemble (trained across instances)": {
+          "gap": 0.3289622507167589,
+          "diff_vs_table": -0.020790747205044584,
+          "ci": 0.011371401719261872,
+          "better": true,
+          "worse": false,
+          "diff_vs_main": -0.2779863294546518,
+          "ci_main": 0.4242126257854876,
+          "better_than_main": false,
+          "worse_than_main": false
+        }
+      },
+      "iteration": 3,
+      "threshold": 0.0,
+      "holdout": false,
+      "replicate": 6
+    },
+    {
+      "instance": "F07_lcl",
+      "val": {
+        "GMI": 229.24719305555575,
+        "Status-table": 228.80077708333337,
+        "DCL": 228.80787430555532
+      },
+      "selected": "Status-table",
+      "GMI": {
+        "gap": 5.169098176795023,
+        "gap_ci": 0.8703016871473906,
+        "gap_total": 0.639019111991172,
+        "fill": 0.9972676073599126,
+        "volume_share": [
+          0.0633,
+          0.1661,
+          0.7705
+        ]
+      },
+      "Status-table": {
+        "gap": 3.327256272356056,
+        "gap_ci": 0.9620518142650388,
+        "gap_total": 0.41132520138093254,
+        "fill": 0.9968191718705609,
+        "volume_share": [
+          0.1091,
+          0.1698,
+          0.7211
+        ]
+      },
+      "DCL": {
+        "gap": 3.115625660899524,
+        "gap_ci": 0.8130050607761519,
+        "gap_total": 0.3851628030712622,
+        "fill": 0.996418086712383,
+        "volume_share": [
+          0.1236,
+          0.1347,
+          0.7417
+        ]
+      },
+      "Selected": {
+        "gap": 3.327256272356056,
+        "gap_ci": 0.9620518142650388,
+        "gap_total": 0.41132520138093254,
+        "fill": 0.9968191718705609,
+        "volume_share": [
+          0.1091,
+          0.1698,
+          0.7211
+        ],
+        "chosen": "Status-table"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -2.0534725158955,
+        "ci": 0.9112836883438122,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -0.21163061145653206,
+        "ci": 0.8054639896469322,
+        "better": false,
+        "worse": false
+      },
+      "members": {
+        "S-DCL ensemble (trained across instances)": {
+          "gap": 2.962794538975986,
+          "diff_vs_table": -0.3644617333800699,
+          "ci": 0.2580323720976413,
+          "better": true,
+          "worse": false,
+          "diff_vs_main": -0.15283112192353782,
+          "ci_main": 0.7815056885237603,
+          "better_than_main": false,
+          "worse_than_main": false
+        }
+      },
+      "iteration": 3,
+      "threshold": 0.0,
+      "holdout": false,
+      "replicate": 7
+    },
+    {
+      "instance": "F07_lch",
+      "val": {
+        "GMI": 235.05432083333332,
+        "Status-table": 233.57546423611154,
+        "DCL": 232.87338611111113
+      },
+      "selected": "DCL",
+      "GMI": {
+        "gap": 10.498023649736425,
+        "gap_ci": 0.7220788491951697,
+        "gap_total": 1.4530481330625133,
+        "fill": 0.9988860940426969,
+        "volume_share": [
+          0.0413,
+          0.1115,
+          0.8472
+        ]
+      },
+      "Status-table": {
+        "gap": 4.548487959821248,
+        "gap_ci": 0.601089157224176,
+        "gap_total": 0.6295634453482606,
+        "fill": 0.9985455012437221,
+        "volume_share": [
+          0.0386,
+          0.1032,
+          0.8582
+        ]
+      },
+      "DCL": {
+        "gap": 3.212632803649746,
+        "gap_ci": 0.6728711183480137,
+        "gap_total": 0.44466561071958094,
+        "fill": 0.9984114975195353,
+        "volume_share": [
+          0.0378,
+          0.1119,
+          0.8503
+        ]
+      },
+      "Selected": {
+        "gap": 3.212632803649746,
+        "gap_ci": 0.6728711183480137,
+        "gap_total": 0.44466561071958094,
+        "fill": 0.9984114975195353,
+        "volume_share": [
+          0.0378,
+          0.1119,
+          0.8503
+        ],
+        "chosen": "DCL"
+      },
+      "dcl_vs_GMI": {
+        "diff_pct_excess": -7.2853908460866785,
+        "ci": 0.6998255313083591,
+        "better": true,
+        "worse": false
+      },
+      "dcl_vs_Status-table": {
+        "diff_pct_excess": -1.3358551561715017,
+        "ci": 0.41287593879064927,
+        "better": true,
+        "worse": false
+      },
+      "members": {
+        "S-DCL ensemble (trained across instances)": {
+          "gap": 3.4476072291583666,
+          "diff_vs_table": -1.1008807306628814,
+          "ci": 0.09254885400030206,
+          "better": true,
+          "worse": false,
+          "diff_vs_main": 0.2349744255086203,
+          "ci_main": 0.44314549201805653,
+          "better_than_main": false,
+          "worse_than_main": false
+        }
+      },
+      "iteration": 2,
+      "threshold": 0.0,
+      "holdout": false,
+      "replicate": 7
+    }
+  ]
+}

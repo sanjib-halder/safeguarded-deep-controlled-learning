@@ -1,0 +1,321 @@
+{
+  "meta": {
+    "target": "factorial-hard",
+    "mode": "per-instance",
+    "iters": 1000,
+    "device": "cpu",
+    "train_seconds": 1280.7053973674774,
+    "holdout_reps": [
+      6,
+      7
+    ],
+    "base": "table",
+    "bound": 2.0,
+    "instances": [
+      "F00_lcl",
+      "F00_lch",
+      "F02_lcl",
+      "F05_lcl"
+    ]
+  },
+  "summary": [
+    {
+      "group": "training instances",
+      "n": 4,
+      "GMI": 12.271457179597585,
+      "Status-table": 7.314277617079969,
+      "Neural": 3.997188742880187,
+      "Selected": 3.997188742880187,
+      "neural_beats_table": 0.75,
+      "neural_worse_table": 0.0,
+      "neural_beats_gmi": 1.0,
+      "selected_neural": 0.75
+    },
+    {
+      "group": "all",
+      "n": 4,
+      "GMI": 12.271457179597585,
+      "Status-table": 7.314277617079969,
+      "Neural": 3.997188742880187,
+      "Selected": 3.997188742880187,
+      "neural_beats_table": 0.75,
+      "neural_worse_table": 0.0,
+      "neural_beats_gmi": 1.0,
+      "selected_neural": 0.75
+    }
+  ],
+  "rows": [
+    {
+      "instance": "F00_lcl",
+      "val": {
+        "GMI": 233.8249708333336,
+        "Status-table": 232.32693819444432,
+        "Neural": 231.00837916666666
+      },
+      "selected": "Neural",
+      "GMI": {
+        "gap": 16.230383134539245,
+        "gap_ci": 2.0552914863024494,
+        "gap_total": 2.2218325304307833,
+        "fill": 0.9960999008164432,
+        "volume_share": [
+          0.04,
+          0.2019,
+          0.7581
+        ]
+      },
+      "Status-table": {
+        "gap": 7.494680534503414,
+        "gap_ci": 0.8816111068523479,
+        "gap_total": 1.0259723925623014,
+        "fill": 0.9975736451918389,
+        "volume_share": [
+          0.1983,
+          0.1067,
+          0.695
+        ]
+      },
+      "Neural": {
+        "gap": 4.120429552585296,
+        "gap_ci": 0.8768942577791362,
+        "gap_total": 0.5640596616478002,
+        "fill": 0.9974867895347339,
+        "volume_share": [
+          0.1431,
+          0.1215,
+          0.7354
+        ]
+      },
+      "Selected": {
+        "gap": 4.120429552585296,
+        "gap_ci": 0.8768942577791362,
+        "gap_total": 0.5640596616478002,
+        "fill": 0.9974867895347339,
+        "volume_share": [
+          0.1431,
+          0.1215,
+          0.7354
+        ],
+        "chosen": "Neural"
+      },
+      "neural_vs_GMI": {
+        "diff_pct_excess": -12.10995358195395,
+        "ci": 1.9437849364284634,
+        "better": true,
+        "worse": false
+      },
+      "neural_vs_Status-table": {
+        "diff_pct_excess": -3.374250981918118,
+        "ci": 0.610025827502225,
+        "better": true,
+        "worse": false
+      },
+      "holdout": false,
+      "replicate": 0
+    },
+    {
+      "instance": "F00_lch",
+      "val": {
+        "GMI": 241.3989090277781,
+        "Status-table": 240.42938784722236,
+        "Neural": 237.96101111111142
+      },
+      "selected": "Neural",
+      "GMI": {
+        "gap": 13.77241562165716,
+        "gap_ci": 1.0932517485245052,
+        "gap_total": 2.154326615833076,
+        "fill": 0.9973674039802611,
+        "volume_share": [
+          0.0371,
+          0.1283,
+          0.8346
+        ]
+      },
+      "Status-table": {
+        "gap": 9.078710165383955,
+        "gap_ci": 1.1017410557756409,
+        "gap_total": 1.4201217479935149,
+        "fill": 0.9984176417540931,
+        "volume_share": [
+          0.0721,
+          0.1301,
+          0.7978
+        ]
+      },
+      "Neural": {
+        "gap": 2.9568875739540252,
+        "gap_ci": 0.6925886128310822,
+        "gap_total": 0.4625260938668048,
+        "fill": 0.9981571827861828,
+        "volume_share": [
+          0.0576,
+          0.1175,
+          0.8249
+        ]
+      },
+      "Selected": {
+        "gap": 2.9568875739540252,
+        "gap_ci": 0.6925886128310822,
+        "gap_total": 0.4625260938668048,
+        "fill": 0.9981571827861828,
+        "volume_share": [
+          0.0576,
+          0.1175,
+          0.8249
+        ],
+        "chosen": "Neural"
+      },
+      "neural_vs_GMI": {
+        "diff_pct_excess": -10.815528047703134,
+        "ci": 1.1309958591793479,
+        "better": true,
+        "worse": false
+      },
+      "neural_vs_Status-table": {
+        "diff_pct_excess": -6.121822591429928,
+        "ci": 0.9492619957879453,
+        "better": true,
+        "worse": false
+      },
+      "holdout": false,
+      "replicate": 0
+    },
+    {
+      "instance": "F02_lcl",
+      "val": {
+        "GMI": 238.43340277777753,
+        "Status-table": 235.7918003472221,
+        "Neural": 235.7918003472221
+      },
+      "selected": "Status-table",
+      "GMI": {
+        "gap": 12.033645119322573,
+        "gap_ci": 1.3764931436655643,
+        "gap_total": 1.7678826890333375,
+        "fill": 0.9969954708677952,
+        "volume_share": [
+          0.034,
+          0.173,
+          0.7929
+        ]
+      },
+      "Status-table": {
+        "gap": 5.826593407279207,
+        "gap_ci": 1.0435868707005553,
+        "gap_total": 0.8559944654030609,
+        "fill": 0.9969898862411554,
+        "volume_share": [
+          0.1382,
+          0.1586,
+          0.7032
+        ]
+      },
+      "Neural": {
+        "gap": 5.826593407279207,
+        "gap_ci": 1.0435868707005553,
+        "gap_total": 0.8559944654030609,
+        "fill": 0.9969898862411554,
+        "volume_share": [
+          0.1382,
+          0.1586,
+          0.7032
+        ]
+      },
+      "Selected": {
+        "gap": 5.826593407279207,
+        "gap_ci": 1.0435868707005553,
+        "gap_total": 0.8559944654030609,
+        "fill": 0.9969898862411554,
+        "volume_share": [
+          0.1382,
+          0.1586,
+          0.7032
+        ],
+        "chosen": "Status-table"
+      },
+      "neural_vs_GMI": {
+        "diff_pct_excess": -6.207051712043368,
+        "ci": 1.492420638664527,
+        "better": true,
+        "worse": false
+      },
+      "neural_vs_Status-table": {
+        "diff_pct_excess": 0.0,
+        "ci": 0.0,
+        "better": false,
+        "worse": false
+      },
+      "holdout": false,
+      "replicate": 2
+    },
+    {
+      "instance": "F05_lcl",
+      "val": {
+        "GMI": 233.5255642361111,
+        "Status-table": 232.61428819444444,
+        "Neural": 231.79713715277796
+      },
+      "selected": "Neural",
+      "GMI": {
+        "gap": 7.049384842871362,
+        "gap_ci": 0.9165752988968188,
+        "gap_total": 0.9077105769185685,
+        "fill": 0.9970017125102499,
+        "volume_share": [
+          0.128,
+          0.0514,
+          0.8206
+        ]
+      },
+      "Status-table": {
+        "gap": 6.857126361153301,
+        "gap_ci": 0.5888170179742501,
+        "gap_total": 0.882954507949761,
+        "fill": 0.9979974228673112,
+        "volume_share": [
+          0.1219,
+          0.0625,
+          0.8157
+        ]
+      },
+      "Neural": {
+        "gap": 3.0848444377022206,
+        "gap_ci": 0.7282923728013073,
+        "gap_total": 0.39721847886945005,
+        "fill": 0.9976961995660153,
+        "volume_share": [
+          0.08,
+          0.0405,
+          0.8794
+        ]
+      },
+      "Selected": {
+        "gap": 3.0848444377022206,
+        "gap_ci": 0.7282923728013073,
+        "gap_total": 0.39721847886945005,
+        "fill": 0.9976961995660153,
+        "volume_share": [
+          0.08,
+          0.0405,
+          0.8794
+        ],
+        "chosen": "Neural"
+      },
+      "neural_vs_GMI": {
+        "diff_pct_excess": -3.9645404051691417,
+        "ci": 0.9025634796732198,
+        "better": true,
+        "worse": false
+      },
+      "neural_vs_Status-table": {
+        "diff_pct_excess": -3.772281923451081,
+        "ci": 0.6028797753158684,
+        "better": true,
+        "worse": false
+      },
+      "holdout": false,
+      "replicate": 5
+    }
+  ]
+}
